@@ -1,0 +1,66 @@
+@media only screen and (max-width : 1050px) 
+	.col-mnu
+		order: 10
+		margin-left: 19px
+	.top-mnu 
+		display: none
+	.hidden-mnu
+		display: block	
+	.toggle-mnu
+		display: block
+		float: right
+		right: 0
+		top: 0
+		text-align: center
+		line-height: 48px
+		display: block
+		width: 24px
+		height: 20px
+		margin: 0
+		margin-top: 25px
+	.toggle-mnu:focus
+		outline: none
+	.toggle-mnu span
+		position: relative
+		display: block
+		background-color: #000		
+		transition: all 0.3s		
+		backface-visibility: hidden
+		width: 20px
+		height: 2px				
+		background-color: #232323
+	.toggle-mnu span
+		&:after, &:before
+			content: ""
+			position: absolute
+			left: 0
+			top: -7px
+			width: 20px
+			height: 2px				
+			background-color: #232323
+			transition: all 0.3s		
+			backface-visibility: hidden				
+			border-radius: 3px			
+	.toggle-mnu span:after
+		top: 7px						
+	.toggle-mnu span:before				
+		
+	.toggle-mnu.on span
+		background-color: transparent		
+	.toggle-mnu.on span:before		
+		transform: rotate(45deg) translate(5px, 5px)
+		top: -6px
+	.toggle-mnu.on span:after		
+		transform: rotate(-45deg) translate(8px, -9px)
+		top: 13px
+	.toggle-mnu.on + #menu
+		opacity: 1
+		visibility: visible
+
+
+
+@media only screen and (min-width : 1051px)
+	.top-mnu 
+		display: flex
+	.hidden-mnu
+		display: none

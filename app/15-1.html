@@ -1,0 +1,143 @@
+@@include('var/_head.html')
+<title>15.1. Личный кабинет</title>
+</head>
+<body>
+ <div class="wrapper wrapper-15-1">  
+  @@include('var/_top-mnu.html')
+  <section class="personal-settings-section">
+    <div class="contain">
+      <h1>Личные настройки</h1> 
+      <div class="infocentr-cols">
+        <div class="infocentr-col-l">
+          <form class="personal-settings-form">
+
+            <div class="add-review-label"><span class="add-review-label-txt">Имя</span><input type="text" class="add-review-input" placeholder="Булат" /></div>
+
+            <div class="add-review-label"><span class="add-review-label-txt">Фамилия</span><input type="text" class="add-review-input" placeholder="Ахметшин " /></div>
+
+            <div class="add-review-label"><span class="add-review-label-txt">E-mail (скрыто)</span><input type="text" class="add-review-input" placeholder="bulatakhmetshin@gmail.com" /></div>
+
+            <div class="add-review-label"><span class="add-review-label-txt">E-mail (публичный)</span><input type="text" class="add-review-input" placeholder="bulatakhmetshin@gmail.com" /></div>
+
+            <div class="add-review-label"><span class="add-review-label-txt">Телефон</span><input type="text" class="add-review-input" placeholder="" /></div>
+            <div class="add-review-label">
+              <span class="add-review-label-txt" placeholder=""><img src="img/vk-22.svg" /><span class="add-review-span">Вконтакте</span></span><input type="text" class="add-review-input" placeholder="" />
+            </div>
+            <div class="add-review-label">
+              <span class="add-review-label-txt"><img src="img/fb-2.svg" /><span class="add-review-span">Facebook</span></span><input type="text" class="add-review-input" placeholder="" />
+            </div>
+            <div class="add-review-label">
+              <span class="add-review-label-txt"><img src="img/insta-2.svg" /><span class="add-review-span">Instagram</span></span><input type="text" class="add-review-input" placeholder="" />
+            </div>
+            <div class="add-review-label">
+              <span class="add-review-label-txt">Город</span>
+              <select class="s-sel">
+                <option value="Город">Город</option>
+                <option value="Москва">Москва</option>
+                <option value="Казань">Казань</option>                
+              </select>
+              <a href="#" class="add-review-link">Почему моего города нет в списке?</a>
+            </div>
+            <div class="add-review-label">
+              <span class="add-review-label-txt">Тип профиля</span>
+              <select class="s-sel">
+                <option value="Представитель застройщика">Представитель застройщика</option>
+                <option value="Москва">Москва</option>
+                <option value="Казань">Казань</option>                
+              </select>              
+            </div>
+
+            <div class="w100">
+              <br>
+              <p>
+                <b>Смена пароля</b>
+              </p>
+              <br>
+            </div>
+
+            <div class="add-review-label"><span class="add-review-label-txt">Новый пароль</span><input type="text" class="add-review-input" placeholder="" /></div>
+            <div class="add-review-label"><span class="add-review-label-txt">Повторите пароль</span><input type="text" class="add-review-input" placeholder="" /></div>
+            <div class="add-photo-w">
+              <div class="add-photo">
+                <a href="#" class="add-photo-link">
+                  <span class="add-photo-txt-1">Загрузить фото</span><span class="add-photo-img-w"><img src="img/camera.svg" /></span>
+                </a>
+                <div class="add-photo-txt-2">Принимаются JPG, PNG, JPEG до 5 мб</div>
+              </div>
+            </div>
+            <div class="add-review-label w100">
+              <span class="add-review-label-txt">Несколько слов о себе</span>
+              <textarea class="add-review-textarea" placeholder="Тема отзыва"></textarea>
+            </div>            
+            <div class="w100">              
+              <div class="add-review-buutt-group">
+                <p><b> Уведомления</b></p>
+                <label class="confirm-label">
+                  <input type="checkbox">
+                  <div>Присылать уведомления об отзывах, на связанные компании</div>
+                </label>
+                <br>
+                <label class="confirm-label">
+                  <input type="checkbox">
+                  <div>Присылать уведомления об ответах на мои отзывы</div>
+                </label>
+                <br>
+                <br>
+                <p><b> Рассылка</b></p>
+                <label class="confirm-label">
+                  <input type="checkbox">
+                  <div>Получать уведомления о добавлении новых ЖК на сайт</div>
+                </label>
+                <br>
+                <label class="confirm-label">
+                  <input type="checkbox">
+                  <div>Получать уведомления о добавлении новых застройщиков на сайт</div>
+                </label>
+                <br>
+                <label class="confirm-label">
+                  <input type="checkbox">
+                  <div>Получать уведомления о добавлении новых публикаций на сайт</div>
+                </label>
+                <div class="confirm-butt-group">
+                  <input class="butt" type="submit" value="Сохранить">
+                  <a href="#" class="butt-r">Удалить профиль</a>
+                </div>
+              </div><!--add-review-buutt-group-->
+
+
+            </div><!--w100-->
+
+
+
+          </form> 
+
+        </div><!--infocentr-col-l-->
+
+        <div class="infocentr-col-r">
+          <div class="r-mnu-block">
+            <div class="r-mnu-tit">Мои настройки</div>
+            <ul class="r-mnu-ul">
+              <li class="r-mnu-li"><a href="#" class="r-mnu-a">Мои отзывы</a></li>
+              <li class="r-mnu-li"><a href="#" class="r-mnu-a">Мои публикации</a></li>
+              <li class="r-mnu-li"><a href="#" class="r-mnu-a">Добавить публикацию</a></li>
+              <li class="r-mnu-li"><a href="#" class="r-mnu-a">Мои ЖК</a></li>
+              <li class="r-mnu-li"><a href="#" class="r-mnu-a">Добавить ЖК</a></li>
+              <li class="r-mnu-li"><a href="#" class="r-mnu-a">Личные настройки</a></li>
+              <li class="r-mnu-li"><a href="#" class="r-mnu-a">Удаление ЖК</a></li>
+            </ul>
+          </div>
+        </div><!--infocentr-col-r-->
+
+      </div><!--infocentr-cols-->
+    </div><!--infocentr-cols-->
+  </section><!--</section>-->
+
+
+
+
+
+  @@include('var/_footer.html')
+</div><!--wrapper-->
+@@include('var/_scripts.html')
+</body>
+</html>

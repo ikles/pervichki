@@ -1,0 +1,88 @@
+@@include('var/_head.html')
+<title>22. Отзывы о ЖК</title>
+</head>
+<body>
+ <div class="wrapper wrapper-22">
+  @@include('var/_top-mnu.html')  
+  <div class="develop-blue-top">
+    <div class="contain">
+      <h1>Отзывы о жилых комплексах Казани</h1>
+      <form class="develop-form">
+        <input type="text" class="input develop-input" placeholder="Название ЖК">
+        <input type="submit" class="butt develop-butt" value="Показать">
+      </form>
+    </div>
+  </div><!--develop-blue-top-->
+  <div class="sort-w-2">
+    <div class="contain">
+      <div class="sort-l sort-l-dev">
+        <div class="sort-tit">Сортировать</div>
+        <div class="sort-links hide-992">          
+          <a href="#" class="sort-link-1 active">Отрицательные отзывы</a>
+          <a href="#" class="sort-link-1">Сначала проверенные</a>          
+        </div>
+        <div class="top-sel top-sel-sort show-992">
+          <select class="sel-city">
+            <option class="top-sel-span" value="Выбрать город">Отрицательные отзывы</option>
+            <option class="top-sel-span" value="Выбрать город">Сначала проверенные</option>
+          </select>
+        </div><!--top-sel-sort-->
+
+      </div>
+    </div>
+  </div>
+
+  <div class="contain">
+    <div class="cols">    
+      <div class="col-grow">
+        <div class="revs-block revs-block_2">          
+          <div class="revs-w">
+
+           @@include('var/_revs_plus_link.html',
+  {
+  "name":"Максим П.",
+  "text":"Расположение удобное. В любую точку Казани на одном автобусе. Ну есть места только, куда просто долго ехать, но зато на автобусе)) можно и без машины прожить, в общем. Строится быстро, что удивительно. В общем, шик, надею, что сданным он будет еще kучше",
+  "plus":"Транспортная доступность",
+  "minus":"Дом явно строили на отвяжись: звукоизоляции нет вообще (сосед храпит, а слышно всем соседям), то проблемы с трубами и лифтами обнаруживаются, короче ужас!",
+  "titlegk":"ЖК Skyline"
+  })
+
+
+  @@include('var/_revs_plus_link.html',
+  {
+  "name":"Олег",
+  "text":"Отсутствие балконов и лоджий это большой недостаток.",
+  "plus":"Готовность",
+  "minus":"Планировки",
+  "titlegk":"ЖК Солнечный город"
+  })
+
+          </div><!--revs-w-->
+        </div><!--revs-block-->
+
+
+
+      </div><!--col-grow-->
+      <div class="col-294">
+
+        <div class="add-rev-r-block">
+          <div class="add-rev-r-txt-1">Оставьте отзыв</div>  
+          <div class="add-rev-r-txt-2">Выскажите свое мнение</div>  
+          <a href="#" class="butt-o">Написать</a>
+        </div>
+
+
+        <div class="r-bann-w">
+          <img src="img/r-bann-w.jpg" alt="">
+        </div>
+      </div><!--col-294-->
+    </div><!--cols-->
+    <div class="proj-w proj-w-3">
+     @@include('var/_proj-its.html')   
+   </div>
+ </div><!--contain-->
+ @@include('var/_footer.html')
+</div><!--wrapper-->
+@@include('var/_scripts.html')
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+ <!--meta name="viewport" content="width=device-width, initial-scale=1"--> 
+ <meta name="viewport" content="width=device-width, maximum-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="css/jquery-ui.css">
+ <link rel="stylesheet" href="css/main.css">
+ <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+ <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<title>11. Регистрация</title>
+</head>
+<body>
+ <div class="wrapper wrapper-11">  
+    <section class="top-section">
+    <div class="contain">
+      <div class="top-w">
+        <a href="/" class="logo"><img src="img/logo.png" /></a>        
+        <div class="top-sel hide-1050">
+          <select class="sel-city">
+            <option class="top-sel-span" value="Выбрать город">Выбрать город</option>
+            <option class="top-sel-span" value="Москва">Москва</option>
+            <option class="top-sel-span" value="Казань">Казань</option>
+          </select>
+        </div>
+        <div class="top-mnu hide-1050">
+          <ul class="top-mnu-ul">
+            <li><a href="#">Жилые комплексы</a></li>
+            <li><a href="#">Застройщики</a></li>    
+            <li><a href="#">Публикации</a></li>    
+          </ul>
+        </div>
+        <div class="col-mnu show-1050">
+          <div class="hidden-mnu">
+            <a href="#" class="toggle-mnu"><span></span></a>
+          </div>
+          <div class="top-mnu">
+            <div class="contain">
+              <div class="top-sel">
+                <select class="sel-city">
+                  <option class="top-sel-span" value="Выбрать город">Выбрать город</option>
+                  <option class="top-sel-span" value="Москва">Москва</option>
+                  <option class="top-sel-span" value="Казань">Казань</option>
+                </select>
+              </div>
+              <ul class="top-mnu-ul">
+                <li><a href="#">Жилые комплексы</a></li>
+                <li><a href="#">Застройщики</a></li>    
+                <li><a href="#">Ипотека</a></li>    
+              </ul>
+              <a href="#" class="butt">Войти</a>
+            </div>
+          </div>          
+        </div>
+        <div class="top-icons">
+          <a href="#" class="top-i"><img src="img/top-i-1.svg" /></a>
+          <a href="#" class="top-i"><img src="img/top-i-2.svg" /></a>
+          <a href="#" class="top-i hide-360"><img src="img/top-i-3.svg" /></a>
+        </div>
+      </div>
+      <div class="top-sel top-sel-n show-1050">
+        <select class="sel-city">
+          <option class="top-sel-span" value="Выбрать город">Выбрать город</option>
+          <option class="top-sel-span" value="Москва">Москва</option>
+          <option class="top-sel-span" value="Казань">Казань</option>
+        </select>
+      </div>
+    </div>
+  </section>
+  <section class="personal-settings-section">
+    <div class="contain">
+      <h1>Регистрация</h1> 
+      <div class="infocentr-cols">
+        <div class="infocentr-col-l">
+          <form class="personal-settings-form">
+
+            <div class="add-review-label">
+              <span class="add-review-label-txt">Имя <span>*</span></span>
+              <input type="text" class="add-review-input" placeholder="" />
+            </div>
+
+            <div class="add-review-label">
+              <span class="add-review-label-txt">Фамилия <span>*</span></span>
+              <input type="text" class="add-review-input" placeholder="" />
+            </div>
+
+            <div class="add-review-label">
+              <span class="add-review-label-txt">E-mail <span>*</span></span>
+              <input type="text" class="add-review-input" placeholder="" />
+            </div>
+
+
+
+            <div class="add-review-label add-review-label_link">
+              <span class="add-review-label-txt">Город <span>*</span></span>
+              <select class="s-sel">
+                <option value="Город">Город</option>
+                <option value="Москва">Москва</option>
+                <option value="Казань">Казань</option>                
+              </select>
+              <a href="#" class="add-review-link">Почему моего города нет в списке?</a>
+            </div>
+
+            <div class="add-review-label">
+
+              <span class="add-review-label-txt">Роль на сайте <span>*</span></span>
+              <div class="confirm-radio-labels">
+                <label class="confirm-label confirm-label-radio">
+                  <input name="rad-1" type="radio">
+                  <div>Представитель застройщика</div>
+                </label>
+                <label class="confirm-label confirm-label-radio">
+                  <input name="rad-1" type="radio">
+                  <div>Житель ЖК</div>
+                </label>
+                <label class="confirm-label confirm-label-radio">
+                  <input name="rad-1" type="radio">
+                  <div>Сотрудника банка</div>
+                </label>
+                <label class="confirm-label confirm-label-radio">
+                  <input name="rad-1" type="radio">
+                  <div>Клиент банка</div>
+                </label>
+                <label class="confirm-label confirm-label-radio">
+                  <input name="rad-1" type="radio">
+                  <div>Другое</div>
+                </label>
+              </div><!--confirm-radio-labels-->
+
+            </div>
+
+            <div class="add-review-label mt40">
+
+              <span class="add-review-label-txt">
+                Связать профиль с объектом на сайте
+                <span class="tooltip">
+                  <img src="img/quest.svg" alt="">
+                  <span class="tool-iiner">Подсказка</span>
+                </span>
+              </span>
+              <input type="text" class="add-review-input" placeholder="Название застройщика и ЖК">
+              <span class="add-review-span">Выберите объект в выпадающем списке</span>
+
+
+            </div>
+
+
+            <div class="add-review-buutt-group mt10">
+
+              <label class="confirm-label">
+                <input type="checkbox">
+                <div>Согласие  <a href="#"> с правилами сайта</a></div>
+              </label>
+
+              <input class="butt" type="submit" value="Зарегистрироваться">
+
+            </div>
+
+          </form> 
+
+        </div><!--infocentr-col-l-->
+
+        <div class="infocentr-col-r">
+
+          <div class="infocentr-blue-r">
+            Объявления от застройщика выделяются среди других объявлений в результатах поиска. Они помечены специальным знаком с надписью «От застройщика», который гарантирует, что данное объявление является официальным предложением застройщика или агентства недвижимости, представляющим интересы застройщика.
+          </div><!--infocentr-blue-r-->
+
+
+        </div><!--infocentr-col-r-->
+
+      </div><!--infocentr-cols-->
+    </div><!--infocentr-cols-->
+  </section><!--</section>-->
+
+
+
+
+
+  <section class="foot-section">
+  <div class="contain">
+    <div class="foot-w">
+      <div class="foot-col foot-col-1">
+        <a href="/" class="logo-2"><img src="img/logo-white_2.svg" /></a>          
+        <select class="sel-city">
+          <option class="top-sel-span" value="Выбрать город">Выбрать город</option>
+          <option class="top-sel-span" value="Москва">Москва</option>
+          <option class="top-sel-span" value="Казань">Казань</option>
+        </select>
+      </div>
+      <div class="foot-col foot-col-2">
+        <ul class="mnu-ul">
+          <li class="mnu-li"><a href="#" class="mnu-a">Жилые комплексы</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Застройщики</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Публикации</a></li>          
+        </ul>
+      </div>
+      <div class="foot-col foot-col-3">
+        <ul class="mnu-ul">
+          <li class="mnu-li"><a href="#" class="mnu-a">Все ЖК</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Застройщикам</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Все застройщики</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Все города</a></li>
+        </ul>
+      </div>
+      <div class="foot-col foot-col-4">
+        <ul class="mnu-ul">
+          <li class="mnu-li"><a href="#" class="mnu-a">Отзывы на ЖК</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Отзывы на застройщиков</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Добавить отзыв</a></li>          
+        </ul>
+      </div>
+      <div class="foot-col foot-col-5">
+        <ul class="mnu-ul">
+          <li class="mnu-li"><a href="#" class="mnu-a">Добавить объект</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Правила сайта</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">О сайте</a></li>
+        </ul>
+      </div>
+      <div class="foot-col foot-col-6">
+        <div class="foot-soc-w">
+          <a href="#" class="foot-soc"><img src="img/fb.svg" /></a>
+          <a href="#" class="foot-soc"><img src="img/vk.svg" /></a>            
+          <a href="#" class="foot-soc"><img src="img/inst.svg" /></a>
+        </div>
+        <a href="https://rucontent.com/" class="rucont-link"><img src="img/rucontent.svg" /></a>
+      </div>
+    </div>
+    <div class="copy">
+      Материалы, размещенные на сайте, получены от застройщиков, банков или собраны из открытых источников. Сайт носит информационный характер и не является публичной офертой. Все права на изображения и тексты принадлежат их
+      правообладателям. Если вы считаете, что публикация того или иного материала нарушает права правообладателя, свяжитесь с нами по электронной почте.
+    </div>
+  </div>
+</section>
+</div><!--wrapper-->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/fancySelect.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/donut-chart.js"></script>
+<script src="js/jquery.sliderPro.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

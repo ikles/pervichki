@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+ <!--meta name="viewport" content="width=device-width, initial-scale=1"--> 
+ <meta name="viewport" content="width=device-width, maximum-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="css/jquery-ui.css">
+ <link rel="stylesheet" href="css/main.css">
+ <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+ <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<title>24. Всплывающие окна</title>
+</head>
+<body>
+ <div class="wrapper wrapper-24">  
+  <div class="contain contain-pop">
+    <a href="#" class="trigger-1">Форма 1</a>
+    <a href="#" class="trigger-2">Форма 2</a>
+  </div><!--contain-->  
+</div><!--wrapper-->
+<div class="overlay"></div>
+
+<div class="pop-form-w pop-form-w-1">
+  <a href="#" class="pop-close"></a>
+  <form class="pop-form pop-form-1">
+    <div class="like-h2">Вход</div>
+    <input type="text" placeholder="Имя пользователя">
+    <input type="text" placeholder="Пароль">
+    <a class="form-link" href="#">Восстановить пароль</a>
+    <div class="pop-butts">
+      <input class="butt" type="submit" value="Войти">
+      <input class="butt-o" type="submit" value="Регистрация">
+    </div><!--pop-butts-->
+  </form>
+</div><!--pop-form-w-->
+<div class="pop-form-w pop-form-w-2">
+  <a href="#" class="pop-close"></a>
+  <form class="pop-form pop-form-2">
+    <div class="like-h2">Восстановление пароля</div>
+    <input type="text" placeholder="Имя пользователя или email">        
+    <img src="img/cap.jpg" alt="">
+    <div class="pop-butts-2">
+      <input class="butt" type="submit" value="Продолжить">      
+    </div><!--pop-butts-->
+  </form>
+</div><!--pop-form-w-->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/fancySelect.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/donut-chart.js"></script>
+<script src="js/jquery.sliderPro.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

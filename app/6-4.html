@@ -1,0 +1,94 @@
+@@include('var/_head.html')
+<title>6.4. Застройщик - Отзывы</title>
+</head>
+<body>
+ <div class="wrapper wrapper-6-4">  
+  @@include('var/_top-mnu.html')
+  <div class="develop-blue-top-2">
+    <div class="contain">
+      <div class="develop-pers-cols">
+        <div class="develop-l">
+          <img src="img/dev-logo-min.jpg"></div>          
+          <div class="develop-r">
+            <h1>Унистрой</h1>            
+          </div>
+        </div>
+      </div>
+    </div><!--develop-blue-top-->
+
+
+    <div class="contain">
+      <ul class="develop-tabs">
+        <li>
+          <a href="#">О компании</a>
+        </li>
+        <li>
+          <a href="#">Объекты</a>
+        </li>
+        <li>
+          <a href="#" href="#">Новости</a>
+        </li>
+        <li>
+          <a class="active" href="#">Отзывы</a>
+        </li> 
+        <li>
+          <a href="#">Отзывы на объекты (4)</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+
+      <div class="cols">
+        <div class="col-940">
+          <div class="develop-h2-w">
+            <div class="like-h2">Отзывы</div>
+            <p>Отзывы о застройщике Унистрой. Если вы хотите оставить отзыв об определенном жилом комплексе, то перейдите во вкладку Отзывы на объекты или на страницу конкретного ЖК.</p>
+          </div>
+          <div class="revs-block revs-block_4">          
+            <div class="revs-w">
+
+  @@include('var/_revs_plus.html',
+  {
+  "name":"Максим П.",
+  "text":"Расположение удобное. В любую точку Казани на одном автобусе. Ну есть места только, куда просто долго ехать, но зато на автобусе)) можно и без машины прожить, в общем. Строится быстро, что удивительно. В общем, шик, надею, что сданным он будет еще kучше",
+  "plus":"Транспортная доступность",
+  "minus":"Дом явно строили на отвяжись: звукоизоляции нет вообще (сосед храпит, а слышно всем соседям), то проблемы с трубами и лифтами обнаруживаются, короче ужас!"
+  })
+
+
+  @@include('var/_revs_plus.html',
+  {
+  "name":"Олег",
+  "text":"Отсутствие балконов и лоджий это большой недостаток.",
+  "plus":"Готовность",
+  "minus":"Планировки"
+  })
+
+<a herf="#" class="develop-btn butt">Оставить отзыв</a>
+          </div><!--revs-w-->
+
+
+
+
+    </div>
+  </div><!--col-940-->
+  <div class="col-grow">
+
+  </div><!--col-grow-->
+</div><!--cols-->
+</div><!--contain-->
+
+
+
+
+<div class="contain">
+  <div class="proj-w proj-w-3">
+    @@include('var/_proj-its.html')    
+  </div>  
+</div><!--cont-->
+@@include('var/_footer.html')
+</div><!--wrapper-->
+@@include('var/_scripts.html')
+</body>
+</html>

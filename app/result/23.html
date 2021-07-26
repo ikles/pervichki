@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+ <!--meta name="viewport" content="width=device-width, initial-scale=1"--> 
+ <meta name="viewport" content="width=device-width, maximum-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="css/jquery-ui.css">
+ <link rel="stylesheet" href="css/main.css">
+ <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+ <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<title>23. Сравнение ЖК</title>
+</head>
+<body>
+ <div class="wrapper wrapper-23">
+    <section class="top-section">
+    <div class="contain">
+      <div class="top-w">
+        <a href="/" class="logo"><img src="img/logo.png" /></a>        
+        <div class="top-sel hide-1050">
+          <select class="sel-city">
+            <option class="top-sel-span" value="Выбрать город">Выбрать город</option>
+            <option class="top-sel-span" value="Москва">Москва</option>
+            <option class="top-sel-span" value="Казань">Казань</option>
+          </select>
+        </div>
+        <div class="top-mnu hide-1050">
+          <ul class="top-mnu-ul">
+            <li><a href="#">Жилые комплексы</a></li>
+            <li><a href="#">Застройщики</a></li>    
+            <li><a href="#">Публикации</a></li>    
+          </ul>
+        </div>
+        <div class="col-mnu show-1050">
+          <div class="hidden-mnu">
+            <a href="#" class="toggle-mnu"><span></span></a>
+          </div>
+          <div class="top-mnu">
+            <div class="contain">
+              <div class="top-sel">
+                <select class="sel-city">
+                  <option class="top-sel-span" value="Выбрать город">Выбрать город</option>
+                  <option class="top-sel-span" value="Москва">Москва</option>
+                  <option class="top-sel-span" value="Казань">Казань</option>
+                </select>
+              </div>
+              <ul class="top-mnu-ul">
+                <li><a href="#">Жилые комплексы</a></li>
+                <li><a href="#">Застройщики</a></li>    
+                <li><a href="#">Ипотека</a></li>    
+              </ul>
+              <a href="#" class="butt">Войти</a>
+            </div>
+          </div>          
+        </div>
+        <div class="top-icons">
+          <a href="#" class="top-i"><img src="img/top-i-1.svg" /></a>
+          <a href="#" class="top-i"><img src="img/top-i-2.svg" /></a>
+          <a href="#" class="top-i hide-360"><img src="img/top-i-3.svg" /></a>
+        </div>
+      </div>
+      <div class="top-sel top-sel-n show-1050">
+        <select class="sel-city">
+          <option class="top-sel-span" value="Выбрать город">Выбрать город</option>
+          <option class="top-sel-span" value="Москва">Москва</option>
+          <option class="top-sel-span" value="Казань">Казань</option>
+        </select>
+      </div>
+    </div>
+  </section>  
+  <div class="develop-blue-top">
+    <div class="contain">
+      <h1>Сравнение новостроек</h1>
+      <form class="develop-form develop-form_2">
+        <input type="text" class="input develop-input" placeholder="Название ЖК">
+        <input type="submit" class="butt develop-butt" value="Добавить к сравнению">
+      </form>
+    </div>
+  </div><!--develop-blue-top-->
+  <div class="sort-w-2">
+    <div class="contain">
+      <div class="sort-l sort-l-dev">        
+        <div class="sort-links ml0 hide-992">          
+          <a href="#" class="sort-link-1 active">Все параметры</a>
+          <a href="#" class="sort-link-1">Различающиеся</a>          
+        </div>
+        <div class="top-sel top-sel-sort-2 show-992">
+          <select class="sel-city">
+            <option class="top-sel-span" value="Все параметры">Все параметры</option>
+            <option class="top-sel-span" value="Выбрать город">Различающиеся</option>
+          </select>
+        </div><!--top-sel-sort-->
+
+        <div class="sort-actions">
+          <a href="#"><img src="img/share_2.svg" alt=""> Поделиться списком</a>
+          <a href="#"><img src="img/close-action.svg" alt=""> Очистить список</a>
+        </div><!--sort-actions-->
+      </div>
+    </div>
+  </div>
+  <div class="contain">
+    <div class="compare-main">
+      <table>
+        <thead>
+          <tr>
+            <td><div class="like-h6">Характеристики</div></td>
+            <td>
+              <div class="compare-tbl-img-w proj-img-w">
+                <img src="img/skyline-1.jpg" alt="">
+                <div class="proj-ics">
+                  <a href="#" class="proj-ic">
+                    <img src="img/pin_22.svg">
+                  </a>
+                  <a href="#" class="proj-ic">
+                    <img src="img/close_22.svg">
+                  </a>
+                </div>                
+              </div>
+              <div class="like-h6">Skyline</div>
+            </td>
+            <td>
+              <div class="compare-tbl-img-w proj-img-w">
+                <img src="img/proj-3.jpg" alt="">
+                <div class="proj-ics">
+                  <a href="#" class="proj-ic">
+                    <img src="img/pin_22.svg">
+                  </a>
+                  <a href="#" class="proj-ic">
+                    <img src="img/close_22.svg">
+                  </a>
+                </div>                
+              </div>
+              <div class="like-h6">Легенда</div>
+            </td>
+            <td>
+              <div class="compare-tbl-img-w proj-img-w">
+                <img src="img/proj-4.jpg" alt="">
+                <div class="proj-ics">
+                  <a href="#" class="proj-ic">
+                    <img src="img/pin_22.svg">
+                  </a>
+                  <a href="#" class="proj-ic">
+                    <img src="img/close_22.svg">
+                  </a>
+                </div>                
+              </div>
+              <div class="like-h6">Солнечный Город Супер</div>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Застройщик:</b></td>
+            <td><a href="#">СК СМУ-88</a></td>
+            <td><a href="#">Арт-Строй</a></td>
+            <td><a href="#">Ак Барс Дом</a></td>
+          </tr>
+          <tr>
+            <td><b>Адрес</b></td>
+            <td>ул. Новаторов, 8Б</td>
+            <td>
+              Приволжский район, ул. <br> Аметьевская Магистраль
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><b>Метро</b></td>
+            <td>Суконная слобода</td>
+            <td>Аметьево</td>
+            <td>Проспект Победы</td>
+          </tr>
+          <tr>
+            <td><b>Цена на квартиры
+            </b></td>
+            <td>45 тыс. – 125 тыс. руб./м2</td>
+            <td>45 тыс. – 125 тыс. руб./м2</td>
+            <td>45 тыс. – 125 тыс. руб./м2</td>
+          </tr>
+          <tr>
+            <td><b>Студии</b></td>
+            <td>от 2 100 000 руб. </td>
+            <td>от 2 100 000 руб. </td>
+            <td>от 2 100 000 руб. </td>
+          </tr>
+          <tr>
+            <td><b>1-комн.квартира</b></td>
+            <td>от 2 100 000 руб.</td>
+            <td>от 2 100 000 руб.</td>
+            <td>от 2 100 000 руб.</td>
+          </tr>
+          <tr>
+            <td><b>2-комн.квартира</b></td>
+            <td>от 3 450 000 руб.</td>
+            <td>от 3 450 000 руб.</td>
+            <td>от 3 450 000 руб.</td>
+          </tr>
+          <tr>
+            <td><b>3-комн.квартира</b></td>
+            <td>от 4 600 000 руб.</td>
+            <td>от 4 600 000 руб.</td>
+            <td>от 4 600 000 руб.</td>
+          </tr>
+          <tr>
+            <td><b>4-комн.квартира</b></td>
+            <td>неизвестно</td>
+            <td>неизвестно</td>
+            <td>неизвестно</td>
+          </tr>
+          <tr>
+            <td><b>Класс жилья
+            </b></td>
+            <td>комфорт</td>
+            <td>бизнес</td>
+            <td>комфорт</td>
+          </tr>
+          <tr>
+            <td><b>Отделка от застройщика</b></td>
+            <td>черновая</td>
+            <td>черновая</td>
+            <td>черновая</td>
+          </tr>
+          <tr>
+            <td><b>Количество квартир</b></td>
+            <td>350</td>
+            <td>580</td>
+            <td>350</td>
+          </tr>
+          <tr>
+            <td><b>Квартир на этаже</b></td>
+            <td>3-5</td>
+            <td>4</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td><b>ДДУ, 214 ФЗ</b></td>
+            <td>да</td>
+            <td>да</td>
+            <td>да</td>
+          </tr>
+          <tr>
+            <td><b>Домов</b></td>
+            <td>5 сдано<br>
+            2 строится</td>
+            <td>5 сдано<br>
+            2 строится</td>
+            <td>5 сдано<br>
+            2 строится</td>
+          </tr>
+          <tr>
+            <td><b>Панорамные окна</b></td>
+            <td>нет</td>
+            <td>да</td>
+            <td>да</td>
+          </tr>
+          <tr>
+            <td><b>Этажность</b></td>
+            <td>Корпус А - 14<br>
+              Корпус Б - 18<br>
+              Корпус В - 20<br>
+              <a href="#">Показать все</a>
+            </td>
+            <td>Корпус А - 14<br>
+              Корпус Б - 18<br>
+            Корпус В - 20</td>
+            <td>Корпус А - 14<br>
+            Корпус Б - 18</td>
+          </tr>
+          <tr>
+            <td><b>Высота потолков</b></td>
+            <td>3-4.2 м (от пола до потолка)</td>
+            <td>3 м</td>
+            <td>5 м</td>
+          </tr>
+          <tr>
+            <td><b>Технология строительства</b></td>
+            <td>монолитно-каркасная</td>
+            <td>монолитно-каркасная</td>
+            <td>монолитно-каркасная</td>
+          </tr>
+          <tr>
+            <td><b>Стены</b></td>
+            <td>кирпич</td>
+            <td>кирпич</td>
+            <td>кирпич</td>
+          </tr>
+          <tr>
+            <td><b>Благоустройства</b></td>
+            <td>детские площадки<br> спортивные площадки</td>
+            <td>детские площадки<br> спортивные площадки</td>
+            <td>детские площадки<br> спортивные площадки</td>
+          </tr>
+          <tr>
+            <td><b>Закрытая территория</b></td>
+            <td>от авто и посторонних</td>
+            <td>от авто и посторонних</td>
+            <td>от авто и посторонних</td>
+          </tr>
+          <tr>
+            <td><b>Утепление</b></td>
+            <td>минеральная вата</td>
+            <td>минеральная вата</td>
+            <td>минеральная вата</td>
+          </tr>
+          <tr>
+            <td><b>Балкон лоджия</b></td>
+            <td>есть</td>
+            <td>нет</td>
+            <td>есть</td>
+          </tr>
+          <tr>
+            <td><b>Свободная планировка</b></td>
+            <td>нет</td>
+            <td>-</td>
+            <td>нет</td>
+          </tr>
+          <tr>
+            <td><b>Консьерж</b></td>
+            <td>да</td>
+            <td>нет</td>
+            <td>нет</td>
+          </tr>
+          <tr>
+            <td><b>Машиноместа в паркинге</b></td>
+            <td>есть надземный</td>
+            <td>есть надземный</td>
+            <td>есть надземный</td>
+          </tr>
+          <tr>
+            <td><b>Количество лифтов</b></td>
+            <td>3</td>
+            <td>1</td>
+            <td>
+            2</td>
+          </tr>
+          <tr>
+            <td><b>Срок сдачи 1 дома</b></td>
+            <td>4 кв 2018 (уже сдан)</td>
+            <td>4 кв 2018 (уже сдан)</td>
+            <td>4 кв 2018 (уже сдан)</td>
+          </tr>
+          <tr>
+            <td><b>Срок последнего дома</b></td>
+            <td>4 кв 2020</td>
+            <td>4 кв 2020</td>
+            <td>4 кв 2020</td>
+          </tr>
+          <tr>
+            <td><b>Квартиры</b></td>
+            <td>от 37 до 90,3 м²</td>
+            <td>от 37 до 90,3 м²</td>
+            <td>от 37 до 90,3 м²</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><a href="#" class="butt-o">Подробнее</a> </td>
+            <td><a href="#" class="butt-o">Подробнее</a> </td>
+            <td><a href="#" class="butt-o">Подробнее</a> </td>            
+          </tr>
+        </tbody>
+      </table>
+    </div><!--compare-main-->
+  </div><!--contain-->
+
+  <section class="foot-section">
+  <div class="contain">
+    <div class="foot-w">
+      <div class="foot-col foot-col-1">
+        <a href="/" class="logo-2"><img src="img/logo-white_2.svg" /></a>          
+        <select class="sel-city">
+          <option class="top-sel-span" value="Выбрать город">Выбрать город</option>
+          <option class="top-sel-span" value="Москва">Москва</option>
+          <option class="top-sel-span" value="Казань">Казань</option>
+        </select>
+      </div>
+      <div class="foot-col foot-col-2">
+        <ul class="mnu-ul">
+          <li class="mnu-li"><a href="#" class="mnu-a">Жилые комплексы</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Застройщики</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Публикации</a></li>          
+        </ul>
+      </div>
+      <div class="foot-col foot-col-3">
+        <ul class="mnu-ul">
+          <li class="mnu-li"><a href="#" class="mnu-a">Все ЖК</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Застройщикам</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Все застройщики</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Все города</a></li>
+        </ul>
+      </div>
+      <div class="foot-col foot-col-4">
+        <ul class="mnu-ul">
+          <li class="mnu-li"><a href="#" class="mnu-a">Отзывы на ЖК</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Отзывы на застройщиков</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Добавить отзыв</a></li>          
+        </ul>
+      </div>
+      <div class="foot-col foot-col-5">
+        <ul class="mnu-ul">
+          <li class="mnu-li"><a href="#" class="mnu-a">Добавить объект</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Правила сайта</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">О сайте</a></li>
+        </ul>
+      </div>
+      <div class="foot-col foot-col-6">
+        <div class="foot-soc-w">
+          <a href="#" class="foot-soc"><img src="img/fb.svg" /></a>
+          <a href="#" class="foot-soc"><img src="img/vk.svg" /></a>            
+          <a href="#" class="foot-soc"><img src="img/inst.svg" /></a>
+        </div>
+        <a href="https://rucontent.com/" class="rucont-link"><img src="img/rucontent.svg" /></a>
+      </div>
+    </div>
+    <div class="copy">
+      Материалы, размещенные на сайте, получены от застройщиков, банков или собраны из открытых источников. Сайт носит информационный характер и не является публичной офертой. Все права на изображения и тексты принадлежат их
+      правообладателям. Если вы считаете, что публикация того или иного материала нарушает права правообладателя, свяжитесь с нами по электронной почте.
+    </div>
+  </div>
+</section>
+</div><!--wrapper-->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/fancySelect.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/donut-chart.js"></script>
+<script src="js/jquery.sliderPro.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

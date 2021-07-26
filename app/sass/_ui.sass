@@ -1,0 +1,400 @@
+body
+  font-weight: 400
+  color: #666
+  font-size: 14px
+  font-family: 'Roboto', sans-serif
+
+.wrapper
+  overflow: hidden
+  margin: auto
+  min-height: 100vh 
+textarea
+  &:focus
+    outline: none 
+
+h1
+  color: rgb(35, 35, 35)
+  font-size: 38px
+  font-weight: 700
+  margin-bottom: 20px
+  line-height: 1.2
+
+.blue-b
+  background-color: #f8faff
+
+.proj-txt-3,
+.p-a,
+.item-link
+  &:hover
+    text-decoration: underline
+
+*  
+  color: #232323
+  font-size: 17px
+  font-weight: 400
+p
+  line-height: 28.9px
+a
+  color: #494ecc
+
+.like-h2
+  color: rgb(35, 35, 35)
+  font-size: 30px
+  font-weight: 700
+  margin-bottom: 20px
+  line-height: 1.2
+  
+.butt-delete,
+input[type="submit"].butt-delete
+  display: inline-flex
+  padding: 0 18px
+  justify-content: space-between
+  flex-wrap: wrap
+  margin-top: 20px
+
+.butt,
+input[type="submit"].butt
+  min-width: 154px
+  height: 48px
+  border-radius: 2px
+  padding: 0 18px
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  background: linear-gradient(180deg, #3439E7 0%, #5F64FC 100%)  
+  color: #ffffff
+  font-size: 17px
+  font-weight: 400  
+  transition: 0.5s 
+  position: relative  
+  &:hover
+    background: linear-gradient(0.74deg, #3439E7 1.66%, #5F64FC 92.71%)      
+    text-decoration: none
+
+  
+
+    
+  
+.butt-o,
+input[type="submit"].butt-o
+  min-width: 153px
+  height: 48px
+  border-radius: 2px
+  border: 1px solid rgb(73, 78, 204)  
+  display: inline-flex
+  padding: 0 18px
+  align-items: center
+  justify-content: center
+  color: #494ecc
+  font-size: 17px
+  font-weight: 400
+  position: relative
+  background-color: #FFF 
+  z-index: 1
+  &:after
+    content: ""     
+    width: 100%
+    height: 100%
+    display: block
+    position: absolute
+    left: 0
+    top: 0
+    background: linear-gradient(2.36deg, #3439E7 1.66%, #5F64FC 92.71%)    
+    opacity: 0
+    visibility: hidden
+    z-index: -1
+    transition: 0.7s
+    border-radius: 2px    
+  &:hover
+    text-decoration: none
+    color: #FFF    
+    &:after      
+      opacity: 1
+      visibility: visible
+
+input[type="submit"].butt-o
+  &:hover
+    background: linear-gradient(2.36deg, #3439E7 1.66%, #5F64FC 92.71%)    
+
+
+.butt-o-2
+  min-width: 154px
+  height: 48px
+  border-radius: 2px
+  display: inline-flex
+  padding: 0 18px
+  align-items: center
+  justify-content: center
+  background: linear-gradient(0.74deg, #3439E7 1.66%, #5F64FC 92.71%)
+  color: #ffffff
+  font-size: 17px
+  &:hover
+    text-decoration: none
+
+.butt-oo
+  min-width: 259px
+  height: 48px
+  border-radius: 2px
+  border: 1px solid rgb(221, 221, 221)  
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  color: #232323
+  font-size: 17px
+  font-weight: 400
+  transition: 0.5s
+  position: relative
+  &:after
+    content: ""     
+    width: 100%
+    height: 100%
+    display: block
+    position: absolute
+    left: 0
+    top: 0
+    background: linear-gradient(2.36deg, #3439E7 1.66%, #5F64FC 92.71%)    
+    opacity: 0
+    visibility: hidden
+    z-index: -1
+    transition: 0.7s
+    border-radius: 2px
+  &:hover
+    color: #FFF
+    border-color: transparent 
+    text-decoration: none
+    &:after      
+      opacity: 1
+      visibility: visible
+
+.butt-f
+  min-width: 259px
+  height: 48px
+  border-radius: 2px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  color: rgb(35, 35, 35)
+  font-size: 17px
+  font-weight: 400
+  display: inline-flex
+  padding: 0 18px
+  align-items: center
+  justify-content: center
+  &:hover
+    text-decoration: none
+
+.butt-f-2
+  min-width: 259px
+  display: inline-flex
+  height: 48px
+  border-radius: 2px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  padding: 0 18px
+  align-items: center
+  justify-content: center
+  color: #ffffff
+  font-size: 17px
+  font-weight: 400
+  background: linear-gradient(0.47deg, #3439E7 1.66%, #5F64FC 92.71%)
+  &:hover
+    text-decoration: none
+
+.butt-f-3  
+  min-width: 273px
+  height: 48px
+  border-radius: 2px
+  border: 1px solid #494ecc  
+  color: #494ecc
+  font-size: 17px
+  font-weight: 400
+  display: inline-flex
+  padding: 0 18px
+  -webkit-align-items: center
+  align-items: center
+  -webkit-justify-content: center
+  justify-content: center
+  position: relative
+  &:after
+    content: ""     
+    width: 100%
+    height: 100%
+    display: block
+    position: absolute
+    left: 0
+    top: 0
+    background: linear-gradient(2.36deg, #3439E7 1.66%, #5F64FC 92.71%)    
+    opacity: 0
+    visibility: hidden
+    z-index: -1
+    transition: 0.7s
+    border-radius: 2px
+  &:hover
+    color: #FFF
+    border: none 
+    text-decoration: none
+    &:after      
+      opacity: 1
+      visibility: visible
+
+.butt-r
+  min-width: 218px
+  height: 48px
+  border-radius: 2px
+  border: 1px solid rgb(233, 114, 107)
+  background-color: rgb(255, 255, 255)
+  padding: 0 18px
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  color: #e9726b
+  font-size: 17px
+  font-weight: 400  
+  transition: 0.5s
+  
+  &:hover
+    text-decoration: none
+    color: #FFF    
+    background-color: rgb(233, 114, 107) 
+.butt-r-2
+  min-width: 218px
+  height: 48px
+  border-radius: 2px
+  border: 1px solid rgb(233, 114, 107)
+  background-color: #e9726b
+  padding: 0 18px
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  color: #ffffff
+  font-size: 17px
+  font-weight: 400
+  &:hover
+    text-decoration: none
+
+.blue-block-txt
+  border-radius: 8px
+  background-color: rgb(248, 250, 255)
+  padding: 20px 53px 20px 42px
+  display: flex
+  align-items: center
+  margin-top: 43px
+  margin-bottom: 49px
+
+.blue-block-txt_h
+  margin-top: 3px
+  margin-bottom: 0px
+
+.blue-block-txt_2
+  margin-top: 38px
+  margin-bottom: 38px
+
+.blue-l
+  display: flex
+  align-items: center
+  -webkit-flex-grow: 1 
+  flex-grow: 1 
+.blue-round
+  width: 61px
+  height: 61px
+  border-radius: 50%
+  background-color: rgb(90, 95, 250)
+  overflow: hidden
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  flex-grow: 1
+  flex: none
+
+.blue-round-img-w
+  display: flex
+  -webkit-align-items: center
+  align-items: center
+
+.blue-txts
+  margin-left: 24px
+  -webkit-flex-grow: 1
+  flex-grow: 1
+.blue-txt-1
+  color: rgb(35, 35, 35)
+  font-size: 22px
+  font-weight: 700
+  line-height: 1.1
+  margin-bottom: 15px
+
+.blue-txt-11
+  color: rgb(35, 35, 35)
+  font-size: 20px
+  font-weight: 700
+  line-height: 1.4
+
+.blue-txt-2
+  color: rgb(35, 35, 35)
+  font-size: 14px
+  font-weight: 400
+  line-height: 1.5
+
+.blue-r
+  display: flex
+  justify-content: flex-end
+  width: 280px
+  flex: none
+
+.blue-r-2
+  width: auto
+  margin-left: auto
+  
+
+.butt-vv
+  height: 48px
+  width: auto
+  border-radius: 2px
+  background: linear-gradient(rgb(52, 57, 231) 0%, rgb(95, 100, 252) 100%)
+  display: flex
+  align-items: center
+  justify-content: center
+  color: rgb(255, 255, 255)
+  font-size: 17px
+  font-weight: 400
+  padding-left: 38px
+  padding-right: 38px
+
+.txt-block
+  margin-bottom: 25px
+  
+.txt-block-w
+  p
+    color: #232323
+    font-size: 17px
+    font-weight: 400
+    line-height: 25.5px
+
+@media (max-width : 992px)
+  .blue-block-txt
+    padding-right: 20px
+    padding-left: 20px
+  .blue-r
+    width: 200px
+
+@media (max-width : 768px)
+  .blue-block-txt
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+  .blue-r
+    width: 100%
+    margin-top: 25px
+    .butt-vv
+      width: 100%
+  .blue-l
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+  .blue-txt-1
+    line-height: 1.4
+  .blue-txts
+    margin-left: 0
+  .blue-round
+    margin: auto
+    margin-bottom: 25px
+
+  

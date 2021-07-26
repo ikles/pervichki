@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+ <!--meta name="viewport" content="width=device-width, initial-scale=1"--> 
+ <meta name="viewport" content="width=device-width, maximum-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="css/jquery-ui.css">
+ <link rel="stylesheet" href="css/main.css">
+ <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+ <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<title>15. Пользователь</title>
+</head>
+<body>
+ <div class="wrapper wrapper-15">
+    <section class="top-section">
+    <div class="contain">
+      <div class="top-w">
+        <a href="/" class="logo"><img src="img/logo.png" /></a>        
+        <div class="top-sel hide-1050">
+          <select class="sel-city">
+            <option class="top-sel-span" value="Выбрать город">Выбрать город</option>
+            <option class="top-sel-span" value="Москва">Москва</option>
+            <option class="top-sel-span" value="Казань">Казань</option>
+          </select>
+        </div>
+        <div class="top-mnu hide-1050">
+          <ul class="top-mnu-ul">
+            <li><a href="#">Жилые комплексы</a></li>
+            <li><a href="#">Застройщики</a></li>    
+            <li><a href="#">Публикации</a></li>    
+          </ul>
+        </div>
+        <div class="col-mnu show-1050">
+          <div class="hidden-mnu">
+            <a href="#" class="toggle-mnu"><span></span></a>
+          </div>
+          <div class="top-mnu">
+            <div class="contain">
+              <div class="top-sel">
+                <select class="sel-city">
+                  <option class="top-sel-span" value="Выбрать город">Выбрать город</option>
+                  <option class="top-sel-span" value="Москва">Москва</option>
+                  <option class="top-sel-span" value="Казань">Казань</option>
+                </select>
+              </div>
+              <ul class="top-mnu-ul">
+                <li><a href="#">Жилые комплексы</a></li>
+                <li><a href="#">Застройщики</a></li>    
+                <li><a href="#">Ипотека</a></li>    
+              </ul>
+              <a href="#" class="butt">Войти</a>
+            </div>
+          </div>          
+        </div>
+        <div class="top-icons">
+          <a href="#" class="top-i"><img src="img/top-i-1.svg" /></a>
+          <a href="#" class="top-i"><img src="img/top-i-2.svg" /></a>
+          <a href="#" class="top-i hide-360"><img src="img/top-i-3.svg" /></a>
+        </div>
+      </div>
+      <div class="top-sel top-sel-n show-1050">
+        <select class="sel-city">
+          <option class="top-sel-span" value="Выбрать город">Выбрать город</option>
+          <option class="top-sel-span" value="Москва">Москва</option>
+          <option class="top-sel-span" value="Казань">Казань</option>
+        </select>
+      </div>
+    </div>
+  </section>  
+
+  <section class="person-section">
+    <div class="contain">
+      <div class="person-w">
+        <div class="person-l">
+          <div class="person-img-w"><img src="img/ava-2.png" /></div>
+          <div class="person-socials-w">
+            <a href="#" class="person-social"><img src="img/vk-1.svg" /></a><a href="#" class="person-social"><img src="img/fb-1.svg" /></a><a href="#" class="person-social"><img src="img/insta-1.svg" /></a>
+          </div>
+        </div>
+        <div class="person-r">
+          <div class="person-r-1">
+            <h1>Ахметшин Булат</h1>
+            <div class="person-repres">(Представитель застройщика <a href="#" class="person-repres-link">Унистрой</a>)</div>
+            <a href="#" class="person-geo"><img src="img/gps_4.svg" /><span class="person-geo-txt">Казань</span></a>
+          </div>
+          <div class="person-phones">
+            <div class="person-phone">
+              <img src="img/call.svg" />
+              <a href="#">8 (927)-333-33-33</a>
+            </div>
+            <div class="person-phone">
+              <img src="img/mail.svg" />
+              <a href="#">bulatakhmetshin@gmail.com</a>
+            </div>
+          </div>
+          <div class="person-desc">
+            Мой профессиональный опыт в финансовой сфере более 10 лет в различных сферах бизнеса: инвестиции, банки, строительство, логистика. Имею опыт работы в налоговом и бизнес-планировании зарубежных компаний.
+          </div>
+          <div class="person-dates">
+            <div class="person-date">Дата регистрации: <span class="person-date-txt">12.03.2019</span></div>
+            <div class="person-date">Последний визит: <span class="person-date-txt">12.03.2020 в 14:45</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="contain">
+    <div class="person-cols">
+      <div class="person-col-l">
+        <div class="like-h2">Хронология активности</div>
+        <div class="chron-items">
+          <div class="chron-item">
+            <div class="chron-date">16.11.2019</div>
+            <div class="chron-txt-1">Унистрой завершил новый объект раньше сроков</div>
+            <a href="#" class="chron-art"><img src="img/article.png" /><span class="chron-art-txt">Статья</span></a>
+          </div>
+          <div class="chron-item">
+            <div class="chron-date">16.11.2019</div>
+            <div class="chron-txt-1">Мы успели достроить....</div>
+            <a href="#" class="chron-art"><img src="img/reply-2.svg" /><span class="chron-art-txt">Ответ на отзыв</span></a>
+          </div>
+          <div class="chron-item">
+            <div class="chron-date">16.11.2019</div>
+            <div class="chron-txt-1">Унистрой завершил новый объект раньше сроков</div>
+            <a href="#" class="chron-art"><img src="img/article.png" /><span class="chron-art-txt">Статья</span></a>
+          </div>
+          <div class="chron-item">
+            <div class="chron-date">16.11.2019</div>
+            <div class="chron-txt-1">Мы успели достроить....</div>
+            <a href="#" class="chron-art"><img src="img/reply-2.svg" /><span class="chron-art-txt">Ответ на отзыв</span></a>
+          </div>
+        </div>
+
+
+      </div><!--person-col-l-->
+      <div class="person-col-r">
+
+        <div class="user-search-form-w">
+          <div class="user-search-tit">Поиск пользователей</div>
+          <form class="user-search-form">
+            <input class="user-search-input" type="text" placeholder="Имя, фамилия" />
+            <select class="s-sel">
+              <option value="Род деятельности">Род деятельности</option>
+              <option value="За все">За все</option>
+              <option value="За все">За все</option>                
+            </select>
+            <select class="s-sel">
+              <option value="Город">Город</option>
+              <option value="За все">За все</option>
+              <option value="За все">За все</option>                
+            </select>
+            <input class="butt" type="submit" value="Поиск">
+          </form>
+        </div>
+
+
+      </div><!--person-col-r-->
+    </div>
+  </div>
+
+  <section class="foot-section">
+  <div class="contain">
+    <div class="foot-w">
+      <div class="foot-col foot-col-1">
+        <a href="/" class="logo-2"><img src="img/logo-white_2.svg" /></a>          
+        <select class="sel-city">
+          <option class="top-sel-span" value="Выбрать город">Выбрать город</option>
+          <option class="top-sel-span" value="Москва">Москва</option>
+          <option class="top-sel-span" value="Казань">Казань</option>
+        </select>
+      </div>
+      <div class="foot-col foot-col-2">
+        <ul class="mnu-ul">
+          <li class="mnu-li"><a href="#" class="mnu-a">Жилые комплексы</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Застройщики</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Публикации</a></li>          
+        </ul>
+      </div>
+      <div class="foot-col foot-col-3">
+        <ul class="mnu-ul">
+          <li class="mnu-li"><a href="#" class="mnu-a">Все ЖК</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Застройщикам</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Все застройщики</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Все города</a></li>
+        </ul>
+      </div>
+      <div class="foot-col foot-col-4">
+        <ul class="mnu-ul">
+          <li class="mnu-li"><a href="#" class="mnu-a">Отзывы на ЖК</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Отзывы на застройщиков</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Добавить отзыв</a></li>          
+        </ul>
+      </div>
+      <div class="foot-col foot-col-5">
+        <ul class="mnu-ul">
+          <li class="mnu-li"><a href="#" class="mnu-a">Добавить объект</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Правила сайта</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">О сайте</a></li>
+        </ul>
+      </div>
+      <div class="foot-col foot-col-6">
+        <div class="foot-soc-w">
+          <a href="#" class="foot-soc"><img src="img/fb.svg" /></a>
+          <a href="#" class="foot-soc"><img src="img/vk.svg" /></a>            
+          <a href="#" class="foot-soc"><img src="img/inst.svg" /></a>
+        </div>
+        <a href="https://rucontent.com/" class="rucont-link"><img src="img/rucontent.svg" /></a>
+      </div>
+    </div>
+    <div class="copy">
+      Материалы, размещенные на сайте, получены от застройщиков, банков или собраны из открытых источников. Сайт носит информационный характер и не является публичной офертой. Все права на изображения и тексты принадлежат их
+      правообладателям. Если вы считаете, что публикация того или иного материала нарушает права правообладателя, свяжитесь с нами по электронной почте.
+    </div>
+  </div>
+</section>
+</div><!--wrapper-->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/fancySelect.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/donut-chart.js"></script>
+<script src="js/jquery.sliderPro.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

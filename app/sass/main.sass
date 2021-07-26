@@ -1,0 +1,7666 @@
+@charset "UTF-8"
+
+$nr: no-repeat
+$rb: right bottom
+$rt: right top
+$rc: right center
+$cc: center center
+$lc: left center
+$lb: left bottom
+$bc: bottom center
+$i: !important
+$tr: transparent
+$bord: 1px solid #EAEAEA
+$black: #000
+$bcol: #f3ebdc
+
+$w1299: 1170px
+$w1199: 970px
+$w992: 750px 
+$w768: 600px
+$w640: 530px
+$w570: 100%
+
+@import "_mixins"
+
+@font-face
+  font-family: "Verdana"
+  font-display: swap
+  src: url("../fonts/Verdana.woff") format("woff"), url("../fonts/Verdana.woff2") format("woff2")
+  font-weight: 400
+  font-style: normal
+
+
+@import "_reset"
+@import "_ui"
+@import "_mnu"
+@import "_fancySelect"
+@import "_slick"
+@import "_slider-pro"
+
+a
+  &:hover
+    text-decoration: underline
+
+@media (max-width : 992px)  
+  h1
+    font-size: 30px
+  .like-h2
+    font-size: 26px
+
+.contain
+  margin-right: auto
+  margin-left: auto
+  width: 1260px
+
+@import "_media"
+
+
+
+
+
+
+/*******************************top-section*******************************/
+
+.top-section
+  padding-top: 25px
+  padding-bottom: 30px
+
+.top-w
+  display: flex
+  align-items: center
+
+.top-mnu  
+.top-mnu-ul
+  display: flex
+  margin-left: 38px
+  li
+    margin-right: 31px
+  a    
+    color: #232323
+    font-size: 16px
+    font-weight: 500    
+    transition: 0.5s 
+    &:hover
+      text-decoration: underline
+
+.logo
+  display: block
+  width: 180px
+  height: 39px
+.top-sel  
+  margin-left: 32px  
+
+.top-icons
+  margin-left: auto
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  padding-top: 7px
+.top-i
+  margin-left: 17px
+
+
+@media (max-width : 1050px)
+  .top-section
+    position: relative
+  .top-mnu
+    width: 100%
+    background-color: #FFF 
+    position: absolute
+    left: 0
+    top: 70px
+    padding-bottom: 39px 
+    z-index: 22
+  .col-mnu
+    .top-sel
+      margin-bottom: 37px
+      margin-top: 0
+    ul.top-mnu-ul
+      margin-bottom: 37px 
+      li
+        width: 100%
+        margin-bottom: 31px
+    .top-sel,
+    ul.top-mnu-ul
+      margin-left: 0      
+      flex-wrap: wrap          
+    div.fancy-select      
+      div.trigger
+        width: 100%
+      ul.options
+        -webkit-flex-wrap: wrap
+        -ms-flex-wrap: wrap
+        flex-wrap: wrap
+        li
+          width: 100%
+    
+@media (max-width : 640px)
+  .top-section
+    padding-bottom: 18px
+  .top-w
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    div.fancy-select div.trigger
+      width: 100%
+  .top-sel
+    order: 2
+    width: 100%
+    margin-top: 22px
+    margin-left: 0
+  .top-icons
+    order: 1
+  .logo
+    order: 0
+    height: 39px
+    width: 180px
+    img
+      height: 39px
+      width: 180px
+@media (max-width : 360px)
+  .col-mnu
+
+@media (max-width : 570px)
+  .top-mnu
+    .butt
+      width: 100%
+  
+
+/*******************************check-section*******************************/
+
+.check-section
+  height: 296px
+  background-color: rgb(248, 250, 255)  
+  position: relative  
+  h1
+    padding-top: 88px
+    position: relative
+    z-index: 2
+.check-img-w
+  width: 100%
+  position: absolute
+  bottom: 0
+  left: 0
+  text-align: center
+  picture
+      
+.h1-c  
+  text-align: center  
+
+.check-city-w
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  position: absolute
+  margin-top: 14px
+
+/*******************************rf-section*******************************/
+
+.rf-section
+  padding-top: 52px
+  padding-bottom: 73px
+  .link-arr-w
+    margin-top: 18px
+.rf-items
+  margin-top: 35px
+  display: flex
+  justify-content: flex-start
+  flex-wrap: wrap
+  margin-right: -25px
+
+.rf-item
+  width: 403px
+  height: 184px
+  border-radius: 8px
+  overflow: hidden
+  background-color: rgba(0, 0, 0, 0.21)
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  margin-right: 25px
+  margin-bottom: 29px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+  picture
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &:before
+    content: "" 
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 2
+    background-color: rgba(0, 0, 0, 0.21)
+  span
+    color: rgb(255, 255, 255)
+    font-size: 24px
+    font-weight: 700
+    display: flex
+    position: absolute
+    z-index: 3
+
+.link-arr
+  color: rgb(35, 35, 35)
+  font-size: 18px
+  font-weight: 400
+  display: inline-block
+  align-items: center
+  background-image: url("../img/arr-r-link.svg")
+  background-repeat: no-repeat
+  background-position: right center
+  padding-right: 17px  
+  padding-left: 5px
+  &:hover    
+    color: #494ecc    
+    background-image: url("../img/arr-r-link-2.svg")        
+    background-position: right -1px center
+    text-decoration: none
+
+
+@media (max-width : 1299px)
+  .rf-item
+    width: calc(100% / 3 - 25px)
+    overflow: hidden
+@media (max-width : 992px)
+  .rf-items
+      margin-top: 25px
+  .rf-item
+    width: calc(50% - 25px)
+@media (max-width : 640px)
+  .rf-item
+    width: 100%
+    margin-bottom: 15px
+    margin-right: 0
+  .rf-items
+    margin-right: 0
+
+   
+/*******************************m-complexes-section*******************************/
+
+.m-complexes-section
+  padding-bottom: 86px
+
+.complexes-its
+  margin-top: 41px
+  display: flex
+  flex-wrap: wrap
+  margin-right: -32px
+  
+.complexes-it
+  width: 291px
+  height: 58px
+  border-radius: 108px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  display: flex
+  align-items: center  
+  color: rgb(35, 35, 35)
+  font-size: 18px
+  font-weight: 400
+  margin-right: 32px
+  margin-bottom: 29px  
+  transition: 0.5s
+  padding-left: 25px
+  padding-right: 25px
+  &:hover    
+    border: 1px solid #dddddd
+    background-color: #f5f5f5
+    text-decoration: none
+.complexes-arr-w
+  margin-top: 16px
+
+@media (max-width : 1299px)
+  .complexes-it
+    width: calc(100% / 3 - 32px)
+@media (max-width : 992px)
+  .complexes-its
+      margin-top: 25px
+  .complexes-it
+    width: calc(50% - 32px)
+@media (max-width : 640px)
+  .complexes-its
+    margin-right: 0
+  .complexes-it
+    width: 100%
+    margin-right: 0
+  
+/*******************************m-developers-section*******************************/
+
+.m-developers-section
+  padding-bottom: 101px
+@media (max-width : 640px)
+  .m-developers-section
+    padding-bottom: 51px
+
+/*******************************foot-section*******************************/
+  
+.foot-section
+  background-color: rgb(11, 14, 31)
+  padding-top: 51px
+  padding-bottom: 35px
+
+.foot-w
+  display: flex  
+  margin-bottom: 74px
+  padding-top: 0px
+  -webkit-justify-content: flex-start
+  justify-content: flex-start
+.foot-col
+
+.foot-col-6
+  margin-left: auto
+.foot-col-5
+  padding-left: 56px
+.foot-col-4
+  padding-left: 73px
+.foot-col-3
+  padding-left: 59px
+.foot-col-2
+  padding-left: 81px
+.foot-col-1
+  width: 202px
+
+.logo-2
+  margin-bottom: 22px
+  display: block
+  margin-top: -4px
+.foot-col
+  div.fancy-select  
+    div.trigger
+      
+.mnu-ul
+
+.mnu-li
+  margin-bottom: 24px
+
+.mnu-a
+  color: #ffffff
+  font-size: 16px
+  font-weight: 400  
+  transition: 0.5s 
+  &:hover
+    text-decoration: underline
+.foot-soc-w
+  padding-right: 11px
+  display: flex
+  justify-content: flex-end
+  
+.foot-soc
+  width: 37px
+  height: 37px
+  background-color: rgb(22, 27, 51)
+  border-radius: 50%
+  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-left: 14px  
+  transition: 0.5s 
+  &:hover
+    background-color: #3c4570
+
+.rucont-link
+  margin-top: 35px
+  display: block
+  margin-left: 20px
+.copy
+  color: rgb(150, 150, 168)
+  font-size: 14px
+  font-weight: 400
+  line-height: 1.5 
+
+@media (max-width : 1299px)
+  .foot-w    
+    justify-content: space-between
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+  .foot-col-1,
+  .foot-col-2,
+  .foot-col-3,
+  .foot-col-4,
+  .foot-col-5,
+  .foot-col-6
+    width: calc(100% / 3)
+    padding-left: 0
+  .foot-col-4,
+  .foot-col-5,
+  .foot-col-6
+    margin-top: 60px
+  .rucont-link
+    display: flex
+  .foot-soc-w
+    -webkit-justify-content: flex-start
+    justify-content: flex-start
+  .foot-soc
+    margin-left: 0
+    margin-right: 17px
+    
+  .foot-col-6
+    margin-left: 0
+    
+@media (max-width : 992px)  
+  .copy
+    font-size: 14px
+  .foot-w
+    margin-bottom: 41px
+  .foot-col-1,
+  .foot-col-2,
+  .foot-col-3,
+  .foot-col-4,
+  .foot-col-5,
+  .foot-col-6
+    width: 100%
+    margin-top: 25px
+  .foot-col-1
+    margin-bottom: 15px
+    margin-top: 0
+  .foot-col-6
+    margin-top: 46px
+  .foot-section
+    padding-top: 40px
+  .foot-w
+    div.fancy-select div.trigger
+      width: 100%
+  .rucont-link
+    margin-top: 40px
+  .foot-soc
+    margin-right: 29px
+    
+/*******************************slider-section*******************************/
+
+.slider-section    
+  position: relative  
+  margin-top: 10px
+.f-contain
+  width: 1184px 
+  margin-left: auto
+  margin-right: auto
+
+.s-filter
+  position: absolute
+  top: 58px
+  left: 0px
+  width: 100%
+  z-index: 2 
+.contain
+
+.h1-w
+  color: #ffffff
+
+.s-form-w
+  margin-top: 23px
+
+.s-form
+  display: flex
+  flex-wrap: wrap
+  margin-top: 0px
+  justify-content: space-between
+
+.filter-section-2
+  .s-form-w
+    margin-top: 32px
+
+input[type=text].s-input-b
+  width: calc(100% - 135px)
+  height: 100%
+  padding-left: 20px
+  padding-right: 0px
+  color: #666666
+  font-size: 16px
+  font-weight: 400
+
+.input-l-w
+  display: flex
+  justify-content: flex-end
+  align-items: center  
+  padding-right: 17px
+.input-l
+  color: rgb(73, 78, 204)
+  font-size: 16px
+  font-weight: 400
+  margin-left: 19px
+  span
+    color: rgb(73, 78, 204)
+  img
+    display: none
+.s-input-w-1,
+.s-input-w-4
+  width: 489px
+
+.s-input-w-2,
+.s-input-w-5
+  width: 264px
+
+.s-input-w-3,
+.s-input-w-6,
+.s-input-w-7
+  width: 408px
+
+
+
+.s-input-w-8
+  width: 264px
+  div.fancy-select div.trigger,
+  div.fancy-select ul.options
+    width: 100%
+    min-width: auto
+
+.s-input-w-12
+  width: 130px
+
+.s-input-w-13
+  margin-top: 20px
+
+.s-filter-check-w
+  width: 100%
+  margin-top: 20px
+.s-filter-check-rw
+  display: flex  
+  margin-bottom: 10px
+  .check-butt
+    margin-bottom: 23px
+.s-filter-check-tit  
+  color: #232323
+  font-size: 17px
+  font-weight: 400
+  margin-right: 15px
+  padding-top: 11px
+.s-filter-check-labels
+  -webkit-flex-wrap: wrap
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+
+.s-input-selects
+  margin-top: 20px
+  width: 100%
+  display: flex
+  -webkit-justify-content: space-between
+  justify-content: space-between
+.s-input-w-1  
+  height: 48px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  display: flex  
+  border-radius: 2px
+  overflow: hidden
+
+.s-input-w-2  
+  height: 48px
+  border-radius: 2px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  display: flex
+  align-items: center  
+  overflow: hidden
+
+.s-input-w-3,
+.s-input-w-7
+  height: 48px  
+  border-radius: 2px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  display: flex
+  align-items: center 
+  overflow: hidden 
+  input[type=text].s-input
+    width: 50%
+
+.label-n-7
+  display: none
+  width: 100%
+.s-input-w-7
+  margin-top: 20px
+  display: none  
+  &.shw
+    display: flex
+  input[type=text].s-input    
+    flex-grow: 1
+    &:first-child
+      width: 328px
+
+
+
+.s-filter-more-chars
+  display: none  
+  &.shw
+    display: block
+
+.s-input-w-4  
+  height: 48px
+  border-radius: 2px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  display: flex
+  align-items: center
+  margin-left: 0px
+  margin-top: 20px
+  div.fancy-select div.trigger,
+  div.fancy-select ul.options
+    width: 110px
+    min-width: auto
+    border-right: none
+  input[type=text].s-input
+    width: calc(50% - (110px / 2))
+
+.s-input-w-5
+  margin-top: 20px  
+  div.fancy-select div.trigger,
+  div.fancy-select ul.options
+    width: 100%
+    
+
+.s-input-w-6  
+  margin-top: 20px
+  display: flex  
+  align-items: center  
+  
+  &.show-par
+    width: 100% $i
+    order: 100
+    -webkit-justify-content: flex-start
+    justify-content: flex-start
+    margin-top: 7px
+    .s-butt-w
+      margin-right: 11px
+    .butt-o-w
+      margin-right: 11px
+      display: inline-flex
+.s-check-f
+  -webkit-flex-grow: 1
+  flex-grow: 1
+
+.filter-section-2
+  .link-arr-w
+    margin-left: 18px
+  .butt, input[type="submit"].butt
+    width: auto
+    padding: 0 39px
+
+
+.s-check  
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 100%
+  border-right: 1px solid #dddddd
+  cursor: pointer
+  width: 46px 
+  &:last-child
+    border: none
+  input[type="checkbox"]
+    display: none
+    + span
+      display: flex
+      width: 100%
+      height: 100%      
+      justify-content: center      
+      align-items: center      
+    &:checked
+      + span
+        background-color: #ccc 
+
+input[type=text].s-input
+  padding-left: 20px
+  padding-right: 20px
+  color: rgb(102, 102, 102)
+  font-size: 16px
+  font-weight: 400
+  height: 100%
+  margin-bottom: 0px
+  border-left: 1px solid #ddd
+  -webkit-border-radius: 0 
+  border-radius: 0 
+  &:nth-child(1) 
+    border: none
+
+.s-butt-w  
+  .butt
+    width: 180px
+  
+
+.link-arr-w
+  color: rgb(255, 255, 255)
+  font-size: 17px
+  font-weight: 400
+  background-image: url("../img/arr-b-w.png")
+  background-repeat: no-repeat
+  background-position: right center
+  display: flex
+  align-items: center
+  padding-right: 15px
+  img
+    margin-left: 5px
+
+/*******************************filter-section-2*******************************/
+
+.s-input-label  
+  display: flex
+  -webkit-align-items: center
+  align-items: center
+  height: 48px
+  cursor: pointer
+  input[type="checkbox"]
+    display: none
+    + span        
+        color: #666666
+        font-size: 16px
+        font-weight: 400
+        display: flex        
+        align-items: center
+        &:before
+          width: 18px
+          height: 18px
+          border: 1px solid #dddddd
+          background-color: #ffffff          
+          content: "" 
+          display: block
+          margin-right: 8px
+    &:checked
+      + span
+        position: relative
+        &:after
+          content: "" 
+          display: block
+          z-index: 2
+          width: 10px
+          height: 10px         
+          background-color: #ccc
+          position: absolute
+          top: 0
+          left: 0
+          top: 4px
+          left: 4px
+
+
+.filter-section-2,
+.filter-section-3
+  .s-input-w-1, .s-input-w-4
+    width: 530px
+  .s-input-w-2, .s-input-w-5
+    width: 264px
+  .s-input-w-3, .s-input-w-6, .s-input-w-7
+    width: 441px
+  .blue-b
+    padding: 48px 0 72px 0
+  h1
+    color: #000 
+  .link-arr-w
+    color: #494ecc
+  .butt-o
+    
+  .butt-o-w
+    display: none
+
+
+.filter-section-2
+  .s-input-w-55
+    width: 306px
+
+.mt20
+  margin-top: 20px
+
+@media (max-width : 1299px)
+  .filter-section-2
+    .link-arr-w
+      padding-right: 0
+    .s-input-w-1,
+    .s-input-w-4
+      width: 480px
+    .s-input-w-2,
+    .s-input-w-5
+      width: 280px
+    .s-input-w-3,
+    .s-input-w-6,
+    .s-input-w-7
+      width: 380px
+    .s-input-w-8
+      width: 243px
+    .s-butt-w .butt
+      width: 170px
+@media (max-width : 1199px)
+  .filter-section-2     
+    .s-butt-w .butt
+      width: 180px        
+    .s-input-w-1,
+    .s-input-w-4,     
+    .s-input-w-2,
+    .s-input-w-5,
+    .s-input-w-3,
+    .s-input-w-6,
+    .s-input-w-7,
+    .s-input-w-8
+      width: calc(50% - 10px)
+    .s-input-w-8
+      margin-bottom: 20px        
+    .s-input-selects
+      -webkit-flex-wrap: wrap
+      -ms-flex-wrap: wrap
+      flex-wrap: wrap
+    .s-input-w-13
+      width: 100%
+      
+@media (max-width : 992px)
+  .filter-section-2
+    .s-input-w-2
+      margin-top: 0
+    .s-input-w-3,
+    .s-input-w-4,
+    .s-input-w-5,
+    .s-input-w-6
+      width: 100%
+    .s-input-w-6
+      -webkit-flex-wrap: wrap
+      -ms-flex-wrap: wrap
+      flex-wrap: wrap
+    .s-input-w-7
+      width: 100%
+    .s-filter-check-rw
+      -webkit-flex-wrap: wrap
+      -ms-flex-wrap: wrap
+      flex-wrap: wrap
+    .s-filter-check-tit
+      margin-bottom: 15px
+      width: 100%
+@media (max-width : 768px)
+  .filter-section-2
+    .link-arr-w      
+      justify-content: center
+      display: flex
+      width: 100%
+      margin-top: 30px
+  .s-input-w-6.show-par
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    .butt-o-w
+      width: 100%
+      margin-top: 20px
+      margin-bottom: 0px
+      margin-right: 0
+      .butt-o
+        width: 100%        
+        
+  .filter-section-2
+    .s-butt-w
+      width: 100%
+      margin-right: 0
+      .butt
+        width: 100%    
+  .s-input-w-6.show-par .s-butt-w
+    margin-right: 0
+  .s-input-w-7
+    input[type=text].s-input:first-child
+      width: 50%
+  
+@media (max-width : 570px)
+  .filter-section-2
+    .link-arr-w      
+      
+    .s-input-w-1,
+    .s-input-w-2
+      width: 100%
+    .s-input-w-1
+      margin-bottom: 20px
+    .s-input-w-5
+      margin-top: 20px
+    .s-butt-w
+      .butt
+        width: 100%
+    .s-input-w-8
+      width: 100%
+    .s-input-w-6.show-par
+      .link-arr-w
+        margin-top: 25px
+
+
+.slider
+  background-color: rgba(14, 6, 19, 0.46)
+  height: 560px
+  overflow: hidden  
+  border-radius: 8px 
+
+.slick-arrow,
+.slick-arrow-2
+  position: absolute
+  bottom: 143px
+  z-index: 3
+  width: 40px
+  height: 40px
+  background-color: rgba(0, 0, 0, 0.23)  
+  border-radius: 50% 
+  font-size: 0
+  border: none
+  transition: 0.5s 
+  background-image: url('../img/arr-l-sl.png') 
+  background-repeat: no-repeat 
+  background-position: center
+  &:focus
+    outline: none 
+  &:hover
+    background-color: rgba(0, 0, 0, 0.6)
+
+.slider-w
+  position: relative
+
+.slick-prev,
+.slick-prev-2
+  left: 34px
+  
+.slick-next,
+.slick-next-2
+  right: 44px
+  transform: rotate(180deg)
+  
+.slider-it  
+  position: relative  
+  img    
+    
+  &:before
+    content: "" 
+    display: block
+    width: 100%
+    height: 100%
+    background-color: rgba(#000, 0.3)
+    position: absolute
+    top: 0
+    left: 0
+  &.slick-active
+    img
+
+
+.s-cont-w
+  position: absolute
+  top: 283px
+  left: 0
+  width: 100%
+.s-cont-1
+  width: 137px
+  height: 29px
+  border-radius: 24px
+  border: 1px solid rgb(255, 255, 255)
+  display: flex
+  align-items: center
+  justify-content: center
+  color: rgb(255, 255, 255)
+  font-size: 13px
+  font-weight: 400
+  margin-bottom: 11px
+  opacity: 1
+  transition-duration: 1s
+.s-cont-2
+  color: rgb(255, 255, 255)
+  font-size: 28px
+  font-weight: 500
+  margin-bottom: 16px
+  opacity: 1
+  transition-duration: 1s
+.s-link
+  color: #ffffff
+  font-size: 16px
+  font-weight: 400
+  text-decoration: underline
+  opacity: 1
+  transition-duration: 1s
+.s-cont-3
+  color: rgb(255, 255, 255)
+  font-size: 18px
+  font-weight: 400
+  margin-top: 22px
+  margin-bottom: 11px
+  opacity: 1
+  transition-duration: 1s
+.s-cont
+  width: 999px
+  margin: auto
+  &.anim
+    .s-cont-1      
+      transition-delay: 0.45s
+      opacity: 0
+    .s-cont-2      
+      transition-delay: 0.35s
+      opacity: 0
+    .s-link-1      
+      transition-delay: 0.25s
+      opacity: 0
+    .s-cont-3      
+      transition-delay: 0.15s
+      opacity: 0
+    .s-link-2            
+      opacity: 0
+    
+
+@media (max-width : 1299px)
+  .f-contain
+    width: 1114px
+  .s-input-w-1,
+  .s-input-w-4
+    width: 429px
+
+  .s-input-w-2,
+  .s-input-w-5
+    width: 264px
+
+  .s-input-w-3,
+  .s-input-w-6
+    width: 388px
+@media (max-width : 1199px)
+  .f-contain
+    width: 914px
+  .s-input-w-1,
+  .s-input-w-4,    
+  .s-input-w-2,
+  .s-input-w-5,    
+  .s-input-w-3,
+  .s-input-w-6
+    width: calc(50% - 10px)
+  .s-input-w-3
+    margin-top: 20px
+  .s-cont-w
+    top: 345px
+@media (max-width : 992px)  
+  .s-cont-w
+    top: auto
+    bottom: 85px          
+  .s-cont
+    width: $w992
+    margin-left: 0
+    padding: 0 130px
+  .s-cont-3
+    line-height: 1.4
+  .slider,    
+  .slider-it
+    height: 400px
+  .filter-section
+    margin-bottom: 27px
+    .h1-w
+      color: #000 
+    .blue-b
+      padding: 31px 0
+    .link-arr-w
+      color: #494ecc
+      background: none      
+  .s-input-w-2
+    margin-top: 20px
+  .s-input-w-6,
+  .s-input-w-5,
+  .s-input-w-1,
+  .s-input-w-2,
+  .s-input-w-3,    
+  .s-input-w-4
+    width: 100% 
+  input[type=text].s-input-b
+    width: calc(100% - 75px) 
+
+  .label-n
+    width: 100%
+    display: none    
+    color: #232323
+    font-size: 14px
+    font-weight: 400    
+    margin-top: 14px
+    margin-bottom: -12px
+  .input-l-w
+    padding-right: 14px
+    margin-left: auto
+  .input-l
+    margin-left: 13px
+    img
+      display: block
+    span
+      display: none
+  .s-input-w-4
+    input[type=text].s-input,
+    div.fancy-select
+      width: calc(100% / 3)
+    div.fancy-select
+      div.trigger
+        width: 100%
+      ul.options
+        width: 100%
+@media (max-width : 768px)    
+  .slider, .slider-it
+    height: 380px
+  .s-cont-w
+    top: 41px
+    bottom: auto
+  .s-cont
+    width: $w768
+    padding-left: 15px
+    padding-right: 15px
+  .slick-next, .slick-next-2
+    right: 16px
+  .slick-prev, .slick-prev-2
+    left: 16px
+  .slick-arrow, .slick-arrow-2
+    bottom: 30px
+@media (max-width : 640px)
+  .s-cont
+    width: $w640
+@media (max-width : 570px)
+  .s-cont
+    width: 430px
+  .s-input-w-6    
+    flex-wrap: wrap
+  .s-butt-w
+    width: 100%
+    .butt
+      width: 100%
+  .filter-section
+    .link-arr-w      
+      justify-content: center
+      display: flex
+      width: 100%
+      margin-top: 30px
+  .s-input-w-2,
+  .s-input-w-3,
+  .s-input-w-4,
+  .s-input-w-5,
+  .s-input-w-6
+    margin-top: 15px
+  .label-n
+    margin-bottom: -7px 
+  .s-input-w-4 div.fancy-select div.trigger,
+  .s-input-w-5 div.fancy-select div.trigger
+    padding-left: 15px
+  input[type=text].s-input-b,
+  input[type=text].s-input
+    padding-left: 15px
+    padding-right: 15px
+  
+
+@media (max-width : 480px)
+  .s-cont
+    width: 340px
+      
+@media (max-width : 360px)
+  .s-cont
+    width: 280px
+
+/*******************************proj-section*******************************/
+
+.proj-section
+  padding-top: 54px
+  padding-bottom: 50px
+.proj-img-w
+  -webkit-border-radius: 8px 
+  border-radius: 8px 
+  overflow: hidden
+  display: block
+  position: relative
+  > img
+    object-fit: cover
+    width: 100%
+    height: 100%
+
+.proj-img-link
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+.proj-ic > img
+  opacity: 0.8
+  opacity: 0.8
+
+.proj-ic-r
+  margin-left: auto
+
+.publ > img
+  margin-left: 5px
+
+.proj-txt-3-w > img
+
+
+.proj-w
+  margin-right: -29px
+  display: flex
+  flex-wrap: wrap
+
+.proj-it
+  width: 293px
+  margin-right: 29px
+  margin-bottom: 66px
+  &:nth-last-child(4),
+  &:nth-last-child(3),
+  &:nth-last-child(2),
+  &:nth-last-child(1)
+    margin-bottom: 0
+.proj-img-w
+  height: 242px
+  border-radius: 8px
+  position: relative
+
+.proj-ics
+  position: absolute
+  top: 12px
+  left: 9px
+  margin-left: 0px
+  display: flex
+  align-items: center
+  width: calc(100% - 19px)
+  margin-right: 0px
+
+.proj-ic
+  width: 40px
+  height: 40px
+  border-radius: 40px
+  background-color: rgb(255, 255, 255)
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-right: 6px
+  -webkit-transition: 0.5s 
+  -moz-transition: 0.5s 
+  -ms-transition: 0.5s 
+  -o-transition: 0.5s 
+  transition: 0.5s 
+  &:hover
+    background-color: #d2d2d2
+    cursor: pointer
+
+.publ
+  height: 29px
+  border-radius: 24px
+  background-color: rgb(247, 244, 252)
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  color: rgb(73, 78, 204)
+  font-size: 13px
+  font-weight: 400
+  margin-left: auto
+  padding-left: 14px
+  padding-right: 14px
+  -webkit-transition: 0.5s 
+  -moz-transition: 0.5s 
+  -ms-transition: 0.5s 
+  -o-transition: 0.5s 
+  transition: 0.5s 
+  &:hover
+    text-decoration: none
+    background-color: #D2D2D2 
+
+.tagss
+  position: absolute
+  left: 9px
+  bottom: 17px
+  padding-right: 9px
+  display: flex
+  flex-wrap: wrap
+
+.tagg
+  height: 29px
+  border-radius: 24px
+  background-color: rgb(255, 255, 255)
+  padding-left: 12px
+  padding-right: 12px
+  color: rgb(153, 153, 153)
+  font-size: 13px
+  font-weight: 400
+  margin-right: 5px
+  display: flex
+  align-items: center
+  justify-content: center
+  -webkit-transition: 0.5s 
+  -moz-transition: 0.5s 
+  -ms-transition: 0.5s 
+  -o-transition: 0.5s 
+  transition: 0.5s 
+  &:hover
+    cursor: pointer
+    background-color: #d2d2d2
+    text-decoration: none
+    color: #000 
+.proj-desc
+  padding-top: 23px
+
+.proj-txt-1
+  color: rgb(35, 35, 35)
+  font-size: 20px
+  font-weight: 700
+  margin-bottom: 11px
+  display: block
+
+.proj-txt-2-w
+  font-size: 17px
+  font-weight: 400
+  color: #232323
+
+.proj-txt-2
+
+.proj-txt-3
+  color: #494ecc
+
+.proj-txt-4
+  color: rgb(35, 35, 35)
+  font-size: 17px
+  font-weight: 400
+  line-height: 1.5
+  margin-top: 11px
+
+.proj-txt-3-w
+  margin-top: 6px
+  display: flex
+  align-items: center
+  margin-bottom: 18px
+.proj-txt-5,
+.proj-txt-7
+  color: rgb(35, 35, 35)
+  font-size: 17px  
+  font-weight: 400
+  margin-left: 5px
+
+.proj-txt-7
+  font-size: 20px
+  margin-left: 0
+  margin-top: 19px
+  margin-bottom: 18px
+
+.proj-txt-6
+  color: rgb(35, 35, 35)
+  font-size: 14px
+  font-weight: 400
+  display: inline-block
+  margin-right: 5px
+  margin-left: 5px
+
+.proj-tbl
+  font-size: 17px
+  font-weight: 400
+  color: rgb(35, 35, 35)
+  margin-top: 20px
+
+.proj-tr
+  display: flex
+  margin-bottom: 14.4px
+
+.proj-td
+  width: 50%
+  display: flex
+  align-items: center
+  span
+    color: rgb(153, 153, 153)
+    display: inline-block
+    margin-left: 5px
+
+.proj-w-h,
+.proj-w-h-2
+  margin-right: 0
+  margin-top: 57px
+
+.proj-w-h-2
+  margin-bottom: 49px
+  margin-top: 18px
+.proj-it-h
+  width: 100%
+  margin-right: 0
+  display: flex  
+  border-radius: 8px  
+  padding: 23px 14px 23px 0px
+  &:last-child
+    margin-bottom: 0
+  &.pub  
+    background-color: #fffae9
+    margin-bottom: 23.5px    
+    padding-left: 21px
+  &:not(.pub)
+    padding-top: 10px
+    margin-bottom: 16px
+    .proj-txts
+      padding-top: 5px
+    .proj-txt-1
+      margin-bottom: 22px
+  .proj-txt-2
+    color: #999999
+  .proj-txt-2-w
+    margin-bottom: 14px
+  .proj-txt-1
+    margin-bottom: 10px
+  .proj-txt-5    
+  .proj-txt-4
+    margin-bottom: 8px
+  .proj-desc
+    display: flex
+    -webkit-flex-grow: 1
+    flex-grow: 1
+    margin-left: 29px
+    padding-top: 0
+  .proj-tbl    
+    flex-grow: 1
+    margin-left: auto
+    padding-left: 63px
+    margin-top: 48px
+  .proj-links
+    margin-left: auto
+    width: 142px
+    -webkit-justify-content: flex-end
+    justify-content: flex-end
+    display: flex
+.proj-img-w-h
+  width: 293px
+  height: 242px  
+
+.proj-list
+  margin-top: 19px
+  padding-bottom: 31px
+  
+.proj-w-2
+  .proj-it
+    margin-bottom: 55px
+.proj-w-3
+  margin-top: 25px
+  padding-bottom: 103px
+
+@media (min-width : 1199px)
+  .wrapper-6-2
+    .proj-w-3
+      padding-bottom: 135px
+
+  .wrapper-6-3
+    .proj-w-3
+      padding-bottom: 75px
+
+  .wrapper-6-4
+    .proj-w-3
+      padding-bottom: 118px
+
+  .wrapper-6-6
+    .proj-w-3
+      padding-bottom: 71px
+  .wrapper-8
+    .proj-w-3
+      padding-bottom: 156px
+  .wrapper-8-1
+    .proj-w-3
+      margin-top: 99px
+      padding-bottom: 71px
+  .wrapper-8-4
+    .proj-w-3
+      padding-bottom: 71px
+  .wrapper-9
+    .proj-w-3
+      padding-bottom: 133px
+  .wrapper-10-2
+    .proj-w-3
+      padding-bottom: 53px
+@media (max-width : 1299px) 
+  .proj-w-3
+    padding-bottom: 40px
+  .proj-list
+    padding-bottom: 0   
+  .proj-it
+    margin-bottom: 25px
+  .proj-section
+    padding-bottom: 32px
+    .proj-w
+  .proj-it-h
+    position: relative
+    padding-bottom: 0
+    &.pub
+      padding-bottom: 15px
+    .proj-links
+      width: auto
+      .publ
+        position: absolute
+        top: 15px
+        right: 15px
+
+@media (max-width : 1199px)
+  .proj-section
+  .proj-it
+    margin-right: 0
+  .proj-w
+    margin-right: 0
+    display: flex      
+    flex-wrap: wrap
+    justify-content: space-between
+  .proj-it-h
+    .proj-tbl
+      padding-left: 0
+      width: 344px
+      flex: none
+  .proj-txt-2-w
+    line-height: 1.4
+
+@media (max-width : 992px)
+  .proj-it-h
+    display: block
+    .proj-desc
+      margin-left: 0
+      margin-top: 20px
+    .proj-img-w-h
+      width: 100%
+    .proj-links .publ
+      top: 35px
+      right: 30px
+@media (max-width : 768px)
+  .proj-it-h
+    .proj-desc
+      display: block
+    .proj-tbl
+      width: 100%
+      margin-left: 0
+      padding-left: 0 
+@media (max-width : 640px)
+  .proj-it
+    width: 100%
+  .proj-img-w
+    overflow: hidden      
+    
+@media (max-width : 480px)
+  .proj-it-h    
+  .proj-tr
+    font-size: 15px
+  .proj-td
+    letter-spacing: -0.3px  
+    padding-right: 5px
+    font-size: 15px
+    &:nth-child(2)
+      padding-right: 0
+  .proj-tbl
+    margin-top: 20px
+@media (max-width : 570px)
+  .proj-section    
+    .proj-it
+      display: none
+      &:nth-child(2)
+        display: block
+      &:nth-child(3)
+        display: block
+
+
+    
+
+/*******************************Page 2*******************************/
+
+
+.item-proc > img
+  position: absolute
+  left: 0px
+
+.item-built  
+  > img
+    position: absolute
+    top: 0px
+    left: 0px
+
+.svg-2
+  position: absolute
+  top: 2px
+  left: 2px
+  z-index: 0
+  width: 30px
+  height: 30px
+
+.svg-2
+  .chart-item-bg
+    stroke: #fff
+  .chart-item-0
+    stroke: #955CDE
+  .chart-item-1
+    stroke: #00cc00
+  .chart-item-2
+    stroke: #0000ff
+
+.develop-cols
+
+.wrapper-2
+  .develop-cols
+    margin-top: -13px
+  .cols-2
+    margin-top: 6px
+  .dev-link-w
+    margin-top: 56px
+  .pub-section
+    .dev-link-w
+      margin-top: 36px
+
+.like-h3-w
+  margin-top: 34px
+  display: flex
+  -webkit-align-items: center
+  align-items: center  
+.like-h3
+  color: rgb(35, 35, 35)
+  font-size: 26px
+  font-weight: 700
+  margin-bottom: 20px
+
+.cols-2
+  display: flex
+  margin-top: 25px
+  -webkit-justify-content: space-between
+  justify-content: space-between
+.col-l-2
+  width: 941px
+
+.develop-row-1
+  margin-bottom: 90px 
+
+.wrapper-7
+  .develop-row-1
+    margin-bottom: 37px
+    &:nth-child(1)    
+      margin-bottom: 48px
+
+.develop-row-in  
+  display: flex
+
+.dev-link-w
+  margin-top: 32px
+
+.item-1
+  width: 294px
+  margin-right: 28px
+
+.item-1-img-w
+  width: 290px
+  height: 160px
+  border-radius: 8px
+  border: 1px solid rgb(221, 221, 221)
+  margin-bottom: 24px
+  display: flex
+  -webkit-align-items: center
+  align-items: center
+  -webkit-justify-content: center
+  justify-content: center
+  overflow: hidden
+.wrapper-7
+  .item-1-img-w
+    margin-bottom: 20px
+  .item-1-r-2
+    margin-bottom: 17px
+
+.item-1-desc
+
+.item-1-r-1
+  margin-bottom: 12px
+
+.item-txt-1
+  color: #adadad
+  font-size: 17px
+  font-weight: 400
+  margin-right: 5px
+.item-txt-2
+  color: #232323
+  font-size: 17px
+  font-weight: 400
+  line-height: 1.4
+.item-1-r-2
+  margin-bottom: 20px
+
+.item-link
+  color: #494ecc
+  font-size: 17px
+  font-weight: 400
+
+.item-1-r-3
+  margin-top: 9px
+  display: flex
+  align-items: center
+  .item-txt-3
+    margin-top: 11px
+.item-1-rate
+  color: rgb(35, 35, 35)
+  font-size: 16px
+  font-weight: 500
+  width: 42px
+  display: flex
+  align-items: center
+  justify-content: center
+  background-repeat: no-repeat
+  background-position: left top
+  background-image: url("../img/item-1-stars.png")
+  height: 39px
+  margin-right: 13px
+
+.item-txt-3
+  color: rgb(35, 35, 35)
+  font-size: 14px
+  font-weight: 400
+  line-height: 1.2
+
+.item-1-r-4
+  margin-top: 24px
+  display: flex
+  align-items: center
+
+.per-50
+  width: 50%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: flex-start
+
+.item-built, .item-proc
+  margin-right: 8px
+  display: flex
+  align-items: center
+  justify-content: center
+  color: rgb(35, 35, 35)
+  font-size: 16px
+  font-weight: 500
+  width: 40px
+  height: 40px
+  line-height: 1
+  position: relative    
+  border: 2px solid #E4E4E4
+  -webkit-border-radius: 50% 
+  border-radius: 50% 
+.svg-3
+  position: absolute
+  top: 2px
+  left: 2px
+  z-index: 0
+  width: 30px
+  height: 30px
+  .chart-item-bg
+    stroke: #fff
+  .chart-item-0
+    stroke: #637EDB
+  .chart-item-1
+    stroke: #00cc00
+  .chart-item-2
+    stroke: #0000ff
+
+.item-2
+  margin-right: 28px
+
+.item-2-link-w
+  display: block
+
+.item-2-img-w
+  margin-bottom: 29px
+  height: 240px
+  overflow: hidden
+  -webkit-border-radius: 8px 
+  border-radius: 8px 
+.item-2-title
+  color: rgb(35, 35, 35)
+  font-size: 20px
+  font-weight: 700
+  margin-bottom: 0px
+
+.item-2-butt-w
+  margin-top: 18px
+
+
+@media (max-width : 993px)
+  .develop-row-in
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    -webkit-justify-content: space-between
+    justify-content: space-between
+    .item-1
+      margin-bottom: 25px
+      margin-right: 0
+    .item-2
+      margin-right: 0
+
+@media (max-width : 768px)
+  .develop-row-in
+    .item-2
+      margin-bottom: 25px
+  .develop-row-1
+    margin-bottom: 45px
+
+@media (max-width : 570px)
+  .item-2-butt-w
+    .butt-oo
+      width: 100%
+@media (max-width : 640px)
+  .item-1,
+  .item-2,  
+    width: 100%
+    margin-right: 0
+  
+  .item-2-img-w
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  .item-1-r-4
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    .per-50
+      width: 100%
+      margin-bottom: 20px
+      &:last-child
+        margin-bottom: 0
+      
+
+.news-block
+  padding-top: 33px 
+  padding-bottom: 86px 
+.news-its
+  margin-top: 28px
+  margin-right: -28px
+  display: flex
+  -webkit-flex-wrap: wrap
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+.pub-its
+  margin-right: -32px
+  margin-top: 35px
+  display: flex
+  -webkit-flex-wrap: wrap
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+.news-it
+  display: inline-block
+  width: 292px
+  margin-right: 28px
+  margin-bottom: 94px
+  &:last-child
+    margin-bottom: 0
+  &:nth-last-child(2)
+    margin-bottom: 0
+  &:nth-last-child(3)
+    margin-bottom: 0
+
+.pub-it
+  width: 294px
+  margin-right: 28px  
+  display: inline-block
+.pub-it-img-w
+  margin-bottom: 22px
+  height: 200px
+  border-radius: 8px
+  display: block
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+.news-it-img-w
+  margin-bottom: 26px
+  display: block
+  width: 100%
+  height: 161px
+  overflow: hidden
+  border: 1px solid #ddd  
+  border-radius: 8px
+  img
+    width: 100% 
+    height: 100%
+    object-fit: cover
+    
+.news-it-date
+  color: rgb(178, 178, 178)
+  font-size: 16px
+  font-weight: 400
+  margin-bottom: 7px
+  display: block
+
+.news-it-title
+  color: rgb(35, 35, 35)
+  font-size: 20px
+  font-weight: 700
+  line-height: 24px
+  display: flex
+
+.pub-section
+  padding-bottom: 111px
+  padding-top: 20px
+  padding-bottom: 137px
+
+@media (max-width : 1299px)
+  .pub-it
+    margin-bottom: 41px
+    &:last-child
+      margin-bottom: 0
+@media (max-width : 992px)
+  .news-its,
+  .pub-its
+    justify-content: space-between
+    margin-right: 0
+  .news-it,
+  .pub-it
+    margin-bottom: 41px
+    margin-right: 0
+  .news-block
+    padding-bottom: 45px
+    .news-it:nth-last-child(2),
+    .news-it:last-child
+      margin-bottom: 0
+  .pub-it    
+    &:nth-last-child(2)    
+      margin-bottom: 0
+  .pub-section
+    padding-bottom: 56px    
+
+
+@media (max-width : 768px)
+  .news-block    
+    .news-it:nth-last-child(2),
+    .news-it:nth-last-child(3),
+    .news-it:last-child
+      margin-bottom: 41px
+  .pub-it    
+    &:nth-last-child(2)    
+      margin-bottom: 41px
+    &:last-child
+      margin-bottom: 0
+
+@media (max-width : 640px)
+  .news-its,
+  .pub-its
+    margin-right: 0
+  .pub-it,
+  .news-block .news-it
+    width: calc(50% - 10px)
+@media (max-width : 480px)
+  .pub-it,
+  .news-block .news-it
+    width: 100%
+    margin-right: 0  
+
+@media (max-width : 1299px)
+  .cols-2
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+  .col-l-2
+    width: 100%
+  .col-r-2
+    width: 100%
+  .p-bann
+    display: none
+  .dev-link-w
+    
+
+.p-bann  
+  overflow: hidden
+  img
+    object-fit: cover
+    width: 100%
+    height: 100% 
+.p-search
+  color: #232323
+  font-size: 20px
+  font-weight: 700
+
+.like-h4
+  margin-bottom: 27px
+
+.like-h6
+  margin-bottom: 10px
+  font-size: 20px
+  font-weight: bold 
+  color: #232323
+.p-ul
+  margin-top: 26px
+  margin-bottom: 23px
+.p-li
+  margin-bottom: 25px
+
+.p-a
+  color: #232323
+  font-size: 17px
+  font-weight: 400
+
+
+/*******************************3*******************************/
+
+
+/*******************************sort-section*******************************/
+
+.sort-link-act > img
+  margin-right: 6px
+
+.sort-link > img
+  margin-right: 6px
+  margin-right: 6px
+
+.sort-section
+  padding-top: 49px
+
+.tabs_content_item
+  display: none
+  padding: 0
+  margin: 0
+
+
+.tabs_content_item.active
+  display: block
+
+
+.sort-title-w
+  display: flex
+  align-items: flex-end
+
+.like-h2-b    
+  color: rgb(35, 35, 35)
+  font-size: 30px
+  font-weight: 700
+  margin-bottom: 0px
+  line-height: 1.5
+
+.sort-title-span
+  color: rgb(153, 153, 153)
+  font-size: 17px
+  font-weight: 400
+  display: inline-block
+  margin-left: 13px
+  margin-bottom: 9px
+.sort-w
+  margin-top: 14px
+  display: flex
+  -webkit-align-items: flex-end
+  align-items: flex-end
+
+@media (max-width : 768px)
+  .sort-w
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+  .arr-more-w
+    width: 100%
+    -webkit-justify-content: flex-start
+    justify-content: flex-start
+  .check-butts
+    margin-bottom: 15px
+@media (max-width : 570px)
+  .sort-title-w
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+  .sort-title-span
+    width: 100%
+    margin-top: 20px
+    margin-left: 0
+
+.check-butts
+  display: flex
+  align-items: center
+  -webkit-flex-wrap: wrap
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  height: 40px
+  overflow: hidden
+  &.ha
+    margin-bottom: 15px  
+.check-butt
+  display: inline-flex
+  height: 40px
+  border-radius: 108px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  align-items: center
+  justify-content: center
+  color: rgb(35, 35, 35)
+  font-size: 17px
+  font-weight: 400
+  padding-left: 16px
+  padding-right: 16px  
+  margin-bottom: 0px
+
+.check-label
+  cursor: pointer
+  margin-right: 14px
+  margin-bottom: 12px
+  &:last-child
+    margin-right: 0
+  input[type="checkbox"]
+    display: none
+    &:checked, &:hover
+      + .check-butt
+        background-color: #F5F5F5        
+        background-repeat: no-repeat        
+    &:checked
+      + .check-butt
+        background-image: url("../img/close.svg")
+        background-position: right 13px top 15px
+        padding-right: 30px
+
+
+
+.arr-more-w
+  display: flex  
+  justify-content: flex-end  
+  flex-grow: 1
+  flex: none  
+  margin-bottom: 10px
+.sort-w-2
+  margin-top: 44px
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.sort-w-5
+  margin-top: 31px
+
+.sort-l
+  display: flex
+  align-items: center
+
+.sort-tit
+  color: #232323
+  font-size: 17px
+  font-weight: 400
+
+.sort-links
+  margin-left: 12px
+  display: flex
+  -webkit-flex-wrap: wrap
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  
+.sort-link-1
+  height: 40px
+  border-radius: 2px
+  border: 1px solid rgb(221, 221, 221)
+  border-right: none 
+  background-color: rgb(255, 255, 255)
+  padding-left: 16px
+  padding-right: 16px
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  color: #999999
+  font-size: 17px
+  font-weight: 400
+  border: 1px solid rgb(221, 221, 221)
+  white-space: nowrap
+  &.active    
+    color: #232323
+  &:last-child
+    border: 1px solid rgb(221, 221, 221)
+  &:hover
+    text-decoration: none
+    background-color: rgba(#ccc, 0.2) 
+    color: #000 
+.sort-link
+  height: 40px
+  border-radius: 2px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  border-right: none 
+  padding-left: 16px
+  padding-right: 16px
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  color: #999999
+  font-size: 17px
+  font-weight: 400
+  &:hover
+    text-decoration: none
+    background-color: rgba(#ccc, 0.2) 
+    color: #000 
+  img
+    opacity: 0.5
+.sort-r
+  .tabs_control_item
+    &:last-child
+      .sort-link
+        border: 1px solid rgb(221, 221, 221)
+.tabs_control_item.active  
+  .sort-link    
+    color: #232323
+    img
+      opacity: 1
+
+.sort-r  
+  display: flex
+  justify-content: flex-end
+  align-items: center
+
+@media (max-width : 1199px)
+  .sort-w-2    
+    flex-wrap: wrap
+  .sort-r  
+    width: 100%
+    margin-top: 20px
+    li
+      width: calc(100% / 3)
+    .sort-link
+      width: 100%
+    
+
+@media (max-width : 992px)
+  .sort-l        
+    flex-wrap: wrap
+@media (max-width : 768px)
+  .sort-l
+    .sort-links
+      margin-top: 10px
+      margin-left: 0
+      width: 100%      
+      flex-wrap: wrap
+  .sort-link-1
+    width: calc(100% / 2)    
+    border-bottom: none
+    &:nth-child(2)
+      border-right: 1px solid #ddd
+    &:nth-child(3)
+      border-bottom: 1px solid #ddd
+
+@media (max-width : 570px)
+  .sort-w-2
+    margin-top: 20px
+
+@media (max-width : 480px)
+  .sort-r
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    li
+      width: 100%
+    .sort-link
+      border-right: 1px solid #ddd
+      border-bottom: none
+  .sort-link-1
+    width: 100%
+    border-right: 1px solid #ddd
+    border-bottom: none
+    &:nth-child(3)
+      border-bottom: none
+    
+/*******************************Page 3-2*******************************/
+
+.wrapper-map
+  width: 100%
+  height: 100vh 
+  overflow: hidden 
+  display: flex  
+  flex-direction: column  
+.contain-map
+  width: 100%
+  padding-left: 38px
+  padding-right: 38px
+
+.contain-map-2
+  margin-bottom: 12px
+  margin-top: 28px
+  
+.map-cols
+  display: flex
+  -webkit-flex-grow: 1 
+  flex-grow: 1 
+  overflow: hidden
+.map-col-l
+  width: 406px  
+  flex: none  
+  height: 100%  
+  box-shadow: 20px 0 40px rgba(10, 33, 65, 0.05)
+  border: 1px solid #dddddd
+  background-color: #ffffff
+  .mCSB_inside>.mCSB_container
+    margin-right: 7px
+  .mCS-dark-3.mCSB_scrollTools
+    width: 7px
+    opacity: 0 $i
+    .mCSB_draggerRail
+      width: 4px
+      background: none
+      margin-right: 0 $i
+      margin-left: 0 $i
+    .mCSB_scrollTools
+      margin-right: 0
+    .mCSB_dragger        
+      .mCSB_dragger_bar
+        background-color: #ccc $i
+        width: 2px
+  &:hover
+    .mCS-dark-3.mCSB_scrollTools
+      opacity: 1 $i  
+  .s-form    
+    padding: 37px 27px 53px 25px
+    width: 100%
+  .s-input-w-12
+    width: 100%
+    display: flex    
+    align-items: center    
+    justify-content: space-between
+    margin-bottom: 22px
+  .s-link-butt
+    min-width: 104px
+    height: 48px
+    border: 1px solid #dddddd
+    background-color: #ffffff
+    display: inline-flex
+    padding-left: 28px
+    padding-right: 28px
+    -webkit-justify-content: center
+    justify-content: center
+    -webkit-align-items: center
+    align-items: center    
+    color: #232323
+    font-size: 16px
+    font-weight: 400
+    
+  div.fancy-select div.trigger
+    padding-left: 15px
+    padding-right: 15px
+  input[type=text].s-input,
+  input[type=text].s-input-b
+    padding-left: 15px
+    padding-right: 15px
+
+  .label-n
+    width: 100%
+    display: block
+    font-size: 16px
+    margin-bottom: 8px
+  .s-input-w-4
+    margin-top: 0
+  .s-input-w-1,
+  .s-input-w-2
+    width: 100%
+    margin-bottom: 18px
+  .s-input-selects
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+  .s-input-w-8
+    width: 100%
+    margin-bottom: 20px
+  .s-input-w-5
+    width: 100%
+    margin-bottom: 27px
+  .s-input-w-6
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    margin-top: 0
+    .s-butt-w
+      width: 100%
+      margin-bottom: 20px
+      .butt
+        width: 100%
+    .butt-o-w,
+    .butt-o
+      width: 100%
+    .s-input-total
+      display: block            
+      color: #be5cde
+      font-size: 16px
+      font-weight: 400
+      margin: auto
+      margin-bottom: 11px
+.map-col-r
+  -webkit-flex-grow: 1 
+  flex-grow: 1 
+  position: relative
+.tooltip-map
+  position: absolute  
+  z-index: 20
+  background: url("../img/Union.svg") $nr 0 0  
+  background-size: 100% 
+  width: 332px
+  height: 145px  
+  display: flex
+  padding: 15px 10px 15px 15px  
+
+.tooltip-map-1
+  top: 150px
+  left: 150px
+
+.tooltip-img-link-w 
+  width: 123px
+  height: 100px
+  border-radius: 2px
+  overflow: hidden
+  margin-right: 11px
+  display: block
+  overflow: hidden
+  img
+    object-fit: cover
+    width: 100%
+    height: 100%
+
+.tooltip-txts
+  -webkit-flex-grow: 1
+  flex-grow: 1
+  margin-top: 5px
+  margin-bottom: 6px
+  
+.tooltip-tit   
+  color: #494ecc
+  font-size: 14px
+  font-weight: 700
+  margin-bottom: 6px
+  display: block
+.tooltip-txt   
+  color: #232323
+  font-size: 14px
+  font-weight: 400
+  line-height: 21px
+  margin-bottom: 4px
+
+.tooltip-txt.tooltip-txt-2
+
+.s-link-par
+  &.hov
+    background-color: #ddd 
+
+@media (max-width : 1199px)
+  .map-col-l
+    .s-input-w-4,
+    .s-input-w-3,
+    .s-input-w-6
+      width: 100%
+    .s-input-w-3
+      margin-top: 0
+@media (max-width : 992px)
+  .contain-map
+    padding-left: 15px
+    padding-right: 15px
+  .map-cols
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+    position: relative
+    -ms-overflow-y: scroll 
+    overflow-y: scroll 
+  .map-controls    
+    .s-link-butt 
+      width: calc(100% / 3 - 5px)      
+      padding-left: 15px
+      padding-right: 15px
+      min-width: auto
+      font-size: 16px
+  .map-col-r
+    margin-top: 16px
+    width: 100%
+  .map-col-l
+    -webkit-box-shadow: none 
+    box-shadow: none 
+    width: 100%
+    height: auto
+    overflow: hidden
+    padding-top: 0
+    padding-bottom: 0
+    -webkit-align-items: center
+    align-items: center
+    display: flex
+    border: none
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+    .s-input-w-12   
+      -webkit-justify-content: flex-start
+      justify-content: flex-start
+      .s-link-butt
+        margin-right: 14px
+    .s-form
+      background-color: #FFF 
+      z-index: 21      
+      position: absolute
+      left: 0
+      top: 60px
+      padding-top: 7px
+      padding-left: 15px
+      padding-right: 15px 
+      width: 100%
+      display: none
+      padding-bottom: 35px
+      .s-input-w-2
+        margin-top: 0  
+  .map-controls.show-992
+    margin-top: 0
+    margin-bottom: 0
+    display: flex
+    -webkit-align-items: center
+    align-items: center
+    -webkit-justify-content: space-between
+    justify-content: space-between
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    .s-link-butt      
+  .tooltip-map-1
+    left: 40px
+    top: 40px
+  .contain-map-2
+    margin-top: 10px
+  .contain-map
+    .like-h2
+      margin-bottom: 0  
+
+@media (max-width : 480px)  
+  .map-col-l .s-input-w-12
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    margin-bottom: 0
+    .s-link-butt
+      width: 100%
+      margin-bottom: 15px
+      margin-right: 0
+  .tooltip-map
+    width: 300px
+    -webkit-background-size: 100% 100% 
+    -o-background-size: 100% 100% 
+    background-size: 100% 100% 
+  .tooltip-map-1
+    left: 10px
+    
+@media (max-width : 359px)
+  .map-controls    
+    .s-link-butt 
+      width: auto
+@media (max-width : 320px)
+  .map-col-l
+    .s-form
+      width: 320px
+
+/*******************************page 4*******************************/
+
+.develop-cols-2
+  margin-top: 32px  
+
+.wrapper-7
+  .develop-cols-2
+    margin-top: 39px
+  .cols-2
+    margin-top: -6px
+
+.like-h3-w-2
+  display: flex
+  -webkit-align-items: center
+  align-items: center
+  margin-bottom: 29px
+  .like-h3
+    margin-bottom: 0    
+  .like-h5
+    margin-bottom: -4px
+
+.pin
+  display: flex
+  width: 27px
+  height: 28px  
+  -webkit-border-radius: 50% 
+  border-radius: 50% 
+  display: flex
+  -webkit-align-items: center
+  align-items: center
+  -webkit-justify-content: center
+  justify-content: center
+  margin-left: 6px
+  background-color: #FF8038 
+.develop-blue-top 
+  padding: 44px 0 72px 0
+  background-color: #f8faff  
+
+@media (min-width : 1199px)
+  .develop-blue-top 
+    margin-top: 10px
+
+input[type=text].input 
+  height: 48px
+  border: 1px solid #dddddd
+  background-color: #ffffff  
+  color: #666666
+  font-size: 16px
+  font-weight: 400
+  padding: 0 20px
+.develop-form
+  display: flex
+  width: 965px
+  margin-top: 31px
+  input[type=text].input
+    -webkit-flex-grow: 1
+    flex-grow: 1
+    margin-right: 7px
+
+.develop-form_4.open
+  width: 100%
+  input[type=text].input
+    margin-right: 0
+input[type="submit"].develop-butt
+  padding-left: 38px
+  padding-right: 38px
+  min-width: auto 
+
+.dev-link-w
+  .butt
+    margin-top: 34px
+    padding-left: 27px
+    padding-right: 27px
+
+.pagin
+  display: flex
+  align-items: center
+  justify-content: center
+  li
+    margin-left: 5px
+    margin-right: 5px
+  a
+    width: 43px
+    height: 40px
+    border-radius: 2px
+    background-color: rgb(248, 250, 255)
+    color: rgb(73, 78, 204)
+    font-size: 17px
+    font-weight: 400
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-right: 0px
+    &.active      
+      background-color: #d4dffb 
+      color: #232323      
+      cursor: text
+      font-weight: bold 
+    &:hover
+      background-color: #d4dffb 
+      color: #232323   
+      text-decoration: none   
+
+.dev-pagin-w
+  margin-top: 39px
+
+
+.dev-proj-w
+  margin-top: 15px
+
+.pb-142
+  padding-bottom: 114px
+.dev-proj-w.dev-proj-w_3.pb-142
+  padding-bottom: 100px
+
+@media (min-width : 1199px)
+  .wrapper-6
+    .pb-142
+      padding-bottom: 81px
+      margin-top: 60px
+
+.sort-l-dev
+  -webkit-align-items: flex-start
+  align-items: flex-start
+  position: relative
+  z-index: 2
+  .sort-tit
+    -webkit-flex: none
+    -ms-flex: none
+    flex: none
+    padding-top: 12px  
+  
+@media (max-width : 992px)
+  .develop-form
+    width: 100%
+  .sort-l-dev    
+    flex-wrap: wrap
+    .sort-tit
+      margin-bottom: 20px
+      width: 100%
+    .sort-links
+      margin-left: 0
+      -webkit-flex-wrap: wrap
+      -ms-flex-wrap: wrap
+      flex-wrap: wrap
+    .sort-link-1
+      width: 50%
+      &:nth-child(1)        
+      &:nth-child(2)
+        border-right: 1px solid #ddd        
+
+@media (max-width : 768px)
+  .sort-l-dev
+    .sort-link-1
+      width: 100%
+      border: 1px solid #ddd
+      &:nth-child(1),
+      &:nth-child(3)
+        border: 1px solid #ddd
+
+@media (max-width : 570px)
+  .develop-form
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    input[type=text].input
+      width: 100%
+      margin-bottom: 20px
+      margin-right: 0
+    .butt
+      width: 100%
+      margin-left: 0
+  .develop-blue-top
+    padding-top: 20px
+    padding-bottom: 30px
+    margin-top: 0
+  .sort-l-dev
+    padding-top: 15px
+    .sort-tit
+      margin-bottom: 11px
+      padding-top: 0  
+  input[type=text].input,
+  div.fancy-select div.trigger
+    padding-left: 12px
+    padding-right: 12px
+  .sort-w-2
+    margin-top: 17px
+  .sort-l-dev
+    padding-top: 0
+  .rate-block
+    margin-top: 27px
+@media (max-width : 480px)
+  .sort-l-dev
+    .sort-link-1
+      padding-top: 10px
+      padding-bottom: 10px
+      line-height: 1.2      
+      height: auto
+      text-align: left $i
+      -webkit-justify-content: flex-start
+      justify-content: flex-start
+      font-size: 14px
+
+
+.develop-blue-top-2
+  background-color: #f8faff
+  padding: 32px 0 41px 0
+  margin-top: 10px
+  
+.develop-pers-cols
+  display: flex  
+  align-items: center
+
+.develop-l
+  width: 196px
+  height: 107px
+  border-radius: 8px
+  border: 1px solid rgb(221, 221, 221)
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  img
+    object-fit: cover
+    width: 100%
+    height: 100%
+.develop-r
+  margin-left: 29px
+  padding-top: 10px
+  h1
+    margin-bottom: 0
+.develop-rw
+  display: flex
+  align-items: center
+  margin-top: -7px
+
+.develop-blue-top-4
+  padding-bottom: 40px
+  .develop-l
+    width: 178px
+    height: 96px
+  .develop-r-bank
+    margin-left: 14px
+    padding-top: 0
+  .develop-conts
+    margin-top: 15px
+
+
+.develop-txt-1
+  color: rgb(153, 153, 153)
+  font-size: 14px
+  font-weight: 400
+  display: inline-block
+  margin-left: 3px
+
+.develop-txt-2
+  color: rgb(73, 78, 204)
+  font-size: 14px
+  font-weight: 400
+  display: inline-block
+  margin-left: 4px      
+
+.develop-txt-3
+  color: rgb(153, 153, 153)  
+  font-weight: 400
+  display: inline-block
+  margin-left: 3px
+  font-size: 17px
+
+.develop-tabs
+  display: flex
+  margin-top: 50px  
+  li
+    margin-right: 30px
+    margin-bottom: 20px
+    a      
+      color: #494ecc
+      display: inline-block
+      font-size: 17px
+      font-weight: 400      
+      padding-bottom: 9px
+      border-bottom: 2px solid transparent
+      &.active
+        color: #232323
+        border-bottom: 2px solid #232323
+      &:hover
+        text-decoration: none
+        color: #232323
+        border-bottom: 2px solid #232323
+
+
+.sort-w-3
+  margin-top: 15px
+
+.develop-proj-list-in
+  margin-top: 29px
+  margin-bottom: 36px
+  .proj-it
+    margin-bottom: 45px
+
+
+@media (max-width : 992px)
+  .develop-tabs    
+    flex-wrap: wrap
+@media (max-width : 768px)
+  .develop-blue-top-2
+    margin-top: 0
+  .develop-tabs
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    li
+      margin-bottom: 20px
+  .develop-h2-w
+    margin-top: 10px
+
+@media (max-width : 640px)
+  .develop-pers-cols
+    display: block
+  .develop-l
+    margin-left: auto
+    margin-right: auto
+  .develop-r
+    margin-top: 15px
+    margin-left: 0
+    text-align: center
+  .develop-rw
+    -webkit-justify-content: center
+    justify-content: center
+
+@media (max-width : 480px)
+  .develop-rw
+    display: block
+  .develop-txt-1,
+  .develop-txt-2
+    margin-top: 10px
+  .develop-h2-w
+    margin-top: 25px
+
+.dev-news-sort-w 
+  display: flex
+  -webkit-align-items: center
+  align-items: center
+
+.develop-btn 
+  margin-top: 55px
+  padding: 0 39px
+
+
+
+.wrapper-6-5
+  .develop-h2-w
+    .like-h2
+      margin-bottom: 12px
+  .dev-news-sort-w 
+    margin-top: -5px
+  .dev-news-sort-tit
+    margin-right: 22px
+  .revs-block
+    padding-right: 0
+    margin-top: -18px
+  
+.dev-news-sort-col 
+  display: flex
+  -webkit-align-items: center
+  align-items: center
+  margin-right: 33px
+.dev-news-sort-tit   
+  color: #232323
+  font-size: 16px
+  font-weight: 400
+  margin-right: 9px
+
+.dev-news-sort-sel 
+  width: 250px
+  div.fancy-select,
+  div.fancy-select div.trigger
+    width: 100%
+
+
+
+
+.s-sel
+
+
+.pub-section-2
+  padding-bottom: 68px
+
+.pub-its-2
+  margin-top: 31px
+  .pub-it
+    margin-bottom: 71px
+
+.news-author
+  display: block
+  color: #232323
+  font-size: 17px
+  font-weight: 400
+  line-height: 1.5
+  margin-top: 10px
+  a
+    color: #232323
+@media (max-width : 640px)
+  .dev-news-sort-w
+    display: block
+  .dev-news-sort-col
+    margin-right: 0
+    margin-top: 25px
+    display: block
+  .dev-news-sort-tit
+    margin-bottom: 10px
+  .dev-news-sort-sel
+    width: 100%
+    div.fancy-select div.trigger
+      width: 100%
+
+.dev-pagin-w-2
+  margin-top: 60px
+
+/*******************************page 4-1*******************************/
+
+.rate-block
+  margin-top: 60px
+.rate-h-w
+  display: flex
+  align-items: center
+  margin-bottom: 6px
+  
+.rate-count
+  width: 33px
+  height: 33px
+  border-radius: 2px
+  background-color: rgb(190, 92, 222)
+  color: rgb(255, 255, 255)
+  font-size: 18px
+  font-weight: 700
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-right: 17px
+
+.like-h5
+  color: #232323
+  font-size: 24px
+  font-weight: 700
+  margin-bottom: 11px
+  line-height: 1.4
+.rate-row-in
+  display: flex  
+.rate-row  
+  margin-bottom: 71px
+  &:last-child
+    margin-bottom: 0px
+
+.rate-l
+  width: 294px
+.rate-l-img-w 
+  display: flex
+  -webkit-align-items: center
+  align-items: center
+  -webkit-justify-content: center
+  justify-content: center
+  width: 100% 
+  height: 160px
+  border-radius: 8px
+  border: 1px solid #dddddd
+  overflow: hidden
+  img
+    
+
+.rate-descs
+  margin-top: 18px
+
+.rate-r
+  flex-grow: 1
+  padding-top: 15px
+  display: flex
+  margin-left: 27px
+  justify-content: space-between
+
+.rate-it-1
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: center
+
+.rate-it-img-w
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 92px
+  height: 92px
+  position: relative  
+  .svg
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 0    
+    transform: rotate(-170deg)
+.rate-it-span
+  z-index: 1
+  width: 49px
+  height: 27px
+  border-radius: 17px
+  background-color: rgb(73, 78, 204)
+  display: flex
+  align-items: center
+  justify-content: center
+  color: rgb(255, 255, 255)
+  font-size: 17px
+  font-weight: 700
+  position: absolute
+  bottom: -10px
+
+.rate-it-title
+  color: rgb(35, 35, 35)
+  font-size: 14px
+  font-weight: 400
+  text-align: center
+  margin-top: 20px
+  line-height: 1.4
+
+.rate-it-2
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: center
+  margin-left: 9px
+.rating-block-r
+  .rate-it-2
+    margin-top: -22px
+.rate-it-2-img-w
+  width: 100px
+  height: 96px
+  display: flex
+  align-items: center
+  justify-content: center
+  color: rgb(35, 35, 35)
+  font-size: 36px
+  font-weight: 400
+  background-image: url("../img/rate-stars.png")
+  background-repeat: no-repeat
+  background-position: center top
+  margin-bottom: 34px
+
+.rate-butt
+  height: 46px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  padding-left: 26px
+  padding-right: 26px
+  color: rgb(35, 35, 35)
+  font-size: 18px
+  font-weight: 400
+  display: inline-flex
+  align-items: center
+  justify-content: center
+
+.svg
+  .chart-item-bg
+    stroke: #d8d9f5
+  .chart-item-0
+    stroke: #494ecc
+  .chart-item-1
+    stroke: #00cc00
+  .chart-item-2
+    stroke: #0000ff
+
+.donut-pagin-w
+  margin-bottom: 121px
+  margin-top: 46px
+
+.donut-link-w
+  margin-top: 23px
+  .butt
+    min-width: 260px
+  
+.develop-blue-top-3
+  padding-top: 5px
+  padding-bottom: 45px
+@media (max-width : 1199px)
+  .rate-row-in
+    display: block
+  .rate-r
+    margin-left: 0
+    margin-top: 25px
+
+@media (max-width : 992px)
+  .donut-pagin-w
+    margin-bottom: 70px
+  .rate-r
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+  .rate-it-1,
+  .rate-it-2
+    width: calc(100% / 3)
+    margin-bottom: 30px
+  .donut-link-w
+    .butt
+      width: 100%
+  .pb-142
+    padding-bottom: 40px
+
+@media (max-width : 480px)
+  .rate-l
+    width: 100%
+  .rate-l-img-w
+    width: 100%
+    img
+      
+@media (max-width : 640px)
+  .rate-it-1,
+  .rate-it-2
+    width: 50%
+  .rate-butt.show-640
+    width: 100%
+
+
+
+.abcomp-section
+  background-color: rgb(248, 250, 255)
+  padding-top: 42px
+  padding-bottom: 38px
+  margin-bottom: 36px
+  h1
+    text-align: center
+
+
+.abcomp-img-w
+  width: 196px
+  height: 107px
+  border-radius: 8px
+  border: 1px solid rgb(221, 221, 221)
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-left: auto
+  margin-right: auto
+  overflow: hidden
+  margin-bottom: 28px
+.abcomp-info
+  display: flex
+  justify-content: center
+  margin-bottom: 23px
+  align-items: flex-end
+  margin-top: -4px
+.abcomp-rep
+  display: flex
+  align-items: flex-end  
+.abcomp-txt-1
+  color: rgb(153, 153, 153)
+  font-size: 14px
+  font-weight: 400
+  margin-left: 6px
+  margin-right: 4px
+
+.abcomp-txt-2
+  color: rgb(73, 78, 204)
+  font-size: 14px
+  font-weight: 400
+  display: flex
+  -webkit-align-items: center
+  align-items: center
+.abcomp-conts
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-bottom: 38px
+
+.abcomp-txt-3
+  color: rgb(73, 78, 204)
+  font-size: 17px
+  font-weight: 400
+  margin-right: 19px
+  display: flex
+  align-items: center
+  img
+    margin-right: 4px
+.abcomp-socs
+  display: flex
+
+.abcomp-soc
+  margin-right: 28px
+  display: flex
+  align-items: center
+  &:last-child
+    margin-right: 0
+
+.abcomp-info-2
+  display: flex
+  align-items: center
+  justify-content: center
+
+.abcomp-info-item
+  width: 113px
+  display: inline-block
+  align-items: center
+  justify-content: center
+  text-align: center
+  margin-left: 36px
+  margin-right: 36px
+
+.abcomp-info-item-txt-1
+  color: rgb(35, 35, 35)
+  font-size: 30px
+  font-weight: 500
+  margin-bottom: 12px
+
+.abcomp-info-item-txt-2
+  color: #232323
+  font-size: 14px
+  font-weight: 400
+
+
+
+.rate-content-its
+  margin-left: 0
+  margin-top: 6px
+  -webkit-justify-content: flex-start
+  justify-content: flex-start
+  margin-bottom: 29px
+  .rate-it-1
+    margin-right: 46px
+
+.content
+  color: #232323
+  font-size: 17px
+  font-weight: 400
+  padding-top: 40px
+  p
+    line-height: 1.5
+    margin-bottom: 23px
+.develop-single-w
+  padding-top: 20px
+  width: 100%
+  p
+    line-height: 1.7
+
+
+.people-rate  
+  color: #999999
+  font-size: 17px
+  font-weight: 400
+  line-height: 1.5
+  a
+    color: #494ecc
+
+.single-dev-2-cols
+  margin-top: 70px
+  margin-bottom: 42px
+  .cols-2
+    margin-top: 42px
+  .col-l-2
+    width: 828px
+  .col-r-2
+    -webkit-flex-grow: 1
+    flex-grow: 1
+    margin-left: 52px
+.single-dev-gal-w  
+  .sp-fade-arrows
+    opacity: 1
+    visibility: visible      
+  .sp-arrow
+    width: 40px
+    height: 40px
+    background-color: rgba(0, 0, 0, 0.24)  
+    border-radius: 50%    
+    background-repeat: no-repeat 
+    background-position: center
+    background-image: url('../img/arr-l-slider.svg')
+    &:after,
+    &:before
+      display: none
+  
+  .sp-next-arrow    
+  .sp-previous-arrow
+
+  .sp-thumbnails-container
+    bottom: 115px
+  .sp-thumbnail-container
+    border-radius: 8px
+    overflow: hidden
+    margin: 0 11.5px
+  .sp-slides-container
+    overflow: hidden
+    border-radius: 8px
+  .sp-slide
+    &:hover, &:active, &:focus
+      cursor: auto
+  .sp-full-screen-button
+    display: none
+  .sp-grab
+    &:hover, &:active, &:focus
+      cursor: pointer $i
+  .like-h2
+    margin-bottom: 46px
+
+ul.h-coop-list
+  li
+    margin-bottom: 27px
+  a    
+    color: #494ecc
+    font-size: 20px
+    font-weight: 700
+    &.active
+      color: #232323
+    &:hover    
+      color: #232323
+      text-decoration: none
+
+@media (max-width : 1299px)
+
+  .single-dev-2-cols
+    .cols-2
+      -webkit-flex-wrap: nowrap
+      -ms-flex-wrap: nowrap
+      flex-wrap: nowrap
+    .col-l-2
+      width: 788px
+@media (max-width : 1199px)
+  .single-dev-2-cols
+    margin-bottom: 80px
+    .cols-2
+      -webkit-flex-wrap: wrap
+      -ms-flex-wrap: wrap
+      flex-wrap: wrap
+      
+    .col-l-2
+      width: 100%
+      -webkit-justify-content: flex-start
+      justify-content: flex-start
+    .col-r-2
+      margin-left: 0
+      margin-top: -35px
+    #example3
+      max-width: 100% $i
+@media (max-width : 992px)
+  .rate-content-its    
+    justify-content: flex-start
+    .rate-it-1
+      margin-right: 0      
+
+@media (max-width : 768px)
+  .single-dev-gal-w
+    .sp-thumbnails-container
+      display: none
+  .single-dev-2-cols
+    .col-r-2
+      margin-top: 35px
+@media (max-width : 640px)
+  .abcomp-info-item
+    margin-right: 10px
+    margin-left: 10px
+  .single-dev-2-cols
+    margin-bottom: 40px
+    
+@media (max-width : 480px)
+  .abcomp-info-2
+    
+  .abcomp-info-item    
+    margin: 0
+    margin-top: 15px
+    width: 100%    
+  .abcomp-info-item-txt-1
+    font-size: 20px
+  .abcomp-info-item-txt-2
+    font-size: 11px
+
+@media (max-width : 360px)
+  .abcomp-info    
+    -webkit-justify-content: center
+    justify-content: center
+    display: flex
+    width: 100%
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+  .abcomp-txt-2
+    width: 100%
+    -webkit-justify-content: center
+    justify-content: center
+  .abcomp-rep
+    margin-bottom: 15px
+
+.pub-pagin-w
+  margin-top: -75px
+  margin-bottom: 110px
+
+.pub-news-sort-w
+  
+
+@media (max-width : 1199px)
+  .pub-news-sort-w
+    display: block
+    .dev-news-sort-col
+      display: block
+      margin-top: 25px
+      margin-right: 0
+    .dev-news-sort-tit
+      margin-bottom: 10px
+    .dev-news-sort-sel
+      width: 100%
+      div.fancy-select div.trigger
+        width: 100%
+
+.favorites-proj-list
+  margin-top: 49px
+
+.proj-ic.active
+  background: #494ECC
+
+@media (max-width : 768px)
+  .favorites-proj-list
+    margin-top: 19px
+      
+ 
+.map-form  
+  margin: auto 
+  width: 633px
+  border: 1px solid #dddddd
+  background-color: #ffffff
+  position: relative
+input[type="text"].map-input
+  border: none
+  width: calc(100% - 50px)
+input[type="submit"].map-butt
+  width: 50px
+  background: url("../img/search.svg")  
+  background-repeat: no-repeat 
+  background-position: center
+  font-size: 0
+  position: absolute
+  right: 0
+  top: 0
+  height: 100%
+
+.offices-section
+  margin-top: 29px
+.ofices-map-w
+  margin-top: 34px
+
+.offices-w
+  border-bottom: 1px solid rgb(221, 221, 221)
+  padding-bottom: 12px
+  margin-top: -10px
+.offices-row-1
+  display: flex
+  margin-top: 22px
+  padding-bottom: 0px
+.offices-item  
+  width: 25%
+  &:nth-child(4n)
+    margin-right: 0
+.offices-txts-w
+  margin-bottom: 15px
+
+.offices-txt-1
+  color: rgb(153, 153, 153)
+  font-size: 17px
+  font-weight: 400
+  margin-bottom: 10px
+
+.offices-txt-2
+  color: rgb(35, 35, 35)
+  font-size: 17px
+  font-weight: 400
+  margin-bottom: 6px
+  line-height: 1.4
+
+.offices-txt-3
+  color: rgb(73, 78, 204)
+  font-size: 17px
+  font-weight: 400
+  display: flex
+  align-items: center
+  margin-bottom: 10px
+
+.offices-socials
+  display: flex
+  margin-top: 25px
+.offices-social
+  margin-right: 28px
+  display: flex
+  align-items: center
+
+.offices-txts-w-2
+  margin-bottom: 21px
+
+.offices-txt-4
+  color: rgb(35, 35, 35)
+  font-size: 17px
+  font-weight: 400
+  font-style: italic
+  margin-bottom: 10px
+
+.offices-txts-w-3
+  margin-bottom: -5px
+
+.offices-row-2
+  display: flex
+  align-items: flex-start
+  justify-content: flex-start
+  padding-top: 30px
+  flex-wrap: wrap
+  .offices-item
+    margin-bottom: 25px
+.offices-txt-5
+  color: rgb(35, 35, 35)
+  font-size: 20px
+  font-weight: 700
+  margin-bottom: 7px
+  line-height: 1.35
+.offices-txts-w-4
+  margin-bottom: 20px
+
+.offices-txt-6
+  color: rgb(73, 78, 204)
+  font-size: 17px
+  font-weight: 400
+  display: flex
+  align-items: center
+  margin-bottom: 15px
+
+.ofices-map
+  margin-top: 37px
+
+.ofices-map
+  margin-bottom: 91px
+  height: 527px 
+
+@media (max-width : 1199px)
+  .offices-item
+    width: calc(100% / 3)
+
+@media (max-width : 992px)
+  .offices-item
+    width: 50%
+  .offices-row-1
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    .offices-item
+      margin-bottom: 28px
+
+@media (max-width : 640px)
+  .offices-item
+    width: 100%
+  .ofices-map
+    height: 250px
+    margin-bottom: 45px
+
+  
+.offices-row-3 
+  -webkit-flex-wrap: wrap
+   -ms-flex-wrap: wrap
+   flex-wrap: wrap 
+  margin-top: 30px
+  border-bottom: none
+  .offices-item
+    margin-bottom: 51px
+
+@media (min-width : 1299px)
+  .wrapper-8-4
+    .offices-row-3
+      margin-top: -6px
+      .offices-item
+        margin-bottom: 17px   
+
+.content-h1-w  
+  color: #232323
+  font-size: 17px
+  font-weight: 400
+  p
+    line-height: 1.5
+    margin-bottom: 15px
+    &:last-child
+      margin-bottom: 15px $i
+
+.about-cols
+  display: flex
+  margin-top: 5px
+
+.wrapper-8
+  .about-cols
+    margin-bottom: 53px
+
+.about-col-l
+  -webkit-flex-grow: 1
+  flex-grow: 1
+.about-col-r
+  width: 379px
+  margin-left: 32px
+  -webkit-flex: none
+  -ms-flex: none
+  flex: none
+
+.butt-o-3  
+  width: 206px
+  display: inline-flex
+  
+.about-butts
+  margin-bottom: 68px
+  margin-top: 20px
+  .butt-o-3
+    margin-right: 14px
+
+.page
+  padding-top: 44px
+
+.faq-item-w
+  margin-top: 39px
+
+.faq-item
+  border-radius: 8px
+  display: flex  
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 21px
+  background-color: rgb(248, 250, 255)  
+  flex-wrap: wrap
+  background-repeat: no-repeat 
+  background-position: right 23px top 23px
+  background-image: url('../img/plus.svg')
+  &:hover
+    text-decoration: none
+  &.act
+    background-color: unset
+    background-image: url('../img/minus.svg')    
+    background-position: right 23px top 28px
+    .faq-txt-2
+      font-weight: 700
+  .faq-txt-w
+    display: flex
+    -webkit-justify-content: space-between
+    justify-content: space-between    
+    width: 100%
+    cursor: pointer
+    padding: 21px 23px 23px 29px
+.faq-txt-3
+  padding: 0px 23px 0px 29px
+.faq-txt-1
+  color: #232323
+  font-size: 17px
+  font-weight: 400
+
+.faq-txt-2
+  color: #232323
+  font-size: 17px
+  font-weight: 400
+  color: #232323
+  font-size: 17px  
+
+.faq-txt-3
+  margin-bottom: 24px
+  color: rgb(35, 35, 35)
+  font-size: 17px
+  font-weight: 400
+  line-height: 28.9px  
+
+
+
+.news-r-block  
+  border-radius: 8px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  padding: 41px 58px 41px 57px
+  margin-bottom: 34px
+
+.news-r-block-link-w
+  margin-top: 22px
+  .link-arr
+    margin-left: 0
+    font-size: 18px
+    padding-left: 0
+
+.news-r-txt-1
+  color: rgb(35, 35, 35)
+  font-size: 20px
+  font-weight: 700
+  margin-bottom: 15px
+
+.news-r-list
+  
+
+.news-r-li
+  color: rgb(153, 153, 153)
+  font-size: 14px
+  font-weight: 400
+  margin-bottom: 20px
+
+.news-r-date
+  color: rgb(153, 153, 153)
+  font-size: 14px
+  font-weight: 400
+  margin-bottom: 5px
+  display: flex
+
+.news-r-link
+  display: inline-flex
+  margin-top: 10px
+  color: rgb(35, 35, 35)
+  font-size: 14px
+  font-weight: 400
+  margin-bottom: 0px
+  line-height: 1.2
+
+.stat-r-block  
+  border-radius: 8px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  padding: 41px 58px 41px 57px
+  margin-bottom: 34px
+
+
+.stat-r-row
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 25px
+
+.stat-txt-1
+  color: rgb(35, 35, 35)
+  font-size: 17px
+  font-weight: 400
+  width: 70%
+
+.stat-txt-2
+  color: rgb(73, 78, 204)
+  font-size: 17px
+  font-weight: 400
+  width: 30%
+
+.accordion-content
+  display: none
+
+.bot-form-section
+  background-color: #f8faff
+  margin-top: 79px
+.bot-form-w
+
+.bot-form
+  padding-top: 68px
+  padding-bottom: 93px
+  width: 936px
+input[type="text"].bot-form-input
+  width: 302.5px
+  height: 48px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  margin-right: 10px
+  padding-left: 18px
+  padding-right: 10px
+  margin-bottom: 24px
+  &:nth-child(3)
+    margin-right: 0
+
+input[type="text"].bot-form-input-2
+  width: 100%
+  height: 48px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  padding-left: 18px
+  padding-right: 10px
+  margin-bottom: 25px
+
+.bot-form-area
+  padding-left: 18px
+  padding-top: 21px
+  margin-bottom: 37px
+  padding-right: 10px
+  width: 100%
+  height: 183px
+  border: 1px solid #dddddd
+  background-color: #ffffff
+  line-height: 1.4
+  &:focus
+    outline: none 
+
+@media (max-width : 992px)
+  .about-cols
+    display: block
+  .about-col-l
+    width: 100%
+  .about-col-r
+    width: 100%
+    margin-left: 0
+  .bot-form
+    width: 100%
+
+
+@media (max-width : 768px)
+  input[type="text"].bot-form-input
+    width: 100%
+  .bot-form-butt
+    width: 100%
+  .bot-form
+    padding-bottom: 53px
+  .about-butts
+    display: block
+    margin-top: 0
+    .butt-o-3
+      margin-top: 20px
+      width: 100%
+      margin-right: 0
+  .page
+    padding-top: 25px
+@media (max-width : 480px)
+  .faq-txt-2
+    line-height: 1.6
+  .faq-txt-2,
+  .faq-txt-3
+    font-size: 15px
+  .faq-item
+    background-position: right 23px top 26px
+    &.act
+      background-position: right 23px top 31px  
+    .faq-txt-w
+      padding-right: 50px    
+  .news-r-block,
+  .stat-r-block
+    padding: 36px 26px
+  .news-r-txt-1
+    margin-bottom: 30px
+  .stat-r-row
+    &:last-child
+      margin-bottom: 0
+    
+input[type="text"].s-input-name
+  padding: 0 17px
+  width: 275px
+  height: 48px
+  border: 1px solid #dddddd
+  background-color: #ffffff  
+  color: #666666
+  font-size: 17px
+  font-weight: 400
+
+.s-inputs-sels-w
+  display: flex
+  -webkit-justify-content: space-between
+  justify-content: space-between
+  width: 100%
+  div.fancy-select div.trigger
+    width: 275px
+  .butt
+    width: 127px
+    padding-left: 0
+    padding-right: 0
+    min-width: auto
+
+.users-section
+  padding-top: 72px
+  padding-bottom: 113px
+.users-img-w > img
+
+.users-w
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+.users-item
+  display: flex  
+  margin-bottom: 64px
+  width: calc(100% / 3 - 26px)
+.users-img-w
+  margin-right: 25px
+  width: 132px
+  height: 132px
+  border-radius: 8px
+  border: 1px solid rgb(221, 221, 221)
+  display: flex
+  align-items: center
+  justify-content: center
+  -webkit-flex: none
+  -ms-flex: none
+  flex: none
+.users-txts
+  -webkit-flex-grow: 1 
+  flex-grow: 1 
+.users-txt-1
+  color: rgb(35, 35, 35)
+  font-size: 20px
+  font-weight: 700
+  margin-bottom: 10px
+  display: block
+.users-txt-2
+  color: rgb(153, 153, 153)
+  font-size: 17px
+  font-weight: 400
+  margin-bottom: 10px
+
+.users-txt-3
+  color: rgb(35, 35, 35)
+  font-size: 17px
+  font-weight: 400
+  margin-bottom: 10px
+
+.users-link
+  color: rgb(73, 78, 204)
+  font-size: 17px
+  font-weight: 400
+  display: flex
+
+.users-pagin-w
+  margin-top: 20px
+
+@media (max-width : 1299px)
+  input[type="text"].s-input-name,
+  .s-inputs-sels-w div.fancy-select div.trigger
+    width: 251px
+    
+@media (max-width : 1199px)
+  input[type="text"].s-input-name,
+  .s-inputs-sels-w div.fancy-select div.trigger
+    width: 201px
+  .users-item
+    width: calc(50% - 20px)
+
+@media (max-width : 992px)
+  .s-inputs-sels-w
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    .butt
+      width: 100%
+  input[type="text"].s-input-name,
+  .s-inputs-sels-w div.fancy-select
+    width: calc(50% - 10px)
+    margin-bottom: 20px
+    div.trigger    
+      width: 100%
+
+@media (max-width : 768px)  
+  .users-item
+    width: 100%
+    margin-bottom: 25px
+  .users-section
+    padding-bottom: 73px
+    padding-top: 22px
+@media (max-width : 570px)
+  input[type="text"].s-input-name,
+  .s-inputs-sels-w div.fancy-select
+    width: 100%
+  .users-txt-1,
+  .users-txt-3
+    line-height: 1.3
+@media (max-width : 360px)  
+  .users-link
+    font-size: 14px
+
+.person-geo
+  img
+    margin-right: 8px
+
+.person-phone
+  img
+    margin-right: 7px    
+    margin-right: 7px    
+
+.person-section
+  background-color: rgb(248, 250, 255)
+  padding-top: 31px
+  padding-bottom: 47px  
+  margin-top: 16px
+
+.person-w
+  display: flex
+
+.person-l
+  width: 132px
+  margin-right: 48px
+  flex: none
+.person-img-w
+  width: 132px
+  height: 132px
+  border-radius: 8px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-bottom: 12px
+
+.person-socials-w
+  display: flex
+  align-items: center
+  -webkit-justify-content: space-around
+  justify-content: space-around
+
+.person-social
+  display: flex
+  align-items: center  
+
+.person-r
+  -webkit-flex-grow: 1
+  flex-grow: 1
+  padding-top: 5px
+.person-r-1
+  display: flex  
+  margin-bottom: 0px
+  h1
+    margin-bottom: 0px
+    margin-right: 11px  
+  
+
+
+.person-repres  
+  color: rgb(35, 35, 35)
+  font-size: 17px
+  font-weight: 400
+  margin-right: 14px
+  display: flex
+  align-items: center
+  justify-content: flex-start
+
+.person-repres-link
+  font-size: 17px
+  font-weight: 400
+  color: rgb(73, 78, 204)
+  margin-left: 3px
+
+.person-geo
+  display: flex
+  align-items: center
+  justify-content: flex-start
+
+.person-geo-txt
+  color: #232323
+  font-size: 17px
+  font-weight: 400
+
+.person-phones  
+  margin-bottom: 31px
+  margin-top: 16px
+
+.person-phone
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  margin-bottom: 17px
+  a
+    color: rgb(73, 78, 204)
+    font-size: 17px
+    font-weight: 400
+    display: flex
+
+.person-desc
+  color: rgb(35, 35, 35)
+  font-size: 17px
+  font-weight: 400
+  line-height: 1.6 
+  margin-bottom: 20px
+
+.person-dates
+  display: flex
+  align-items: center
+  justify-content: flex-start
+
+.person-date
+  color: rgb(153, 153, 153)
+  font-size: 14px
+  font-weight: 400
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  margin-right: 16px
+
+.person-date-txt
+  color: rgb(153, 153, 153)
+  font-size: 14px
+  font-weight: 400
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  margin-left: 5px    
+
+.person-cols
+  display: flex
+  -webkit-justify-content: space-between
+  justify-content: space-between
+  padding-bottom: 90px
+  margin-top: 60px
+.person-col-l
+  -webkit-flex-grow: 1
+  flex-grow: 1
+  margin-right: 75px
+.person-col-r
+  -webkit-flex: none
+  -ms-flex: none
+  flex: none
+  width: 294px
+  .butt, input[type="submit"].butt
+    min-width: 129px 
+
+.chron-items
+  display: flex
+  flex-direction: column  
+  margin-top: 0px
+.chron-item
+  border-bottom: 1px solid rgb(221, 221, 221)
+  padding-bottom: 25px  
+  padding-top: 19px
+  &:last-child
+    border-bottom: none
+
+.chron-date
+  color: rgb(153, 153, 153)
+  font-size: 17px
+  font-weight: 400
+  margin-bottom: 10px
+
+.chron-txt-1
+  color: rgb(35, 35, 35)
+  font-size: 17px
+  font-weight: 400
+  margin-bottom: 7px
+  line-height: 1.4
+.chron-art
+  display: flex
+  align-items: center
+  justify-content: flex-start
+
+.chron-art-txt
+  color: rgb(102, 102, 102)
+  font-size: 17px
+  font-weight: 400
+  margin-left: 8px
+
+.user-search-form-w  
+  border-radius: 8px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  padding: 29px 21px 34px 29px
+
+.user-search-tit
+  color: rgb(35, 35, 35)
+  font-size: 20px
+  font-weight: 700
+  margin-bottom: 19px
+
+.user-search-form
+  div.fancy-select div.trigger
+    width: 100%
+    margin-bottom: 14px
+input[type="text"].user-search-input
+  width: 100%
+  height: 48px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  margin-bottom: 14px
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  padding-left: 15px
+  padding-right: 15px
+
+@media (max-width : 992px)
+  .person-r-1
+    display: block
+    h1
+      margin-bottom: 15px
+  .person-repres
+    margin-bottom: 10px
+@media (max-width : 768px)    
+  .person-date
+    margin-top: 15px
+  .person-dates
+    display: block
+@media (max-width : 640px)
+  .person-cols
+    display: block
+  .person-col-l,
+  .person-col-r
+    width: 100%
+    margin-left: 0
+  .person-col-r
+    margin-top: 40px
+  .person-cols
+    padding-bottom: 65px
+
+@media (max-width : 570px)
+  .person-w
+    display: block
+  .person-l            
+    margin-bottom: 30px
+  .person-cols
+    margin-top: 20px
+  .person-repres
+    display: block
+    line-height: 1.4
+  .person-section
+    margin-top: 0
+@media (max-width : 480px)
+  .person-l
+    margin-left: auto
+    margin-right: auto
+  
+.develop-conts
+  margin-top: 10px
+  margin-bottom: 0
+.develop-r-bank
+  padding-top: 5px
+  h1
+    font-size: 38px
+    margin-bottom: 14px
+.form-cols
+  display: flex  
+  justify-content: space-between
+.form-col-l  
+  flex-grow: 1
+.form-col-r  
+  flex: none
+  width: 294px
+
+.w100
+  width: 100%
+
+.add-review-label.w100
+  width: 100%
+
+.add-review-block
+  padding-bottom: 100px
+  margin-top: 34px
+.add-review-form
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin-top: 41px  
+.add-review-label
+  display: block
+  width: 462px
+  margin-bottom: 33px
+  margin-right: 0px
+  width: calc(50% - 8px)
+  &:last-child
+    margin-bottom: 0
+  div.fancy-select div.trigger
+    width: 100%
+.add-review-label-txt
+  color: rgb(35, 35, 35)
+  font-size: 16px
+  font-weight: 400
+  display: flex
+  -webkit-align-items: center
+  align-items: center
+  width: 100%
+  margin-bottom: 10px
+  line-height: 1.4  
+  span
+    color: #e9726b
+  img
+    margin-right: 9px
+
+
+input[type="text"].add-review-input
+  width: 100%
+  height: 48px
+  border-radius: 2px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  padding-left: 15px
+  padding-right: 15px
+  color: rgb(102, 102, 102)
+  font-size: 16px
+  font-weight: 400
+
+.add-review-span
+  color: #999999
+  font-size: 16px
+  font-weight: 400
+  display: block
+  margin-top: 10px
+  line-height: 1.4
+.add-review-link
+  color: rgb(73, 78, 204)
+  font-size: 17px
+  font-weight: 400
+  display: block
+  margin-top: 10px
+  line-height: 1.4
+
+.add-review-textarea
+  color: rgb(102, 102, 102)
+  font-size: 16px
+  font-weight: 400
+  height: 221px
+  border-radius: 2px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  width: 100%
+  padding: 23px 18px
+  margin-top: 10px  
+
+.add-review-bot
+  margin-top: 33px
+  width: 100%
+.stars
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  img    
+    margin-left: 3px
+    cursor: pointer
+
+.add-review-bot-label  
+  color: #232323
+  font-size: 17px
+  font-weight: 400  
+  .stars
+    width: 50%
+.add-review-bot-row
+  display: flex
+  width: 50%
+  min-width: 363px
+  -webkit-justify-content: space-between
+  justify-content: space-between
+  margin-bottom: 17px
+
+.add-review-bot-rows
+  margin-top: 22px
+
+.confirm-label
+  display: flex  
+  align-items: center  
+  color: #232323
+  font-size: 17px
+  font-weight: 400    
+  div    
+    display: flex
+    line-height: 1.4
+    a
+      display: inline-block
+      margin-left: 7px
+    &:before
+      margin-right: 10px
+      content: ""   
+      display: block
+      flex: none
+      width: 18px
+      height: 18px
+      border-radius: 2px
+      border: 1px solid #dddddd
+      background-color: #ffffff
+  input[type="checkbox"]
+    display: none
+    &:checked
+      + div    
+        &:before          
+          border: 1px solid #494ecc
+          background-color: #494ecc
+
+.add-review-buutt-group
+  margin-top: 46px
+  .butt, input[type="submit"].butt
+    padding-left: 39px
+    padding-right: 39px
+    margin-top: 29px    
+    min-width: none
+    max-width: none 
+
+.add-review-label_link
+  margin-bottom: -1px
+
+@media (max-width : 992px)
+  .add-review-label
+    width: 100%
+  .add-review-label_link
+    margin-bottom: 40px
+@media (max-width : 768px)
+  .form-cols
+    display: block
+  .form-col-l
+    width: 100%
+
+@media (max-width : 570px)
+  .add-review-bot-row
+    display: block
+    margin-right: 0
+    width: 100%
+    margin-bottom: 27px
+    &:last-child
+      margin-bottom: 0
+    .stars
+      -webkit-justify-content: flex-start
+      justify-content: flex-start
+      margin-top: 10px
+
+.r-mnu-block
+  width: 100%
+  border-radius: 8px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  padding: 40px 31px 7px
+
+.r-mnu-tit
+  color: rgb(35, 35, 35)
+  font-size: 20px
+  font-weight: 700
+  margin-bottom: 17px
+
+.r-mnu-ul
+  margin-bottom: 37px
+
+.r-mnu-li
+  &:first-child
+    .r-mnu-a
+      border-top: 1px solid rgb(221, 221, 221)
+.r-mnu-a
+  color: rgb(102, 102, 102)
+  font-size: 17px
+  font-weight: 400
+  display: block
+  align-items: center
+  justify-content: flex-start
+  width: 100%
+  border-bottom: 1px solid rgb(221, 221, 221)
+  padding-bottom: 17px
+  padding-top: 17px
+
+.r-mnu-block
+  margin-top: 13px
+.r-mnu-tit
+  margin-bottom: 26px
+.r-mnu-a
+  padding-top: 18px
+  padding-bottom: 19px
+  
+.infocentr-cols
+  display: flex
+  -webkit-justify-content: space-between
+  justify-content: space-between
+.infocentr-col-l
+  -webkit-flex-grow: 1
+  flex-grow: 1
+  margin-right: 29px
+.infocentr-col-r
+  width: 292px
+  -webkit-flex: none
+  -ms-flex: none
+  flex: none
+
+.infocentr-blue-r  
+  border-radius: 8px
+  background-color: #f8faff
+  padding: 35px 28px 28px 28px
+  color: #232323
+  font-size: 17px
+  font-weight: 400
+  line-height: 1.75
+  
+.infocentr-section
+  padding-top: 52px
+  padding-bottom: 103px
+.ifocentr-dates
+  margin-top: 41px
+  margin-bottom: 72px
+  span
+    display: inline-block
+    margin-right: 39px    
+    color: #999999
+    font-size: 17px
+    font-weight: 400
+
+.bottom-links
+  margin-top: 28px
+  a
+    display: block    
+    color: #494ecc
+    font-size: 17px
+    font-weight: 400
+    margin-bottom: 19px
+
+@media (max-width : 1199px)
+  .ifocentr-dates
+    margin-bottom: 40px
+    span
+      display: block
+      margin-top: 20px
+
+@media (max-width : 768px)
+  .infocentr-cols
+    display: block
+  .infocentr-col-l,
+  .infocentr-col-r
+    width: 100%
+  .infocentr-col-r
+    margin-top: 40px
+  .r-mnu-block
+    padding-top: 30px
+  .infocentr-section  
+    padding-bottom: 63px
+    padding-top: 38px
+  .map-form
+    width: 100%
+
+/********************************15-1***********************************/
+
+span.tool-iiner
+  border-radius: 8px
+  background-color: #f8faff
+  padding: 15px
+  color: #232323
+  font-size: 17px
+  font-weight: 400
+  line-height: 1.7
+  left: 20px
+  top: 0
+  position: absolute
+  display: none
+  border: 1px solid #ccc
+  z-index: 2 
+.add-review-label-txt
+.tooltip
+  display: inline-block           
+  margin-right: 10px    
+  margin-left: 5px
+  position: relative
+  &:hover
+    cursor: pointer      
+    span.tool-iiner
+      display: block
+
+
+.personal-settings-form
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap  
+  
+
+
+.personal-settings-section
+  padding-top: 44px
+  padding-bottom: 123px
+  .infocentr-cols
+    margin-top: 34px
+
+.add-review-label-txt
+  margin-bottom: 3px
+.add-review-label
+  margin-bottom: 26px
+
+.add-review-label_link
+  margin-bottom: -1px
+
+@media (max-width : 992px)
+  .add-review-label
+    width: 100%
+  .add-review-label_link
+    margin-bottom: 40px
+  .add-review-label.mt40
+    margin-top: 0px
+    
+.add-photo-w
+  width: 100%
+  margin-bottom: 46px
+
+.add-photo
+
+.add-photo-link
+  display: block
+  margin-bottom: 27px
+  width: 100%
+  overflow: hidden
+
+.add-photo-txt-1
+  color: rgb(35, 35, 35)
+  font-size: 17px
+  font-weight: 400
+  display: block
+  margin-bottom: 27px
+  width: 100%
+
+.add-photo-img-w
+  width: 132px
+  height: 132px
+  border-radius: 8px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-bottom: 0px
+
+.add-photo-txt-2
+  color: rgb(153, 153, 153)
+  font-size: 17px
+  font-weight: 400
+
+.add-review-label-txt .add-review-span
+  color: #232323
+  margin-top: 0
+
+.confirm-butt-group
+  margin-top: 40px
+  display: flex
+  .butt
+    margin-right: 11px
+    margin-top: 0
+
+@media (max-width : 768px)
+  .personal-settings-section
+    padding-bottom: 63px
+    padding-top: 38px
+@media (max-width : 480px)
+  .confirm-butt-group
+    display: block
+    *
+      width: 100%
+    .butt-r
+      margin-top: 20px
+
+.confirm-radio-labels
+  margin-top: 22px
+
+.confirm-label-radio
+  margin-bottom: 14px  
+  div
+    display: flex
+    -webkit-align-items: center
+    align-items: center
+    position: relative
+    padding-left: 24px
+    &:before
+      position: absolute
+      left: 0
+      top: 4px
+      content: ""   
+      display: block
+      flex: none
+      width: 16px
+      height: 16px
+      border-radius: 50%
+      border: 1px solid #dddddd
+      background-color: #ffffff
+    &:after
+      content: "" 
+      display: block
+      background-color: #494ecc
+      border-radius: 50%
+      width: 10px
+      height: 10px
+      display: none
+      position: absolute
+      left: 3px
+      top: 7px
+  input[type="radio"]
+    display: none
+    &:checked
+      + div    
+        &:before          
+          border: 1px solid #494ecc
+        &:after
+          display: block
+
+.about-rates
+  display: flex
+  margin-top: 38px
+  margin-bottom: 10px
+.about-rate
+  width: 135px  
+  margin-right: 39px
+  &:last-child
+    margin-right: 0
+.about-rating
+  height: 66px
+  border-radius: 8px
+  background-color: #f8faff  
+  color: #232323
+  font-size: 26px
+  font-weight: 400
+  display: flex  
+  align-items: center  
+  justify-content: center
+
+.about-rate-txt
+  color: #232323
+  font-size: 14px
+  font-weight: 400
+  text-align: center
+  line-height: 1.3
+  margin-top: 8px
+
+.col-940
+  width: 940px
+  flex: none
+
+.col-992
+  width: 992px
+     
+
+.col-grow
+  -webkit-flex-grow: 1
+  flex-grow: 1
+
+.color-999
+  color: #999
+
+.about-tbl-w
+  margin-top: 47px
+  table    
+    width: 100%
+    td
+      padding: 20px 0
+      line-height: 2.1
+      border-bottom: 1px solid #dddddd
+      vertical-align: top
+      &:first-child
+        padding-right: 102px        
+    tr
+      &:last-child
+        td
+          border-bottom: none
+
+@media (min-width : 1199px)
+  .about-tbl-w    
+    table          
+      td        
+        &:first-child
+          padding-right: 42px        
+          width: 325px
+  .wrapper-10-1,
+  .wrapper-10-2
+    .about-tbl-w
+      margin-top: -8px
+
+@media (max-width : 992px)
+  .col-940
+    width: 750px
+
+@media (max-width : 768px)
+  .col-940
+    width: 100%
+  .about-rates    
+    flex-wrap: wrap
+    -webkit-justify-content: space-between
+    justify-content: space-between
+    
+  .about-rate
+    width: calc(50% - 80px)
+    margin-bottom: 30px
+    margin-right: 0
+  .about-tbl-w
+    table
+      display: block
+      tbody
+        display: block
+        width: 100%      
+      tr
+        display: block
+        width: 100%        
+        &:last-child
+          td
+            border-bottom: 1px solid #ddd
+            &:last-child
+              border-bottom: none
+      td
+        display: block
+        width: 100%
+        padding: 10px 0
+@media (max-width : 570px)
+  .about-rate
+    width: calc(50% - 10px)
+   
+.for-developers-desc
+  text-align: center
+  margin-bottom: 27px
+  margin-top: -13px
+.for-developers-map
+  width: 100%
+  height: 412px
+
+.opport-w
+  display: flex
+  justify-content: space-between
+  margin-top: 72px
+  margin-bottom: 65px
+  li
+    margin-bottom: 41px
+    padding-left: 40px
+    background-repeat: no-repeat 
+    background-position: top 4px left
+    letter-spacing: 0.2px  
+
+.opport-col-l,
+.opport-col-r
+  width: calc(50% - 29.5px)
+  ul
+    margin-top: 30px
+
+
+.opport-col-l  
+  li
+    background-image: url('../img/arr-green.svg') 
+.opport-col-r
+  li
+    background-image: url('../img/arr-orange.svg') 
+
+.opport-txt-1
+  color: rgb(35, 35, 35)
+  font-size: 20px
+  font-weight: 700
+  margin-bottom: 9px
+  line-height: 1.2
+  display: block
+
+.opport-txt-2
+  color: rgb(35, 35, 35)
+  font-size: 17px
+  font-weight: 400
+  line-height: 28.9px
+  display: block
+
+.opport-txt-3
+  color: rgb(35, 35, 35)
+  font-size: 17px
+  font-weight: 400
+  line-height: 28.9px
+  padding-left: 34px
+  display: block
+
+.opport-link
+  color: #494ecc
+  font-size: 20px
+  font-weight: 700
+
+.for-developers-butts
+  display: flex
+  -webkit-justify-content: center
+  justify-content: center
+  margin-bottom: 94px
+  .butt
+    margin-right: 13px
+    min-width: auto
+    padding: 0 41px
+  .butt-o
+    padding: 0 39px
+    min-width: auto
+  
+@media (max-width : 570px)
+  .for-developers-butts  
+    display: block
+    margin-bottom: 60px
+    .butt,
+    .butt-o
+      width: 100%
+      margin-bottom: 20px
+    
+@media (max-width : 768px)
+  .opport-w
+    display: block
+  .opport-col-l,
+  .opport-col-r
+    width: 100%
+    margin-bottom: 20px
+
+.cols
+  display: flex  
+  justify-content: space-between
+@media (min-width : 1199px)
+  .wrapper-6-5
+    .cols
+      margin-top: 20px
+
+.col-294
+  width: 294px  
+  flex: none
+  margin-left: 30px
+
+.single-content  
+  padding-bottom: 68px
+  margin-top: 5px
+  table
+    width: 100%  
+    border-collapse: collapse  
+    tr
+
+    td
+      border: 1px solid #dddddd
+      line-height: 1.2
+      &:nth-child(1)
+        white-space: nowrap
+    thead
+      tr
+      td
+        padding: 11px 14px 13px 14px
+        background-color: #f8faff
+        font-weight: 700         
+    tbody
+      tr
+      td
+        padding: 14px
+  blockquote    
+    color: #232323
+    font-size: 18px
+    font-style: italic
+    line-height: 1.5                
+    padding-top: 38px
+    margin: 31px 45px 34px 38px
+    background: url("../img/quotes.svg") $nr top left
+  ul
+    margin-bottom: 20px
+    padding-left: 29px
+  li    
+    color: #232323
+    font-size: 17px
+    font-weight: 400
+    line-height: 1.7
+    margin-bottom: 11px    
+    position: relative
+    padding-left: 25px
+    &:before
+      position: absolute
+      top: 13px
+      left: 0
+      content: "" 
+      display: block
+      width: 6px
+      height: 6px
+      background-color: #232323
+      -webkit-border-radius: 50% 
+      border-radius: 50% 
+img.content-img
+  max-width: 100% 
+  height: auto
+
+.single-info
+  margin-bottom: 20px
+  display: flex
+  -webkit-align-items: center
+  align-items: center
+  margin-top: 37px
+.single-info-item
+  display: flex
+  -webkit-align-items: center
+  align-items: center
+  margin-right: 32px
+  a
+    color: #999999
+  img
+    margin-right: 5px
+  span
+    color: #999999
+
+.r-bann-w
+  margin-top: 38px
+  img
+    max-width: 100% 
+
+@media (max-width : 992px)
+  .cols
+    display: block
+  .col-grow,
+  .col-294
+    width: 100%
+    margin-left: 0
+  .col-294
+    margin-bottom: 40px
+  .single-content
+  .single-table-pda-scroll            
+    overflow-y: scroll
+    table
+      width: 938px
+  .r-bann-w
+    display: none
+
+@media (max-width : 570px)
+  .single-info
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap    
+    -webkit-justify-content: space-between
+    justify-content: space-between
+    margin-top: 40px
+    > div
+      width: auto
+      margin-top: 20px
+      margin-right: 0
+
+.pop-close
+  position: absolute
+  right: 26px
+  top: 26px  
+  color: #000
+  font-size: 15px
+  background: url("../img/pop-close.svg")
+  display: block
+  z-index: 2
+  width: 16px
+  height: 16px
+.overlay    
+  position: absolute
+  display: none
+  height: 100%
+  width: 100%
+  top: 0
+  left: 0
+  z-index: 6
+  position: fixed
+  background-color: rgba(248, 250, 255, 0.85)
+
+.ohi
+  overflow: hidden  
+
+.pop-form-w-1  
+.pop-form-w-2
+  
+.pop-form-w
+  top: 50px  
+  display: none
+  width: 480px
+  padding: 46px 46px 62px 46px
+  box-shadow: 0 20px 40px rgba(10, 33, 65, 0.05)
+  border-radius: 8px
+  border: 1px solid #dddddd
+  background-color: #ffffff
+  position: fixed
+  left: 50%  
+  transform: translate(-50%, 0)
+  z-index: 8
+  img
+    max-width: 100% 
+  .like-h2
+    text-align: center
+  input[type="text"]
+    width: 100%
+    height: 48px
+    border-radius: 2px
+    border: 1px solid #dddddd
+    background-color: #ffffff
+    color: #666666
+    font-size: 17px
+    font-weight: 400
+    padding: 0 18px
+    margin-bottom: 20px
+
+.form-link
+  display: block  
+  
+.pop-butts  
+  margin-top: 20px
+  display: flex
+  -webkit-justify-content: space-between
+  justify-content: space-between
+  -webkit-flex-wrap: wrap
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  .butt, .butt-o
+    width: calc(50% - 4.5px)
+
+.pop-butts-2
+  margin-top: 24px
+  .butt
+    width: 100%
+
+.contain-pop
+  padding: 80px 0
+  a
+    display: block
+    margin-bottom: 20px
+
+@media (max-width : 570px)
+  .contain-pop
+    padding-left: 15px
+    padding-right: 15px
+  .pop-form-w
+    width: calc(100% - 20px)
+    padding: 30px
+  .pop-butts
+    .butt, .butt-o
+      width: 100%
+      margin-top: 10px
+
+
+
+.revs-stars img  
+  margin-left: 5px
+
+.revs-mark-1,
+.revs-mark-2
+  &:hover
+    text-decoration: none
+
+
+.revs-form-row-1 img
+  margin-right: 5px
+
+.revs-block
+  padding-bottom: 65px
+  margin-top: -30px
+  .dev-link-w
+    margin-top: 40px
+
+
+
+.revs-w
+
+.revs-item-row-1
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 17px
+
+.revs-ava
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-right: 11px
+
+.revs-name-date,
+.revs-ava-nd
+  display: flex
+  -webkit-align-items: center
+  align-items: center
+
+.revs-name
+  color: rgb(35, 35, 35)
+  font-size: 17px
+  font-weight: 700
+  margin-right: 5px
+  display: flex
+  align-items: center
+  justify-content: flex-start
+
+.revs-date
+  color: rgb(153, 153, 153)
+  font-size: 17px
+  font-weight: 400
+  display: flex
+  align-items: center
+
+.revs-stars
+  display: flex
+  -webkit-justify-content: flex-end
+  justify-content: flex-end
+  img
+    margin-left: 4px
+.revs-item-row-2
+  color: rgb(35, 35, 35)
+  font-size: 17px
+  font-weight: 400
+  line-height: 28.9px
+  margin-bottom: 22px
+
+.revs-item-row-3
+  display: flex
+  align-items: center
+  justify-content: space-between  
+
+.revs-actions
+  display: flex
+  align-items: center
+
+.revs-comments-reply
+
+.revs-comments-count
+  display: flex
+  margin-right: 0px
+  margin-left: 26px
+  &:hover
+    text-decoration: none
+.revs-comments-span
+  color: rgb(153, 153, 153)
+  font-size: 17px
+  font-weight: 400
+  margin-right: 6px
+
+.revs-comments-link
+  color: rgb(73, 78, 204)
+  font-size: 17px
+  font-weight: 400
+  display: flex
+
+.revs-marks
+  display: flex
+  align-items: center
+
+.revs-mark
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  margin-top: 0px
+  margin-right: 12px
+  &:hover
+    text-decoration: none
+ 
+
+.revs-mark-count  
+  font-size: 17px
+  font-weight: 400
+  margin-left: 3px
+  margin-right: 3px
+
+.revs-mark-count-1
+  color: #000000  
+
+.revs-mark-count-2
+  color: #999999
+  
+
+.revs-form-w
+  background-color: rgb(248, 250, 255)
+  padding: 25px 35px 21px 42px
+  margin-top: -30px
+.revs-form-row-1
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  margin-bottom: 14px
+
+.revs-form-replay-label
+  color: rgb(35, 35, 35)
+  font-size: 17px
+  font-weight: 400
+  margin-right: 4px
+
+.revs-form-replay-name
+  color: #494ecc
+  font-size: 17px
+  font-weight: 400
+
+.revs-form
+
+.revs-area
+  width: 100%
+  height: 183px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  color: rgb(102, 102, 102)
+  font-size: 18px
+  font-weight: 400
+  padding-left: 28px
+  padding-top: 21px
+  margin-bottom: 13px
+
+.revs-form-row-2
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.revs-butt-1
+  color: rgb(153, 153, 153)
+  font-size: 17px
+  font-weight: 400
+  margin-right: 15px
+
+.revs-butt-2
+  color: #494ecc
+  font-size: 17px
+  font-weight: 400
+
+.my-pubs
+  margin-top: 40px
+  padding-bottom: 116px
+.revs-pubs-block
+
+.revs-comp
+  display: inline-block
+  margin-right: 20px
+
+.revs-item
+  border-bottom: 1px solid #ddd
+  padding-top: 35px
+  padding-bottom: 39px
+  &:nth-child(1)
+    padding-top: 44px
+  &_parent
+    .revs-item
+      padding-left: 75px
+      padding-bottom: 0
+      padding-top: 35px
+      .revs-item-row-1
+        margin-bottom: 12px
+  &:last-child
+    
+.btn-o    
+  display: inline-flex  
+  justify-content: center
+  align-items: center
+  padding: 0 40px
+  color: #494ECC 
+  background: #FFFFFF
+  border: 1px solid #494ECC  
+  border-radius: 2px
+  height: 48px
+
+.dev-link-btn
+  margin-right: 25px
+
+.revs-item.revs-item_after-form
+  border-bottom: 1px solid #ccc
+  border-top: 1px solid #ccc
+  padding-top: 29px
+  padding-bottom: 32px
+  margin-top: 42px
+  
+.revs-item-col-l,
+.revs-item-col-r
+  display: flex
+  -webkit-align-items: center
+  align-items: center
+
+.revs-mark-bord
+  border: 1px solid #DDDDDD  
+  border-radius: 4px
+  height: 27px
+  padding: 0 6px
+  display: flex  
+  align-items: center  
+  justify-content: center
+  margin-right: 0
+  margin-left: 5px
+.revs-parent
+  display: flex
+  margin-left: 21px
+  &:hover
+    text-decoration: none
+  img
+    margin-right: 6px
+
+.revs-block_4
+  padding-right: 0
+  .revs-item
+    &:nth-child(1)
+  .revs-w
+    margin-top: 39px
+
+  
+.revs-pub-butts
+  display: flex
+  -webkit-align-items: center
+  align-items: center
+  margin-top: 17px
+  > a
+    padding-left: 35px
+    padding-right: 35px
+    width: auto
+    min-width: auto
+    margin-right: 9px
+
+.pub-it-hor 
+  display: flex
+  margin-bottom: 27px
+  .pub-it-img-w 
+    width: 294px    
+    flex: none
+.pub-it-r    
+  flex-grow: 1
+  margin-left: 27px
+  p
+    margin-bottom: 16px
+    margin-top: 6px
+    line-height: 1    
+    span
+      color: #999 
+.pub-it-r-butts
+  display: flex
+  align-items: center
+  margin-top: 23px
+  
+  > a
+    max-width: calc(100% / 3 - 10px)
+    min-width: auto 
+    padding-left: 40px
+    padding-right: 40px
+    margin-right: 9px
+    &:last-child
+      margin-right: 0
+.news-it-title 
+.news-author 
+
+.pub-it-img-w-2
+  height: 242px
+
+@media (max-width : 1199px)
+  .pub-it-r-butts
+    flex-wrap: wrap
+  .pub-it-r-butts > a
+    max-width: none
+    width: 100%
+    margin-bottom: 10px
+    margin-right: 0  
+
+@media (max-width : 992px)
+  .pub-it-hor
+    display: block
+  .pub-it-r
+    width: 100%
+    display: block
+    margin-left: 0
+@media (max-width : 768px)
+  .pub-it-r-butts    
+    display: flex
+    > a
+      max-width: calc(100% / 3 - 10px)
+      margin-right: 8px
+  .my-pubs
+    padding-bottom: 60px
+@media (max-width : 570px)
+  .pub-it-hor
+    .pub-it-img-w
+      width: 100%
+
+@media (max-width : 480px)
+  .pub-it-r-butts    
+    display: block
+    > a
+      width: 100%
+      margin-right: 0
+      max-width: none   
+  .revs-item-row-1
+    display: block
+    .revs-item-col-l
+      margin-bottom: 20px
+  .revs-pub-butts
+    display: block
+    width: 100%
+    > a
+      width: 100%
+      margin-right: 0
+      max-width: none
+      margin-bottom: 20px
+  .revs-item-row-3    
+    .revs-item-col-l
+      width: 100%      
+
+.all-link1
+  font-weight: bold
+  display: inline-flex  
+  align-items: center
+  &:after 
+    content: "" 
+    display: inline-block
+    background: url("../img/arr-r-link-2.svg") $nr 0 0
+    width: 9px
+    height: 12px
+    margin-left: 3px
+   
+
+.add-review-blue-block
+  background: #f8faff
+  padding: 63px 0 50px 0
+  margin-bottom: 70px
+  .like-h2
+    margin-bottom: 20px
+  .add-review-bot-row
+    margin-bottom: 23px
+  .add-review-bot
+    margin-top: 15px
+.bot-form-w-2
+.bot-form-2
+  padding-top: 0
+  padding-bottom: 0
+  margin-top: 28px
+  .bot-form-area
+    margin-bottom: 0
+
+.add-review-buutt-group-2
+  margin-top: 40px
+	
+@media (max-width : 768px)
+  .revs-form-row-2
+    display: block
+    .revs-item-col-l
+      margin-bottom: 15px
+
+@media (max-width : 640px)
+  .confirm-label div
+    display: block
+    &:before
+      float: left
+    a
+      display: inline
+      margin-left: 0
+  .revs-form-w
+    padding-left: 30px
+    padding-right: 30px
+  .revs-item_parent .revs-item
+    padding-left: 15px
+  .revs-name-date
+    flex-direction: column    
+    align-items: flex-start    
+    justify-content: flex-end
+  .revs-date
+    margin-top: 7px
+    font-size: 14px  
+  .revs-comments-span
+    font-size: 0
+    background: url("../img/comment.svg") $nr 0 0
+    width: 18px
+    height: 18px    
+  .revs-parent
+    order: -1
+    margin-left: 0
+    margin-bottom: 15px
+    img      
+      flex: none
+      width: 17px      
+      height: 14px
+    .revs-date
+      -webkit-flex-grow: 1
+      flex-grow: 1
+      margin-top: 0
+  .revs-item-row-1
+    .revs-item-col-l
+      -webkit-flex-direction: column
+      -ms-flex-direction: column
+      flex-direction: column    
+      align-items: flex-start
+  .revs-item
+    padding-top: 38px
+    padding-bottom: 30px
+@media (max-width : 570px)
+  .revs-form-w
+    margin-top: 0
+    width: calc(100% + 30px)
+    margin-left: -15px
+    padding-left: 15px
+    padding-right: 15px
+    padding-bottom: 24px
+  .revs-form-row-2
+    .revs-item-col-r
+      -webkit-justify-content: flex-end
+      justify-content: flex-end
+  .confirm-label div:before
+    margin-bottom: 23px
+
+.dis-advantage
+  margin-bottom: 27px
+  padding-left: 0px
+  margin-top: -9px
+.dis-advantage-item 
+    margin-bottom: 10px
+    display: flex        
+.dis-advantage-label   
+  background-position: left center 
+  background-repeat: no-repeat   
+  width: 17px
+  height: 17px
+  flex: none 
+  margin-top: 6px
+  &.plus
+    background-image: url('../img/plus-1.svg') 
+  &.minus
+    color: #F3A4A4
+    background-image: url('../img/minus-1.svg') 
+.dis-advantage-txt 
+  font-size: 17px
+  line-height: 170%
+  color: #232323
+  padding-left: 10px
+
+.rate-it-2
+  p
+    margin-top: -12px
+    font-size: 17px
+.rating-block-img-w
+  display: block
+  margin-bottom: 16px
+  max-width: 360px
+  height: 241px
+  overflow: hidden
+  margin-top: 65px
+  img
+    object-fit: cover
+    width: 100%
+    height: 100%
+
+.rating-block-r
+  .add-review-bot-row
+    display: block
+    margin-bottom: 25px
+  .add-review-bot-label
+    width: 100%
+  .stars
+    -webkit-justify-content: flex-start
+    justify-content: flex-start
+    margin-top: 9px  
+  .rate-it-2
+    margin-top: -30px
+    padding-left: 0    
+    text-align: left
+    display: block
+    margin-left: 0
+  .rate-it-2-img-w
+    margin-bottom: 28px
+
+.rating-block-title
+  margin-bottom: 53px  
+  color: #232323
+  font-size: 20px
+  font-weight: 700
+
+.bot-form-area_2
+  height: 129px
+  margin-top: 21px
+
+.bank-conditions-block
+  padding-top: 54px
+  margin-bottom: 56px
+  
+
+
+.bank-conditions-w
+  display: flex
+
+.bank-conditions-l
+  width: 294px
+  margin-right: 35px
+
+.bank-conditions-img-w
+  width: 294px
+  height: 160px
+  background: rgb(255, 255, 255)
+  border: 1px solid rgb(221, 221, 221)
+  border-radius: 8px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-bottom: 19px
+
+.bank-conditions-l-row
+  font-size: 17px
+  font-weight: 400
+  color: rgb(73, 78, 204)
+  margin-bottom: 13px
+
+.bank-conditions-txt-1
+  font-size: 17px
+  font-weight: 400
+  color: #232323
+
+.bank-conditions-r
+  padding-top: 15px
+.bank-conditions-r-row
+  display: flex
+
+.bank-conditions-col
+  margin-right: 41px
+  &:nth-child(2)
+    margin-right: 0
+  
+.bank-conditions-row-2
+  margin-bottom: 17px
+
+.bank-conditions-txt-2
+  font-size: 17px
+  font-weight: 400
+  color: rgb(153, 153, 153)
+  margin-right: 5px
+
+.develop-tabs_2
+  margin-bottom: 24px
+  li
+    a
+      display: inline-block
+      padding-bottom: 8px    
+      color: #999999
+      font-size: 20px
+      font-weight: 700
+      &:hover
+        color: #232323
+        border-bottom: 2px solid #232323
+      &.active
+        color: #232323
+        border-bottom: 2px solid #232323
+
+.about-tbl-w_2
+  margin-bottom: 70px
+
+@media (min-width : 1299px)
+  .wrapper-10
+    .about-tbl-w_2
+      margin-top: -29px
+      margin-bottom: 83px
+.bank-conditions-butt-w
+  margin-top: 5px
+  .butt-o
+    min-width: none
+    max-width: none
+    display: inline-flex 
+    padding-left: 38px
+    padding-right: 38px
+
+@media (max-width : 1199px)
+  .bank-conditions-r-row
+    display: block
+  .bank-conditions-col
+    margin-right: 0
+    width: 100%    
+@media (max-width : 768px)
+  .bank-conditions-w
+    display: block
+  .bank-conditions-l
+    margin-bottom: 20px
+  .bank-conditions-block
+    margin-bottom: 74px
+@media (max-width : 480px)
+  .bank-conditions-row-2
+    display: block
+    span
+      display: block
+      margin-top: 15px
+  .about-tbl-w_2
+    margin-bottom: 40px
+  .bank-conditions-l,
+  .bank-conditions-img-w
+    width: 100%
+    margin-right: 0
+
+.develop-list-block
+  padding-top: 52px
+  padding-bottom: 46px
+
+.develop-list-scroll
+
+.develop-list-row
+  margin-bottom: 61px
+
+.develop-list-txt-1
+  color: rgb(35, 35, 35)
+  font-size: 20px
+  font-weight: 700
+  margin-bottom: 19px
+
+.develop-list-w
+  display: flex
+  
+  
+.develop-list-col
+  width: calc(25%)
+  padding-right: 32px
+  &:nth-child(4n)
+    padding-right: 0
+
+ul.develop-list-ul
+  li
+    display: block
+    margin-bottom: 13px
+
+.develop-list-txt-2
+  color: #999999
+  font-size: 16px
+  font-weight: 400
+
+.wrapper-20
+  .pub-pagin-w
+    margin-top: 0
+    margin-bottom: 20px
+
+@media (max-width : 1199px)
+  .develop-list-w
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+  .develop-list-col
+    width: 50%
+  ul.develop-list-ul li
+    line-height: 1.4
+    &:last-child
+      margin-bottom: 15px $i
+@media (max-width : 570px)
+  .develop-list-col
+    width: 100%
+    padding-right: 0
+
+.bank-min
+  width: 80px
+  height: 43px
+  border-radius: 2px
+  border: 1px solid #dddddd
+  background-color: #ffffff
+  display: flex
+  -webkit-align-items: center
+  align-items: center
+  -webkit-justify-content: center
+  justify-content: center
+  max-width: 100% 
+  margin-left: 13px
+  
+.revs-block_2
+  .revs-item
+    &:last-child
+      border: none 
+
+.revs-ntitle 
+  display: inline-block
+  margin-left: 11px
+  color: #494ECC 
+  font-weight: 700 
+
+
+.users-pagin-w_2
+  margin-bottom: 87px
+
+.add-rev-r-block
+  border-radius: 8px
+  border: 1px solid #dddddd
+  background-color: #ffffff
+  padding: 21px 30px 30px 30px
+  margin-top: 59px
+  .butt-o
+
+.wrapper-22 .proj-w-3
+  margin-top: 206px
+
+.add-rev-r-txt-1  
+  color: #232323
+  font-size: 20px
+  font-weight: 700
+  margin-bottom: 18px  
+.add-rev-r-txt-2  
+  color: #232323
+  font-size: 17px
+  font-weight: 400  
+  margin-bottom: 15px
+
+input[type="text"].inputt
+  width: 100%
+  height: 48px
+  border: 1px solid #dddddd
+  background-color: #ffffff
+  padding-left: 19px
+  padding-right: 19px  
+  color: #666666
+  font-size: 16px
+  font-weight: 400
+
+.s-input-337
+  width: 337px
+
+.s-input-158
+  width: 158px
+  div.fancy-select
+    width: 100%
+    div.trigger,
+    ul.options
+      width: 100%
+      min-width: auto
+.label-n_2
+  margin-bottom: 11px
+  min-height: 17px 
+  &.empty
+    
+.s-input-grow
+  -webkit-flex-grow: 1
+  flex-grow: 1
+  display: flex  
+  justify-content: space-between  
+  -webkit-align-items: center
+  align-items: center
+  height: 42px
+  
+.s-input-lbl-wrap.s-input-w-6
+  width: auto
+  margin-top: 0
+
+.s-input-lbl-wrap
+  min-height: 77px 
+  display: flex  
+  flex-direction: column  
+  justify-content: flex-end
+
+.s-input-lbl-wrap_4.show-par
+  order: 100
+  .butt-o-w
+    display: inline-flex
+    margin-left: 10px
+
+.filter-section-3
+  .s-filter-more-chars
+    
+
+.s-input-396
+  width: 396px
+  display: flex
+  input[type=text].s-input  
+    width: 50%
+    border: 1px solid #dddddd
+
+.s-input-409
+  width: 409px
+  div.fancy-select
+    width: 100%
+    div.trigger,
+    ul.options
+      width: 100%
+      min-width: auto
+.s-input-lbl-wrap_5
+  display: none
+  &.shw
+    display: flex
+.s-input-selects_2
+  -webkit-flex-wrap: wrap
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  display: flex
+  -webkit-justify-content: space-between
+  justify-content: space-between
+  margin-top: 27px
+  .s-input-409
+    margin-bottom: 21px
+.s-filter-check-tit_2
+  flex: none
+.s-filter-check-labels_2  
+  flex-wrap: nowrap
+  width: 100%
+  display: flex
+  align-items: flex-start  
+  flex-grow: 1
+  .s-input-409
+    margin-top: -5px
+    margin-left: 12px
+
+.find-cred  
+  color: #be5cde
+  font-size: 17px
+  font-weight: 400
+
+.s-input-lbl-wrap_1
+  position: relative
+  #calc-distance  
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+.s-input-lbl-wrap_2
+  position: relative
+  #calc-distance-2
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+
+.ui-state-default, .ui-widget-content .ui-state-default
+  width: 18px
+  height: 18px
+  background-color: #494ecc
+  -webkit-border-radius: 50% 
+  border-radius: 50% 
+  outline: none 
+  border: none
+  &:focus
+    outline: none 
+    border: none
+    margin-left: 0
+        
+
+.ui-slider-horizontal .ui-slider-handle
+  margin-left: 0
+  top: -0.5em
+.ui-widget.ui-widget-content
+  border-radius: 2px  
+  height: 1px
+  border: none
+  border-bottom: 1px solid #ddd 
+.ui-slider-horizontal .ui-slider-range
+  background-color: #494ecc
+  height: 3px
+
+.s-input-lbl-wrap_1 #calc-distance,
+.s-input-lbl-wrap_2 #calc-distance-2
+  width: calc(100% - 18px)
+
+@media (max-width : 1299px)
+  .s-input-337
+    width: 286px
+  .s-input-selects_2 .s-input-409
+    width: calc(100% / 3 - 10px)
+@media (max-width : 1199px)
+  .s-input-337
+    width: 397px
+  .s-input-lbl-wrap_5
+    margin-top: 25px
+    width: 100%
+  .s-input-396
+    width: 100%
+    
+  .filter-section-3,
+  .filter-section-4    
+    .s-filter-check-w
+      margin-top: 0
+    .s-filter-check-rw
+      -webkit-flex-wrap: wrap
+      -ms-flex-wrap: wrap
+      flex-wrap: wrap
+      .s-filter-check-tit_2
+        width: 100%
+        margin-bottom: 15px
+
+@media (max-width : 992px)
+  .s-input-337
+    width: 289px
+  .s-input-selects_2 .s-input-409
+    width: calc(100% / 2 - 5px) 
+
+@media (max-width : 768px)
+  .s-input-lbl-wrap_3,
+  .s-input-158,
+  .s-butt-w,  
+  .s-butt-w .butt, .s-butt-w input[type="submit"].butt
+    width: 100%
+  .filter-section-3 .link-arr-w    
+    margin-top: 30px
+  .s-input-grow
+    width: 100%
+    height: auto    
+    flex-direction: column    
+    align-items: center    
+    justify-content: center
+  .s-input-lbl-wrap_4
+    height: auto
+    min-height: auto
+    width: 100%
+  .s-input-selects_2 .s-input-409
+    width: 100%
+  .s-filter-more-chars.shw
+    width: 100%
+  .s-filter-check-labels_2
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+  .s-filter-check-labels_2 .s-input-409
+    margin-left: 0
+    width: 100%
+  .s-input-lbl-wrap_4.show-par .butt-o-w
+    width: 100%
+    margin-top: 25px
+    margin-left: 0
+    .butt-o
+      width: 100%
+  
+@media (max-width : 640px)
+  .s-input-lbl-wrap_1,
+  .s-input-lbl-wrap_2,
+  .s-input-lbl-wrap_3,
+  .s-input-337
+    width: 100%
+
+.banks-list-block
+  margin-top: 75px 
+  
+
+.banks-list-w  
+
+.banks-list-item
+  padding-bottom: 34px
+  border-bottom: 1px solid #ddd
+  padding-top: 43px
+  display: flex
+  &:nth-child(1) 
+    padding-top: 0
+
+
+
+.banks-list-l
+  width: 296px  
+  flex: none
+.banks-list-img-w
+  display: flex
+  align-items: center
+  width: 100%
+  height: 160px
+  border-radius: 8px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  justify-content: center
+  margin-right: 29px
+  margin-bottom: 13px
+
+.banks-list-num-w
+  color: #232323
+  font-size: 17px
+  font-weight: 400
+  margin-top: 21px
+.banks-list-r
+  -webkit-flex-grow: 1 
+  flex-grow: 1
+  margin-left: 29px 
+.banks-list-tit
+  color: rgb(35, 35, 35)
+  font-size: 20px
+  font-weight: 700
+  margin-bottom: 20px
+  line-height: 1.4
+.banks-list-terms
+  display: flex  
+
+.banks-list-terms-l    
+  flex: none
+@media (min-width : 1136px)
+  .banks-list-terms-l
+    width: 334px
+.banks-list-terms-row-1
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  margin-bottom: 22px
+  
+
+.banks-list-terms-txt-1
+  color: rgb(153, 153, 153)
+  font-size: 14px
+  font-weight: 400
+  margin-bottom: 7px
+  display: block
+  width: 100%
+.banks-list-terms-txt-2
+  color: #232323
+  font-size: 20px
+  font-weight: 400
+  line-height: 1.2
+.banks-list-terms-row-2
+  color: #999999
+  font-size: 17px
+  font-weight: 400
+  position: relative
+  padding-left: 9px 
+  &:before
+    position: absolute
+    left: 0
+    top: calc(50% - 2px)
+    display: block
+    content: "" 
+    width: 4px
+    height: 4px
+    background-color: #be5cde
+    -webkit-border-radius: 50% 
+    border-radius: 50% 
+  b, strong
+    color: #999999
+    font-weight: 700
+
+.banks-list-terms-r
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  margin-bottom: 22px
+  flex-wrap: wrap
+  margin-left: -12px  
+  flex-grow: 1
+.banks-list-terms-row-3
+  width: 100%
+  margin-bottom: 21px
+
+.banks-list-terms-row-4
+  li
+    margin-bottom: 13px
+    color: #999999
+    font-size: 17px
+    font-weight: 400
+    position: relative
+    padding-left: 9px
+    &:before
+      position: absolute
+      left: 0
+      top: calc(50% - 2px)
+      display: block
+      content: "" 
+      width: 4px
+      height: 4px
+      background-color: #be5cde
+      -webkit-border-radius: 50% 
+      border-radius: 50% 
+.banks-list-terms-txt-3
+  margin-bottom: 8px
+  color: #999999
+  font-size: 17px
+  font-weight: 400
+
+.banks-list-terms-txt-4
+  color: #999999
+  font-size: 17px
+  font-weight: 400
+  
+.banks-list-terms-butt-w  
+  margin-top: 16px
+  .butt-o
+    width: auto
+    min-width: auto
+    padding-right: 39px
+    padding-left: 39px
+
+.banks-list-pub  
+  color: #dcdcdc
+  font-size: 13px
+  font-weight: 400
+  display: flex  
+  align-items: flex-end
+  img
+    margin-left: 5px
+
+.banks-pagin-w
+  margin-top: 61px
+  margin-bottom: 68px
+
+.revs-block_3
+  margin-top: 0
+  padding-top: 0
+  .like-h2
+    margin-bottom: 0
+  .revs-item
+    &:last-child
+      border-bottom: 1px solid #ddd 
+
+.revs-item-comp-link-w
+  margin-top: 35px
+.wrapper-7-2
+  .revs-item-comp-link-w
+    margin-top: 55px
+
+@media (max-width : 1299px)
+  .banks-list-terms-l
+    padding-right: 10px
+  .banks-list-terms-r
+    margin-left: 0
+  .banks-list-terms
+    -webkit-justify-content: space-between
+    justify-content: space-between
+@media (max-width : 1199px)
+  .banks-list-cols-w
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    .r-bann-w
+      display: none
+    .col-grow
+      width: 100%
+@media (max-width : 992px)
+  .banks-list-r
+    margin-left: 0
+    margin-top: 25px
+  .banks-list-item
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+  .banks-list-terms-l
+    padding-right: 25px
+  .blue-block-txt_2
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+    > *
+      width: 100%
+      margin-bottom: 20px
+    .blue-r-2
+      width: auto
+      margin-left: auto
+      margin-right: auto
+    .blue-l
+      -webkit-flex-direction: column
+      -ms-flex-direction: column
+      flex-direction: column
+    .blue-round-img-w
+      margin-bottom: 20px
+@media (max-width : 640px)
+  .banks-list-terms
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+  .banks-list-terms-l,
+  .banks-list-terms-r
+    padding-right: 0
+    width: 100%
+  .banks-list-terms-r
+    margin-top: 25px
+@media (max-width : 480px)
+  .banks-list-l
+    width: 100%
+
+.revs-bank-cols
+  .revs-item
+    &:last-child
+      border-bottom: 1px solid #ddd 
+
+
+.add-review-white-block
+  margin-bottom: 90px
+
+
+
+.branches-section  
+  margin-top: 46px
+.branches-item
+  display: flex
+  margin-bottom: 63px
+
+.branches-col-l
+  width: 294px
+  height: 160px
+  border-radius: 8px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-right: 29px
+  flex: none  
+.branches-col-r  
+  flex-grow: 1  
+  display: table
+
+.branches-row
+  width: 100%
+  display: table-row  
+.branches-col
+  display: table-cell
+  padding-bottom: 24px
+  &:nth-child(4)  
+    padding-left: 11px
+  
+.branches-txt-1
+  color: #232323
+  font-size: 17px
+  font-weight: 400
+
+.branches-time-w
+  display: flex
+  
+.branches-time
+  display: flex
+  margin-left: 5px
+
+.branches-txt-2
+  color: rgb(153, 153, 153)
+  font-size: 17px
+  font-weight: 400
+  margin-right: 5px
+
+.revs-banks-list-block
+  margin-top: 96px
+  padding-left: 19px
+  .revs-item
+    border: none  
+    padding-top: 22.5px
+    padding-bottom: 22.5px
+  .revs-item-row-2
+    margin-bottom: 9px
+    letter-spacing: -0.2px 
+  .revs-item-row-1
+    margin-bottom: 10px
+
+.revs-city
+  margin-right: 6px
+
+.revs-answer
+  display: inline-block
+  background: url("../img/arr-b.svg") $nr right center
+  line-height: 21px
+  padding-right: 18px  
+  color: #999999
+  font-size: 18px
+  font-weight: 400
+  &:hover
+    color: #000
+    text-decoration: none 
+  
+.revs-revs-link-w
+  margin-top: 20px
+.banks-list-block
+  padding-bottom: 99px
+
+
+
+@media (min-width : 1299px)
+  .wrapper-9
+    .banks-list-block
+      padding-bottom: 11px
+    .revs-block
+      padding-right: 0
+    .revs-item
+      padding-bottom: 36px
+      padding-top: 32px
+      &:nth-child(1)
+        padding-top: 35px
+
+@media (max-width : 1299px)
+  .branches-item
+    display: block
+    margin-bottom: 43px
+  .branches-col-l
+    margin-bottom: 25px
+  .branches-col-r
+    width: 100%
+  .sort-w-4
+    .sort-r      
+      justify-content: flex-start
+
+@media (max-width : 1199px)
+  .branches-cols
+    display: block
+    .col-grow
+      width: 100%
+    .col-294
+      display: none
+
+@media (max-width : 992px)
+  .branches-time
+    margin-left: 0
+    margin-right: 5px 
+  .branches-item
+    width: 100%
+    margin-bottom: 10px
+  .branches-col-r
+    display: flex
+    width: 100%
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+  .branches-row
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+    display: flex
+    width: 50%
+    margin-bottom: 25px
+  .branches-col:nth-child(4)
+    padding-left: 0
+
+@media (max-width : 768px)
+  .branches-row
+    width: 100%
+  .banks-list-block
+    padding-bottom: 39px
+@media (max-width : 640px)
+  .revs-city
+    margin-top: 4px
+@media (max-width : 480px)
+  .branches-time-w
+    display: block
+    margin-top: -10px
+  .branches-time
+    width: 100%  
+    margin-top: 10px
+  .branches-col-l
+    width: 100%
+  .revs-item-row-4
+    display: flex
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+    -webkit-align-items: flex-start
+    align-items: flex-start
+    .revs-item-col-r
+      order: 0
+      margin-bottom: 10px
+      margin-left: -4px
+    .revs-item-col-l
+      order: 1
+  .banks-list-block
+    margin-top: 0
+  .banks-list-item
+    padding-top: 30px
+    padding-bottom: 20px
+
+.ipot-h2-w
+  margin-top: 46px
+.wrapper-8-2
+  .ipot-h2-w
+    margin-top: 32px
+    margin-bottom: -11px
+.banks-list-block_2
+  padding-bottom: 73px
+  margin-top: 0
+  .banks-list-item
+    padding-top: 28px
+    padding-bottom: 31px
+  .banks-list-r
+    margin-left: 0
+  .banks-list-terms-r    
+.banks-list-bank-pub-w
+  display: flex  
+  align-items: center
+  margin-top: 17px
+  .bank-min
+    margin-left: 0
+    margin-right: 9px
+
+
+.banks-list-block_2
+  .banks-list-item_p
+    padding-top: 24px
+    padding-bottom: 27px
+  .banks-list-terms-r_2
+    margin-bottom: 0
+    
+.banks-list-terms-r_2 
+  display: flex  
+  justify-content: flex-start  
+.banks-list-terms-r-col-l
+  width: 200px
+.banks-list-terms-r-col-r
+  margin-left: -4px  
+
+.banks-pagin-w_2
+  margin-bottom: 0
+
+@media (max-width : 1299px)
+  .banks-list-terms-r_2
+    margin-left: 35px
+
+@media (max-width : 992px)
+  .banks-list-block_2
+    .banks-list-terms-r-col-r
+      margin-left: 0
+
+@media (max-width : 640px)
+  .banks-list-terms-r_2
+    margin-left: 0
+
+.sort-actions
+  display: flex
+  -webkit-align-items: center
+  align-items: center
+  margin-left: auto
+  height: 40px
+  img
+    margin-right: 6px
+  a
+    margin-left: 16px
+    &:hover
+      text-decoration: none
+.develop-form_2
+  width: 819px
+  display: flex
+  input[type=text].input
+    width: calc(100% - 242px)
+
+.compare-main
+  padding-bottom: 124px
+  
+  table
+    width: 100%
+    margin-top: 28px    
+    border-collapse: collapse
+    
+  td
+    border-top: 1px solid #dddddd
+    border-bottom: 1px solid #dddddd
+    width: 296px
+    padding-left: 25px
+    &:nth-child(1) 
+      width: auto
+      padding-left: 0
+  thead
+    td
+      padding-bottom: 0px
+      border: none
+      vertical-align: top      
+  tbody
+    td
+      line-height: 1.5            
+      padding-top: 18px
+      padding-right: 0 
+      padding-bottom: 14px
+      vertical-align: top
+      &:last-child
+        padding-right: 0
+    tr
+      &:first-child
+        td
+          border-top: none
+          padding-top: 6px
+          padding-bottom: 16px
+      &:last-child
+        td
+          border-bottom: none
+
+.compare-main_more_3_elems
+  table
+    width: 1500px 
+
+.compare-tbl-img-w
+  width: 296px
+  height: 242px
+  border-radius: 8px
+  overflow: hidden
+  margin-bottom: 19px
+  margin-right: 0
+  margin-top: 14px  
+  > img    
+    width: 100%
+    object-fit: cover
+    height: 100%
+@media (max-width : 1299px)
+  .compare-main_more_3_elems
+    table
+      width: 1600px
+@media (max-width : 1199px)
+  .compare-main
+    overflow-y: scroll
+    table
+      width: 1170px
+  .compare-main_more_3_elems
+    table
+      width: 1600px
+@media (max-width : 992px)
+  .develop-form_2
+    width: 100%
+@media (max-width : 768px)
+  .sort-actions
+    margin-top: 20px
+    -webkit-justify-content: space-between
+    justify-content: space-between
+    display: flex
+    width: 100%
+    margin-left: 0
+    a
+      margin-left: 0 
+.compare-main_more_3_elems
+    table
+      width: 1500px     
+@media (max-width : 570px)
+  .develop-form_2 input[type=text].input
+    width: 100%
+    margin-right: 0
+@media (max-width : 480px)
+  .sort-actions
+    display: block
+    margin-bottom: 15px
+    margin-top: 35px
+    a
+      display: block
+      margin-bottom: 10px
+      width: 100%
+
+.banks-list-block_3
+  margin-top: 30px
+  .banks-list-item
+    &:first-child
+      padding-top: 10px
+
+.calc-butts
+  display: flex
+  -webkit-align-items: center
+  align-items: center
+  margin-top: 55px
+  width: 100%
+  .butt
+    margin-right: 11px
+
+
+.credit-w
+  display: flex
+  justify-content: space-between
+
+.credit-l
+  margin-right: 50px
+  flex-grow: 1
+
+.credit-r
+  width: 528px
+  flex: none
+
+.credit-form-w
+  border-radius: 8px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  padding: 25px 55px 14px 38px
+  margin-top: -14px
+.credit-form
+  margin-bottom: 42px
+  margin-top: -9px
+.inputt
+
+.total-data-block
+
+.total-data-row
+  display: inline-flex
+
+.total-data-col
+  margin-bottom: 24px
+  margin-right: 58px
+
+.total-data-1
+  color: rgb(153, 153, 153)
+  font-size: 14px
+  font-weight: 400
+  margin-bottom: 8px
+
+.total-data-2
+  color: #232323
+  font-size: 20px
+  font-weight: 400
+
+.s-input-337
+  div.fancy-select
+    div.trigger
+      width: 100%
+.s-input-lbl-wrap_6,
+.s-input-lbl-wrap_7
+    margin-top: 48px
+
+
+
+.credit-l
+  .s-input-lbl-wrap
+    width: calc(50% - 5px)
+    .s-input-337
+      width: 100%
+.calc-credit-labels
+  margin-top: 36px
+  p
+    margin-bottom: 21px
+    line-height: 1
+.calc-credit-labels-w  
+  display: flex
+  label
+    margin-right: 22px
+    margin-bottom: 0
+    display: flex
+    -webkit-align-items: center
+    align-items: center
+    div
+      display: flex
+      -webkit-align-items: center
+      align-items: center
+    img
+      margin-left: 8px
+      &:hover
+        cursor: pointer
+
+@media (min-width : 1199px)
+  .filter-section-4
+    .s-form
+      margin-top: -25px
+    .blue-b
+      padding-bottom: 60px
+
+@media (max-width : 1199px)
+  .credit-l
+    .s-input-lbl-wrap
+      width: 100%
+      margin-bottom: 20px
+      margin-top: 0
+    .s-form-w
+      margin-top: 0
+@media (max-width : 992px)
+  .credit-w
+    display: block
+    .label-n_2
+      display: block
+  .credit-l
+  .credit-r,
+    width: 100%
+  .credit-r
+    margin-top: 35px
+@media (max-width : 768px)
+  .calc-butts
+    display: block
+    margin-top: 25px
+  .butt-o-w_2
+    width: 100%
+    margin-top: 20px
+    .butt-o
+      width: 100%
+  .credit-l
+    margin-right: 0
+  .calc-credit-labels-w
+    margin-bottom: 0
+    display: block
+    label
+      margin-bottom: 15px
+@media (max-width : 570px)
+  .total-data-row
+    display: block
+  .total-data-col
+    width: 100%
+  .credit-form-w
+    padding: 30px 30px 10px
+
+.credit-calc-reviews-w
+  padding-top: 53px
+  padding-bottom: 88px
+
+
+.m-developers-section_2
+  padding-top: 56px
+
+@media (max-width : 640px)
+  .m-developers-section_2
+    padding-top: 15px
+
+.s-input-w-22
+  display: inline-flex
+  -webkit-align-items: center
+  align-items: center
+  .link-arr-w
+    margin-left: 17px
+    white-space: nowrap 
+.s-input-w-22.show-par
+  margin-top: 25px
+
+.develop-form_3
+  display: flex
+  -webkit-align-items: center
+  align-items: center
+  width: 1140px
+
+.develop-form_4
+  -webkit-flex-wrap: wrap
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+
+.rcomplex-head-w
+  display: flex
+  margin-bottom: 23px
+  line-height: 1
+  margin-top: 4px
+  -webkit-align-items: flex-end
+  align-items: flex-end
+  h1
+    margin-bottom: 0px
+    line-height: 1
+
+.rcomplex-head-info, .rcomplex-geo
+  img
+    margin-right: 5px
+.rcomplex-head-info-w
+  margin-left: 16px
+  display: flex  
+  align-items: flex-end
+  margin-bottom: 6px
+
+.rcomplex-icons
+  margin-bottom: 0px
+  display: flex
+  margin-right: -12px
+.rcomplex-icon
+  display: flex
+  align-items: center
+  margin-left: 15px
+  &:hover
+    text-decoration: none
+    .rcomplex-head-txt-1
+      text-decoration: underline
+  img
+    margin-right: 4px
+
+
+.rcomplex-metro
+  img
+    margin-right: 3px
+
+.rcom-docs-it
+  img
+    margin-right: 10px
+
+
+.layout-img-w
+  img
+    max-height: 80% 
+.howtobuy-rw-2
+  margin-top: 17px
+  img
+    margin-right: 5px
+
+
+.rcomplex-section
+  margin-bottom: 38px
+  margin-top: 0px
+
+.add-review-buutt-group.mt10
+  .butt
+    margin-top: 10px
+
+.rcomplex-head-txt-1
+  color: rgb(153, 153, 153)
+  font-size: 17px
+  font-weight: 400
+  display: flex
+  align-items: flex-end
+  justify-content: center
+  margin-right: 12px
+  letter-spacing: 0.1px 
+
+.phone-show  
+  display: none
+  &.show
+    display: block
+    width: 100%
+    margin-bottom: 5px
+
+.phone-hide
+  &.hide
+    display: none
+
+.rcomplex-head-info
+  display: flex
+  align-items: flex-end
+  justify-content: center
+  
+.rcomplex-row-2
+  display: flex
+  justify-content: space-between
+  margin-bottom: 14px
+
+.rcomplex-adress
+  display: flex
+
+.rcomplex-adress-1
+  color: rgb(35, 35, 35)
+  font-size: 17px
+  font-weight: 400
+  margin-right: 0px
+
+.rcomplex-geo
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-left: 10px
+  &:hover
+    text-decoration: none
+    span
+      text-decoration: underline
+
+
+.rcomplex-row-3
+  display: flex
+  margin-bottom: 26px
+  .rcomplex-head-txt-1
+    margin-right: 3px
+.rcomplex-metro
+  display: flex
+  margin-right: 9px
+.rcomplex-cols
+  display: flex
+  align-items: flex-start
+
+.rcomplex-col-l
+  width: 828px  
+  flex: none
+.rcomplex-col-r
+  padding-left: 0px
+  margin-bottom: 0px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap  
+  flex-grow: 1
+  margin-left: 34px
+  
+.like-h4
+  color: rgb(35, 35, 35)
+  font-size: 24px
+  font-weight: 700
+  margin-bottom: 23px
+  display: block
+  width: 100%
+
+.rcomplex-bread
+  width: 100%
+  display: flex
+  margin-bottom: 14px
+  color: rgb(153, 153, 153)
+  font-size: 17px
+  font-weight: 400
+  -webkit-flex-wrap: wrap
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  line-height: 1.4
+  margin-top: 4px
+  span
+    display: inline-block
+    margin-left: 6px
+    margin-right: 6px
+
+.chars-butt-w
+  margin-bottom: 39px
+  width: 100%
+ul.chars-list
+  margin-bottom: 23px
+  li
+    margin-bottom: 11px
+    display: flex
+    align-items: center
+
+.single-dev-gal-w_2
+  height: 655px
+  .sp-thumbnails-container
+    bottom: 165px
+
+.chars-list-span
+  color: rgb(153, 153, 153)
+  font-size: 17px
+  margin-right: 5px
+
+.chars-list-txt
+  color: rgb(35, 35, 35)
+  font-size: 17px
+  font-weight: 400
+  margin-bottom: 14px
+  width: 100%
+.rcomplex-min
+  display: flex
+  justify-content: flex-start
+  margin-bottom: 31px
+
+.rcomplex-min-l
+
+.rcomplex-min-img-w
+
+.rcomplex-min-r
+  padding-left: 12px
+  display: inline-block
+  align-items: center
+
+.rcomplex-min-txt-1
+  color: rgb(35, 35, 35)
+  font-size: 17px
+  font-weight: 400
+  margin-bottom: 11px
+
+.rcomplex-span
+  width: 76px
+  height: 26px
+  color: #999999
+  font-size: 17px
+  font-weight: 400
+  line-height: 25.5px
+
+.info-its
+  display: flex
+  margin-bottom: 14px
+  width: 100%    
+.info-it
+  height: 104px
+  border-radius: 8px
+  background-color: rgb(248, 250, 255)
+  margin-right: 0px
+  display: inline-flex
+  padding-top: 25px
+  padding-left: 10px
+  -webkit-align-items: center
+  align-items: center
+  flex-direction: column
+  min-width: 100px
+  margin-right: 26px
+  padding-right: 10px  
+  &:last-child
+    margin-right: 0
+
+.info-it-row
+  display: flex
+  align-items: center
+  margin-bottom: 8px
+
+.info-it-img-w
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-right: 11px
+
+.info-it-txt-1
+  color: rgb(35, 35, 35)
+  font-size: 24px
+  font-weight: 700
+  display: flex
+  align-items: center
+  justify-content: center
+
+
+
+.info-it-txt-2
+  color: #232323
+  font-size: 14px
+  font-weight: 400
+
+.butt-instllm  
+  height: 36px
+  border-radius: 47px
+  border: 1px solid rgb(190, 92, 222)
+  background-color: rgb(255, 255, 255)
+  color: rgb(190, 92, 222)
+  font-size: 17px
+  font-weight: 400
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  padding-left: 18px
+  padding-right: 18px
+  &:hover
+    text-decoration: none
+    background-color: rgb(190, 92, 222)
+    color: #fff 
+.rcom-chars-section
+  margin-bottom: 12px
+
+
+
+.rcom-chars-w
+  display: flex
+  flex-wrap: wrap
+  margin-top: 37px
+.rcom-chars-it
+  display: flex
+  width: 33.333%
+  margin-bottom: 44.5px
+
+.rcom-chars-img-w  
+
+.rcom-chars-tsts
+  margin-left: 20px
+  margin-top: -9px
+  p
+    margin-bottom: -3px    
+.rcom-docs-section
+  margin-bottom: 44px
+
+.rcom-docs-its
+  display: flex
+  justify-content: space-between
+  margin-bottom: 0px
+  margin-top: 33px
+
+.rcom-docs-col
+  width: 33.3333%
+  padding-right: 13px 
+.rcom-docs-it  
+  margin-bottom: 16.5px  
+  display: block
+  line-height: 1.6
+  span
+    color: #494ECC
+  img
+    flex: none
+    width: 16px
+  span.span-gray
+    margin-left: 4px
+  .span-gray
+    color: #999999
+
+.rcom-desc-block
+  .like-h2
+    margin-bottom: 27px
+  ul
+    margin-left: 17px
+  li
+    line-height: 1.7
+    margin-bottom: 11px
+    position: relative
+    padding-left: 24px
+    &:before
+      content: "" 
+      display: block
+      position: absolute
+      left: 0
+      top: 12px
+      width: 6px
+      height: 6px
+      background-color: #232323
+      -webkit-border-radius: 50% 
+      border-radius: 50% 
+  table
+    width: 100% 
+    thead
+      td
+        font-weight: bold 
+        padding-bottom: 7px 
+    td
+      padding: 20px 0
+      line-height: 2.1
+      border-bottom: 1px solid #dddddd        
+
+@media (min-width : 1199px)
+  .rcom-desc-w-50
+    width: 65%  
+    p
+      margin-bottom: 27px
+    
+.w-thead
+  background-color: #ccc
+  color: #FFF
+
+.w-tr, .w-td, .w-tbody
+
+.layout-section
+  margin-bottom: 92px
+  margin-top: 93px
+
+.layout-butt-w
+  margin-top: 17px
+
+.layout-w
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  margin-top: 42px
+.layout-it
+  display: flex
+  flex-wrap: wrap
+  width: 398px
+  margin-bottom: 41px
+
+.layout-img-w
+  width: 100%
+  height: 297px
+  border-radius: 8px
+  border: 1px solid rgb(221, 221, 221)
+  background-color: rgb(255, 255, 255)
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-bottom: 19px
+
+.layout-txt
+  color: #232323
+  font-size: 20px
+  font-weight: 700
+
+.rcom-map-w
+  width: 830px
+  height: 560px
+  margin-bottom: 47px
+
+.w-ul, .w-li
+
+.howtobuy-block
+  margin-top: 93px
+
+.howtobuy-content
+  margin-bottom: 46px
+  margin-top: 37px
+
+.howtobuy-rw-1
+  display: flex
+  align-items: flex-start
+  margin-bottom: 25px
+  flex-wrap: nowrap
+  justify-content: flex-start
+
+.howtobuy-img-w
+  width: 294px
+  height: 160px
+  border-radius: 8px
+  border: 1px solid rgb(221, 221, 221)
+  margin-right: 28px
+  overflow: hidden
+  flex: none
+.howtobuy-col-1
+  margin-right: 36px
+  margin-top: 2px
+
+.rcomplex-min-r-2
+  padding-left: 0px
+  display: inline-block
+  align-items: center
+
+.howtobuy-col-2
+  margin-top: 3px
+  -webkit-flex-grow: 1 
+  flex-grow: 1 
+.butt-instllm-2
+  height: 36px
+  border-radius: 47px
+  border: 1px solid rgb(190, 92, 222)
+  background-color: rgb(255, 255, 255)
+  color: rgb(190, 92, 222)
+  font-size: 17px
+  font-weight: 400
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  padding-left: 18px
+  padding-right: 18px
+  &:hover
+    text-decoration: none
+    background-color: rgb(190, 92, 222)
+    color: #fff 
+.howtobuy-rw-2
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  padding-right: 55px
+.howtobuy-txt
+  color: #232323
+  font-size: 17px
+  font-weight: 400
+  white-space: nowrap
+  
+.dev-proj-w_2
+  padding-bottom: 0
+.dev-proj-w_3
+  margin-top: 28px
+  .like-h2
+    margin-bottom: 42px
+
+.construction-progress-block
+  padding-top: 117px
+.construction-progress-w
+  .pub-its
+    margin-top: 22px
+  .pub-it-img-w
+    height: 160px
+  .dev-link-w
+    margin-top: 45px
+.construction-progress-actions
+  margin-top: 39px
+.construction-progress-sel 
+  width: 105px
+  div.fancy-select
+    width: 100%
+    height: 48px
+    div.trigger,
+    ul.options
+      width: 100%
+      min-width: auto
+    div.trigger
+      height: 48px
+    
+.construction-progress-labels    
+  height: 48px
+  display: flex
+  -webkit-align-items: center
+  align-items: center
+  margin-left: 21px
+.check-label_2 
+  height: 48px
+  margin-bottom: 0
+  margin-right: 0
+  margin-left: 12px  
+  &:first-of-type
+    margin-left: 21px
+  input[type="checkbox"]
+    + .check-butt
+      height: 48px
+      padding: 0 22px 
+      font-size: 18px             
+  input[type="checkbox"]:checked + .check-butt
+    background-image: none
+        
+.pub-section_2
+  margin-top: 48px
+  .news-its
+    margin-top: 43px
+  .news-it
+    &:nth-last-child(1),
+    &:nth-last-child(2),
+    &:nth-last-child(3),
+    &:nth-last-child(4) 
+      margin-bottom: 0
+
+.rcomplex-head-info-w
+  margin-top: 36px
+.rcomplex-head-txt-w
+  margin-right: 28px
+  
+
+.develop-tabs_3
+  -webkit-flex-wrap: wrap
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  margin-top: 36px
+  li
+    margin-bottom: 20px
+
+@media (max-width : 1299px)
+  .rcomplex-col-l
+    width: 718px
+  .layout-it
+    width: calc(100% / 3 - 10px)
+@media (max-width : 1199px)
+
+  .layout-it
+    width: calc(100% / 2 - 10px)
+  .butt-instllm,
+  .butt-instllm-2
+    font-size: 14px
+  .rcomplex-col-l
+    width: 548px
+  .develop-form_3
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    width: 100%
+    input[type=text].input
+      width: 100%
+      margin-bottom: 25px
+
+@media (max-width : 992px)
+  .howtobuy-rw-1
+    display: block
+  .howtobuy-img-w
+    margin-bottom: 25px
+  .howtobuy-rw-2    
+    justify-content: flex-start
+    -webkit-align-items: flex-start
+    align-items: flex-start
+  .howtobuy-txt
+    white-space: normal
+    line-height: 1.2
+      
+  .howtobuy-col-1
+    margin-bottom: 20px
+  .info-its
+    -webkit-justify-content: flex-start
+    justify-content: flex-start
+  .info-it
+    margin-right: 10px
+  .rcomplex-cols
+    display: block
+  .rcomplex-col-l,
+  .rcomplex-col-r
+    width: 100%
+    margin-left: 0
+
+  .rcomplex-row-2
+    display: block
+  .rcomplex-icons
+    margin-top: 15px
+    margin-bottom: 25px
+    margin-right: -12px
+  .rcomplex-icon
+    margin-left: 0 
+    margin-right: 26px
+  .rcom-map-w
+    width: 100%
+    height: 221px
+    overflow: hidden
+    img
+      max-width: 100%       
+  .pub-section_2
+    .news-it
+      &:nth-last-child(1),
+      &:nth-last-child(2),
+      &:nth-last-child(3),
+      &:nth-last-child(4)
+        margin-bottom: 41px
+  .rcomplex-head-w
+    display: block
+  .rcomplex-head-info-w
+    margin-left: 0
+    margin-top: 15px
+@media (max-width : 768px)
+  .layout-it
+    width: 100%
+  .single-dev-gal-w_2
+    height: auto
+    margin-bottom: 25px
+  .rcomplex-head-w
+    display: block
+  .rcomplex-head-info-w
+    margin-left: 0
+    margin-top: 15px
+    margin-bottom: 25px
+  .rcom-chars-it
+    width: 50%
+  .rcom-docs-its
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+  .rcom-docs-col
+    width: 50%
+  .rcom-desc-block table
+    td
+      &:nth-child(3),
+      &:nth-child(5)
+        display: none
+      &:nth-child(2)
+        padding-right: 10px
+        padding-left: 10px    
+  .dev-news-sort-col_2
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    display: flex
+    -webkit-justify-content: space-between
+    justify-content: space-between
+  .check-label_2,
+  .construction-progress-sel
+    margin-bottom: 18px
+    width: calc(50% - 10px)
+    margin-left: 0
+    &:first-of-type
+      margin-left: 0
+  .check-label_2 input[type="checkbox"] + .check-butt
+    width: 100%
+@media (max-width : 640px)
+  .layout-section
+    margin-top: 42px
+  .layout-w
+    margin-top: 12px
+  .rcom-docs-col
+    display: none
+    width: 100%
+    padding-right: 0
+    &:nth-child(1)
+      display: block
+  .rcom-chars-it
+    width: 100%
+    display: none
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4)
+      display: flex
+  .rcomplex-head-info-w
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    text-align: left    
+    .rcomplex-head-info
+      margin-top: 15px
+  .rcomplex-icons
+    display: block
+    > a
+      margin-bottom: 18px
+  .dev-proj-w_2
+    padding-bottom: 20px
+  .layout-section
+    margin-bottom: 32px
+@media (max-width : 570px)
+  .rcomplex-row-3
+    display: block
+    .rcomplex-head-txt-1
+      text-align: left      
+      justify-content: flex-start
+      margin-bottom: 15px
+    .rcomplex-metro
+      margin-top: 20px
+  .rcomplex-min
+    display: block
+  .rcomplex-min-r
+    padding-left: 0
+    margin-top: 20px
+  .info-its
+    display: block
+  .info-it
+    width: 100%
+    margin-bottom: 20px
+    display: flex
+    -webkit-flex-direction: row
+    -ms-flex-direction: row
+    flex-direction: row
+    -webkit-align-items: center
+    align-items: center    
+    .info-it-txt-2
+      margin-left: 7px
+    .info-it-row
+      margin-bottom: 0
+    .info-it-txt-2
+      font-size: 17px
+  .s-input-w-22
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    width: 100%
+    .butt, input[type="submit"].butt
+      width: 100%
+      margin-bottom: 25px
+      margin-right: 0
+    .link-arr-w
+      margin-left: auto
+      margin-right: auto
+  .rcomplex-head-info
+    -webkit-align-items: flex-start
+    align-items: flex-start
+    line-height: 1.2
+  .rcomplex-adress
+    display: block
+  .rcomplex-geo  
+    justify-content: flex-start    
+    margin-left: 0
+    margin-top: 10px
+  .rcomplex-section
+    margin-top: 17px  
+@media (max-width : 480px)
+  .pub-section_2
+    .news-it
+      width: 100%
+  .rcom-desc-block table
+    td
+      font-size: 14px
+      letter-spacing: -0.7px
+      line-height: 1.4
+      padding: 19px 0
+      span
+        font-size: 14px
+      &:nth-child(2)
+        width: 70px
+    thead
+      td
+        vertical-align: top
+  .layout-img-w
+    height: 215px
+  .layout-it
+    margin-bottom: 39px
+    .layout-txt
+      line-height: 1.2
+      
+.wrapper-12
+  h1
+    margin-bottom: 21px
+  p
+    line-height: 1.6
+
+
+@import "_body"
+@import "_mCustomScrollbar"
+@import "_hides"
+@import "_vars"
+@import "_after"
+
+

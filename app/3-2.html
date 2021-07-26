@@ -1,0 +1,204 @@
+@@include('var/_head.html')
+<title>3.2 Жилые комплексы на карте</title>
+</head>
+<body>
+ <div class="wrapper-map">
+  <section class="top-section">
+    <div class="contain-map">
+      <div class="top-w">
+        <a href="/" class="logo"><img src="img/logo.png" /></a>        
+        <div class="top-sel hide-1050">
+          <select class="sel-city">
+            <option class="top-sel-span" value="Выбрать город">Выбрать город</option>
+            <option class="top-sel-span" value="Москва">Москва</option>
+            <option class="top-sel-span" value="Казань">Казань</option>
+          </select>
+        </div>
+        <div class="top-mnu hide-1050">
+          <ul class="top-mnu-ul">
+            <li><a href="#">Жилые комплексы</a></li>
+            <li><a href="#">Застройщики</a></li>    
+            <li><a href="#">Публикации</a></li>    
+          </ul>
+        </div>
+        <div class="col-mnu show-1050">
+          <div class="hidden-mnu">
+            <a href="#" class="toggle-mnu"><span></span></a>
+          </div>
+          <div class="top-mnu">
+            <div class="contain-map">
+              <div class="top-sel">
+                <select class="sel-city">
+                  <option class="top-sel-span" value="Выбрать город">Выбрать город</option>
+                  <option class="top-sel-span" value="Москва">Москва</option>
+                  <option class="top-sel-span" value="Казань">Казань</option>
+                </select>
+              </div>
+              <ul class="top-mnu-ul">
+                <li><a href="#">Жилые комплексы</a></li>
+                <li><a href="#">Застройщики</a></li>    
+                <li><a href="#">Публикации</a></li>    
+              </ul>
+              <a href="#" class="butt">Войти</a>
+            </div>
+          </div>          
+        </div>
+        <div class="top-icons">
+          <a href="#" class="top-i"><img src="img/top-i-1.svg" /></a>
+          <a href="#" class="top-i"><img src="img/top-i-2.svg" /></a>
+          
+        </div>
+      </div>
+      <div class="top-sel top-sel-n show-1050">
+        <select class="sel-city">
+          <option class="top-sel-span" value="Выбрать город">Выбрать город</option>
+          <option class="top-sel-span" value="Москва">Москва</option>
+          <option class="top-sel-span" value="Казань">Казань</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="contain-map contain-map-2">
+    <div class="like-h2">Новостройки на карте Казани</div>
+  </div>
+
+  <div class="map-cols">
+    <div class="map-col-l">
+
+      <div class="map-controls contain-map show-992">
+        <a href="#" class="s-link-butt"><img src="img/arr-l-big.svg" alt=""></a>
+        <a href="#" class="s-link-butt s-link-par">Параметры</a>
+        <a href="#" class="s-link-butt">Списком</a>
+      </div>
+
+      <form class="s-form">
+
+        <div class="s-input-w-2">
+          <label class="s-check s-check-f">
+            <input type="checkbox" name="s-check-1" value="Студия">
+            <span>Студия</span>
+          </label>
+          <label class="s-check">
+            <input type="checkbox" name="s-check-1" value="1">
+            <span>1</span>
+          </label>
+          <label class="s-check">
+            <input type="checkbox" name="s-check-1" value="2">
+            <span>2</span>
+          </label>
+          <label class="s-check">
+            <input type="checkbox" name="s-check-1" value="3">
+            <span>3</span>
+          </label>
+          <label class="s-check">
+            <input type="checkbox" name="s-check-1" value="4">
+            <span>4+</span>
+          </label>
+        </div>  
+
+        <div class="s-input-w-1">
+          <input class="s-input-b" type="text" placeholder="ЖК или адрес" />
+          <div class="input-l-w">
+            <a href="#" class="input-l">
+              <span>Метро</span>
+              <img src="img/metro-v.svg" alt="">
+            </a>
+            <a href="#" class="input-l">
+              <span>Район</span>
+              <img src="img/loc-v.svg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="s-input-w-12">
+          <a href="#" class="s-link-butt">Метро</a>
+          <a href="#" class="s-link-butt">Район</a>
+          <label class="s-input-label">
+            <input type="checkbox">
+            <span>Возле метро</span>
+          </label>
+        </div>
+
+        
+        
+
+        <div class="s-input-w-5">
+          <select class="s-sel">
+            <option value="Срок сдачи объекта">Стадия строительства</option>
+            <option value="В процессе">В процессе</option>
+            <option value="Завершен">Завершен</option>
+          </select>
+        </div>
+
+        <div class="label-n">Площадь м²</div>
+        <div class="s-input-w-3">              
+          <input class="s-input s-input-s" type="text" placeholder="от" />
+          <input class="s-input" type="text" placeholder="до" />
+        </div>
+
+        
+        <div class="s-input-selects">
+          <div class="s-input-w-8">
+            <select class="s-sel">
+              <option value="Стадии строительства">Класс жилья</option>
+              <option value="В процессе">В процессе</option>
+              <option value="Завершен">Завершен</option>
+            </select>
+          </div>
+
+          <div class="s-input-w-8 s-input-w-11">
+            <select class="s-sel">
+              <option value="Стадии строительства">Тип здания</option>
+              <option value="В процессе">В процессе</option>
+              <option value="Завершен">Завершен</option>
+            </select>
+          </div>
+
+          <div class="s-input-w-8 s-input-w-9">
+            <select class="s-sel">
+              <option value="Стадии строительства">Паркинг</option>
+              <option value="В процессе">В процессе</option>
+              <option value="Завершен">Завершен</option>
+            </select>
+          </div>
+
+        </div><!--s-input-selects-->
+
+        <div class="s-input-w-6">
+          <a href="#" class="s-input-total">Найдено 30 новостроек</a>
+          <div class="s-butt-w">
+            <input type="submit" class="butt" value="Показать">
+          </div>              
+          <div class="butt-o-w">
+            <a href="#" class="butt-o">Сбросить параметры</a>
+          </div>
+        </div><!--s-input-w-6-->
+
+
+
+      </form>
+
+      
+    </div><!--map-col-l-->
+    <div class="map-col-r">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A561be5b4c9cc51180c30beb79ba423991509be2997135e0c4b26d6625e068f2d&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script>
+
+      <div class="tooltip-map tooltip-map-1">
+        <div class="tooltip-img-link-w">
+         <img src="img/tooltip-1.jpg" alt=""> 
+       </div>
+       <div class="tooltip-txts">
+        <a href="#" class="tooltip-tit">Skyline</a>
+        <div class="tooltip-txt">ул. Новаторов, 8Б</div>        
+      </div><!--tooltip-txts-->
+    </div>
+
+  </div><!--map-col-r-->
+</div><!--map-cols-->
+
+</div><!--wrapper-->
+@@include('var/_scripts.html')
+</body>
+</html>

@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+ <!--meta name="viewport" content="width=device-width, initial-scale=1"--> 
+ <meta name="viewport" content="width=device-width, maximum-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="css/jquery-ui.css">
+ <link rel="stylesheet" href="css/main.css">
+ <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+ <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<title>2. Страница города</title>
+</head>
+<body>
+ <div class="wrapper wrapper-2">  
+    <section class="top-section">
+    <div class="contain">
+      <div class="top-w">
+        <a href="/" class="logo"><img src="img/logo.png" /></a>        
+        <div class="top-sel hide-1050">
+          <select class="sel-city">
+            <option class="top-sel-span" value="Выбрать город">Выбрать город</option>
+            <option class="top-sel-span" value="Москва">Москва</option>
+            <option class="top-sel-span" value="Казань">Казань</option>
+          </select>
+        </div>
+        <div class="top-mnu hide-1050">
+          <ul class="top-mnu-ul">
+            <li><a href="#">Жилые комплексы</a></li>
+            <li><a href="#">Застройщики</a></li>    
+            <li><a href="#">Публикации</a></li>    
+          </ul>
+        </div>
+        <div class="col-mnu show-1050">
+          <div class="hidden-mnu">
+            <a href="#" class="toggle-mnu"><span></span></a>
+          </div>
+          <div class="top-mnu">
+            <div class="contain">
+              <div class="top-sel">
+                <select class="sel-city">
+                  <option class="top-sel-span" value="Выбрать город">Выбрать город</option>
+                  <option class="top-sel-span" value="Москва">Москва</option>
+                  <option class="top-sel-span" value="Казань">Казань</option>
+                </select>
+              </div>
+              <ul class="top-mnu-ul">
+                <li><a href="#">Жилые комплексы</a></li>
+                <li><a href="#">Застройщики</a></li>    
+                <li><a href="#">Ипотека</a></li>    
+              </ul>
+              <a href="#" class="butt">Войти</a>
+            </div>
+          </div>          
+        </div>
+        <div class="top-icons">
+          <a href="#" class="top-i"><img src="img/top-i-1.svg" /></a>
+          <a href="#" class="top-i"><img src="img/top-i-2.svg" /></a>
+          <a href="#" class="top-i hide-360"><img src="img/top-i-3.svg" /></a>
+        </div>
+      </div>
+      <div class="top-sel top-sel-n show-1050">
+        <select class="sel-city">
+          <option class="top-sel-span" value="Выбрать город">Выбрать город</option>
+          <option class="top-sel-span" value="Москва">Москва</option>
+          <option class="top-sel-span" value="Казань">Казань</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+
+
+  
+  
+    <section class="filter-section filter-section-2">
+    <div class="blue-b">
+      <div class="contain">
+        <h1 class="h1-w">Новостройки Казани</h1>
+
+        <div class="s-form-w">
+          <form class="s-form">
+            <div class="s-input-w-1">
+              <input class="s-input-b" type="text" placeholder="Название ЖК или адрес" />
+              <div class="input-l-w">
+                <a href="#" class="input-l">
+                  <span>Метро</span>
+                  <img src="img/metro-v.svg" alt="">
+                </a>
+                <a href="#" class="input-l">
+                  <span>Район</span>
+                  <img src="img/loc-v.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="s-input-w-2">
+              <label class="s-check s-check-f">
+                <input type="checkbox" name="s-check-1" value="Студия">
+                <span>Студия</span>
+              </label>
+              <label class="s-check">
+                <input type="checkbox" name="s-check-1" value="1">
+                <span>1</span>
+              </label>
+              <label class="s-check">
+                <input type="checkbox" name="s-check-1" value="2">
+                <span>2</span>
+              </label>
+              <label class="s-check">
+                <input type="checkbox" name="s-check-1" value="3">
+                <span>3</span>
+              </label>
+              <label class="s-check">
+                <input type="checkbox" name="s-check-1" value="4">
+                <span>4+</span>
+              </label>
+            </div>            
+            <div class="label-n show-992">Площадь м²</div>
+            <div class="s-input-w-3">              
+              <input class="s-input s-input-s" type="text" placeholder="Площадь м² от" />
+              <input class="s-input" type="text" placeholder="до" />
+            </div>            
+            <div class="label-n show-992">Цена в руб.  </div>
+           <div class="s-input-w-5 s-input-w-55">
+              <select class="s-sel">
+                <option value="Стадии строительства">Класс жилья</option>
+                <option value="В процессе">В процессе</option>
+                <option value="Завершен">Завершен</option>
+              </select>
+            </div>  
+            <div class="s-input-w-5 s-input-w-55">
+              <select class="s-sel">
+                <option value="Стадии строительства">Стадии строительства</option>
+                <option value="В процессе">В процессе</option>
+                <option value="Завершен">Завершен</option>
+              </select>
+            </div> 
+                          <div class="s-input-w-12 mt20">
+                  <label class="s-input-label">
+                    <input type="checkbox">
+                    <span>Возле метро</span>
+                  </label>
+                </div>          
+            <div class="s-input-w-6">
+              <div class="s-butt-w">
+                <input type="submit" class="butt" value="Показать">
+              </div>              
+              <div class="butt-o-w">
+                <a href="#" class="butt-o">Сбросить параметры</a>
+              </div>
+              <a href="#" class="link-arr-w">
+                <span>Подбор по параметрам</span>
+                <img src="img/arr-b-v.svg" alt="">
+              </a>
+            </div><!--s-input-w-6-->
+            <div class="label-n label-n-7">Этажность дома</div>
+            <div class="s-input-w-7">
+              <input class="s-input s-input-s" type="text" placeholder="Этажность дома" />
+              <input class="s-input" type="text" placeholder="до" />
+            </div>
+
+            <div class="s-filter-more-chars">
+              <div class="s-input-selects">
+                <div class="s-input-w-8">
+                  <select class="s-sel">
+                    <option value="Стадии строительства">Класс жилья</option>
+                    <option value="В процессе">В процессе</option>
+                    <option value="Завершен">Завершен</option>
+                  </select>
+                </div>
+
+                <div class="s-input-w-8 s-input-w-9">
+                  <select class="s-sel">
+                    <option value="Стадии строительства">Паркинг</option>
+                    <option value="В процессе">В процессе</option>
+                    <option value="Завершен">Завершен</option>
+                  </select>
+                </div>
+
+                <div class="s-input-w-8 s-input-w-10">
+                  <select class="s-sel">
+                    <option value="Стадии строительства">Стадии строительства</option>
+                    <option value="В процессе">В процессе</option>
+                    <option value="Завершен">Завершен</option>
+                  </select>
+                </div>
+
+                <div class="s-input-w-8 s-input-w-11">
+                  <select class="s-sel">
+                    <option value="Стадии строительства">Тип здания</option>
+                    <option value="В процессе">В процессе</option>
+                    <option value="Завершен">Завершен</option>
+                  </select>
+                </div>
+
+                <div class="s-input-w-12">
+                  <label class="s-input-label">
+                    <input type="checkbox">
+                    <span>Возле метро</span>
+                  </label>
+                </div>
+              </div><!--s-input-selects-->
+
+              <div class="s-input-w-8 s-input-w-13">
+                <select class="s-sel">
+                  <option value="Стадии строительства">Форма выдачи</option>
+                  <option value="В процессе">В процессе</option>
+                  <option value="Завершен">Завершен</option>
+                </select>
+              </div>
+
+              <div class="s-filter-check-w">
+                <div class="s-filter-check-rw">
+                  <div class="s-filter-check-tit">Безопасность</div>
+                  <div class="s-filter-check-labels">
+                    <label class="check-label">
+                      <input name="check-24" type="checkbox">
+                      <span class="check-butt">Закрытая территория</span>
+                    </label>
+                    <label class="check-label">
+                      <input name="check-24" type="checkbox">
+                      <span class="check-butt">Консьерж</span>
+                    </label>
+                    <label class="check-label">
+                      <input name="check-24" type="checkbox">
+                      <span class="check-butt">Охрана</span>
+                    </label>
+                  </div><!--s-filter-check-labels-->
+                </div><!--s-filter-check-rw-->
+
+                <div class="s-filter-check-rw">
+                  <div class="s-filter-check-tit">Дополнительные опции</div>
+                  <div class="s-filter-check-labels">
+                    <label class="check-label">
+                      <input name="check-24" type="checkbox">
+                      <span class="check-butt">Балкон или лоджия</span>
+                    </label>
+                    <label class="check-label">
+                      <input name="check-24" type="checkbox">
+                      <span class="check-butt">Свободная планировка</span>
+                    </label>
+                    <label class="check-label">
+                      <input name="check-24" type="checkbox">
+                      <span class="check-butt">Панорамные окна</span>
+                    </label>
+                  </div><!--s-filter-check-labels-->
+                </div><!--s-filter-check-rw-->
+
+                <div class="s-filter-check-rw">
+                  <div class="s-filter-check-tit">Инфраструктура</div>
+                  <div class="s-filter-check-labels">
+                    <label class="check-label">
+                      <input name="check-24" type="checkbox">
+                      <span class="check-butt">У воды</span>
+                    </label>
+                    <label class="check-label">
+                      <input name="check-24" type="checkbox">
+                      <span class="check-butt">У леса</span>
+                    </label>
+                    <label class="check-label">
+                      <input name="check-24" type="checkbox">
+                      <span class="check-butt">Рядом с парком</span>
+                    </label>
+                    <label class="check-label">
+                      <input name="check-24" type="checkbox">
+                      <span class="check-butt">Пляж у дома</span>
+                    </label>
+                    <label class="check-label">
+                      <input name="check-24" type="checkbox">
+                      <span class="check-butt">Спортивные площадки</span>
+                    </label>
+                    <label class="check-label">
+                      <input name="check-24" type="checkbox">
+                      <span class="check-butt">Детский садик</span>
+                    </label>
+                    <label class="check-label">
+                      <input name="check-24" type="checkbox">
+                      <span class="check-butt">Школа</span>
+                    </label>
+                    <label class="check-label">
+                      <input name="check-24" type="checkbox">
+                      <span class="check-butt">Магазины</span>
+                    </label>
+                    <label class="check-label">
+                      <input name="check-24" type="checkbox">
+                      <span class="check-butt">Аптеки</span>
+                    </label>
+                  </div><!--s-filter-check-labels-->
+                </div><!--s-filter-check-rw-->
+
+                <div class="s-filter-check-rw">
+                  <div class="s-filter-check-tit">Вид платежа</div>
+                  <div class="s-filter-check-labels">
+                    <label class="check-label">
+                      <input name="check-24" type="checkbox">
+                      <span class="check-butt">Досрочное погашение</span>
+                    </label>
+                    <label class="check-label">
+                      <input name="check-24" type="checkbox">
+                      <span class="check-butt">Для ИП и бизнеса</span>
+                    </label>
+                    <label class="check-label">
+                      <input name="check-24" type="checkbox">
+                      <span class="check-butt">Для зарплатных клиентов</span>
+                    </label>                 
+                  </div><!--s-filter-check-labels-->
+                </div><!--s-filter-check-rw-->
+
+              </div><!--s-filter-check-w-->
+            </div><!--s-filter-more-chars-->
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="proj-section">
+    <div class="contain">
+      <div class="proj-w">        
+        <div class="proj-it">
+          <div class="proj-img-w"><a href="#project-link" class="proj-img-link"></a>            
+            <img src="img/proj-1.jpg">            
+            <div class="proj-ics">
+              <a href="#" class="proj-ic"><img src="img/top-i-1.svg"></a><a href="#" class="proj-ic"><img src="img/top-i-2.svg"></a><a href="#" class="publ">Реклама<img src="img/bulicity.svg"></a>
+            </div>
+            <div class="tagss">
+              <span class="tagg">Строится, есть сданные</span>
+              <span class="tagg">Комфорт</span>
+            </div>
+          </div>
+          <div class="proj-desc">
+            <a href="#" class="proj-txt-1">Солнечный город</a>
+            <div class="proj-txt-2-w"><span class="proj-txt-2">Застройщик: </span><a href="#" class="proj-txt-3">Унистрой</a></div>
+            <div class="proj-txt-4">Приволжский район, ул. Братьев Касимовых</div>
+            <div class="proj-txt-3-w"><img src="img/metro.svg"><a href="#" class="proj-txt-5">Козья слобода </a><span class="proj-txt-6">15 мин.</span><img src="img/bus.png"></div>
+            
+
+          </div>
+        </div>
+        <div class="proj-it">
+          <div class="proj-img-w"><a href="#project-link" class="proj-img-link"></a>
+            <img src="img/proj-2.jpg">
+            <div class="proj-ics">
+              <a href="#" class="proj-ic"><img src="img/top-i-1.svg"></a><a href="#" class="proj-ic"><img src="img/top-i-2.svg"></a><a href="#" class="publ">Реклама<img src="img/bulicity.svg"></a>
+            </div>
+            <div class="tagss"><span class="tagg">Строится</span><span class="tagg">Комфорт</span></div>
+          </div>
+          <div class="proj-desc">
+            <a href="#" class="proj-txt-1">Skyline</a>
+            <div class="proj-txt-2-w"><span class="proj-txt-2">Застройщик: </span><a href="#" class="proj-txt-3">СК СМУ-88</a></div>
+            <div class="proj-txt-4">ул. Новаторов, 8Б</div>
+            <div class="proj-txt-3-w"><img src="img/metro.svg"><a href="#" class="proj-txt-5">Козья слобода </a><span class="proj-txt-6">15 мин.</span><img src="img/bus.png"></div>
+            
+
+          </div>
+        </div>
+        <div class="proj-it">
+          <div class="proj-img-w"><a href="#project-link" class="proj-img-link"></a>
+            <img src="img/proj-3.jpg">
+            <div class="proj-ics">
+              <a href="#" class="proj-ic"><img src="img/top-i-1.svg"></a><a href="#" class="proj-ic"><img src="img/top-i-2.svg"></a><a href="#" class="publ">Реклама<img src="img/bulicity.svg"></a>
+            </div>
+            <div class="tagss"><span class="tagg">Сдан</span><span class="tagg">Бизнес</span></div>
+          </div>
+          <div class="proj-desc">
+            <a href="#" class="proj-txt-1">Легенда</a>
+            <div class="proj-txt-2-w"><span class="proj-txt-2">Застройщик: </span><a href="#" class="proj-txt-3">Арт-Строй</a></div>
+            <div class="proj-txt-4">Приволжский район, ул. Аметьевская Магистраль</div>
+            <div class="proj-txt-3-w"><img src="img/metro.svg"><a href="#" class="proj-txt-5">Аметьево</a><span class="proj-txt-6">15 мин.</span><img src="img/man.svg"></div>
+            
+
+
+          </div>
+        </div>
+        <div class="proj-it">
+          <div class="proj-img-w"><a href="#project-link" class="proj-img-link"></a>
+            <img src="img/proj-4.jpg">
+            <div class="proj-ics">
+              <a href="#" class="proj-ic"><img src="img/top-i-1.svg"></a><a href="#" class="proj-ic"><img src="img/top-i-2.svg"></a><a href="#" class="publ">Выбор редакции</a>
+            </div>
+            <div class="tagss"><span class="tagg">Строится, есть сданные</span><span class="tagg">Комфорт</span></div>
+          </div>
+          <div class="proj-desc">
+            <a href="#" class="proj-txt-1">Солнечный Город Супер</a>
+            <div class="proj-txt-2-w"><span class="proj-txt-2">Застройщик: </span><a href="#" class="proj-txt-3">Ак Барс Дом</a></div>
+            <div class="proj-txt-4">ул. Баки Урманче / Оренбургский проезд</div>
+            <div class="proj-txt-3-w"><img src="img/metro.svg"><a href="#" class="proj-txt-5">Проспект Победы</a><span class="proj-txt-6">15 мин.</span><img src="img/bus.png"></div>
+            
+
+
+          </div>
+        </div> 
+                <div class="proj-it">
+          <div class="proj-img-w"><a href="#project-link" class="proj-img-link"></a>            
+            <img src="img/proj-1.jpg">            
+            <div class="proj-ics">
+              <a href="#" class="proj-ic"><img src="img/top-i-1.svg"></a><a href="#" class="proj-ic"><img src="img/top-i-2.svg"></a><a href="#" class="publ">Реклама<img src="img/bulicity.svg"></a>
+            </div>
+            <div class="tagss">
+              <span class="tagg">Строится, есть сданные</span>
+              <span class="tagg">Комфорт</span>
+            </div>
+          </div>
+          <div class="proj-desc">
+            <a href="#" class="proj-txt-1">Солнечный город</a>
+            <div class="proj-txt-2-w"><span class="proj-txt-2">Застройщик: </span><a href="#" class="proj-txt-3">Унистрой</a></div>
+            <div class="proj-txt-4">Приволжский район, ул. Братьев Касимовых</div>
+            <div class="proj-txt-3-w"><img src="img/metro.svg"><a href="#" class="proj-txt-5">Козья слобода </a><span class="proj-txt-6">15 мин.</span><img src="img/bus.png"></div>
+            
+
+          </div>
+        </div>
+        <div class="proj-it">
+          <div class="proj-img-w"><a href="#project-link" class="proj-img-link"></a>
+            <img src="img/proj-2.jpg">
+            <div class="proj-ics">
+              <a href="#" class="proj-ic"><img src="img/top-i-1.svg"></a><a href="#" class="proj-ic"><img src="img/top-i-2.svg"></a><a href="#" class="publ">Реклама<img src="img/bulicity.svg"></a>
+            </div>
+            <div class="tagss"><span class="tagg">Строится</span><span class="tagg">Комфорт</span></div>
+          </div>
+          <div class="proj-desc">
+            <a href="#" class="proj-txt-1">Skyline</a>
+            <div class="proj-txt-2-w"><span class="proj-txt-2">Застройщик: </span><a href="#" class="proj-txt-3">СК СМУ-88</a></div>
+            <div class="proj-txt-4">ул. Новаторов, 8Б</div>
+            <div class="proj-txt-3-w"><img src="img/metro.svg"><a href="#" class="proj-txt-5">Козья слобода </a><span class="proj-txt-6">15 мин.</span><img src="img/bus.png"></div>
+            
+
+          </div>
+        </div>
+        <div class="proj-it">
+          <div class="proj-img-w"><a href="#project-link" class="proj-img-link"></a>
+            <img src="img/proj-3.jpg">
+            <div class="proj-ics">
+              <a href="#" class="proj-ic"><img src="img/top-i-1.svg"></a><a href="#" class="proj-ic"><img src="img/top-i-2.svg"></a><a href="#" class="publ">Реклама<img src="img/bulicity.svg"></a>
+            </div>
+            <div class="tagss"><span class="tagg">Сдан</span><span class="tagg">Бизнес</span></div>
+          </div>
+          <div class="proj-desc">
+            <a href="#" class="proj-txt-1">Легенда</a>
+            <div class="proj-txt-2-w"><span class="proj-txt-2">Застройщик: </span><a href="#" class="proj-txt-3">Арт-Строй</a></div>
+            <div class="proj-txt-4">Приволжский район, ул. Аметьевская Магистраль</div>
+            <div class="proj-txt-3-w"><img src="img/metro.svg"><a href="#" class="proj-txt-5">Аметьево</a><span class="proj-txt-6">15 мин.</span><img src="img/man.svg"></div>
+            
+
+
+          </div>
+        </div>
+        <div class="proj-it">
+          <div class="proj-img-w"><a href="#project-link" class="proj-img-link"></a>
+            <img src="img/proj-4.jpg">
+            <div class="proj-ics">
+              <a href="#" class="proj-ic"><img src="img/top-i-1.svg"></a><a href="#" class="proj-ic"><img src="img/top-i-2.svg"></a><a href="#" class="publ">Выбор редакции</a>
+            </div>
+            <div class="tagss"><span class="tagg">Строится, есть сданные</span><span class="tagg">Комфорт</span></div>
+          </div>
+          <div class="proj-desc">
+            <a href="#" class="proj-txt-1">Солнечный Город Супер</a>
+            <div class="proj-txt-2-w"><span class="proj-txt-2">Застройщик: </span><a href="#" class="proj-txt-3">Ак Барс Дом</a></div>
+            <div class="proj-txt-4">ул. Баки Урманче / Оренбургский проезд</div>
+            <div class="proj-txt-3-w"><img src="img/metro.svg"><a href="#" class="proj-txt-5">Проспект Победы</a><span class="proj-txt-6">15 мин.</span><img src="img/bus.png"></div>
+            
+
+
+          </div>
+        </div>       
+      </div><!--proj-w-->
+    </div>
+  </section>
+
+  <div class="contain">
+    <div class="develop-cols">
+      <div class="like-h2">Застройщики Казани</div>
+      <div class="like-h3-w"><div class="like-h3">Унистрой</div></div>
+      <div class="cols-2">
+        <div class="col-l-2">
+          <div class="develop-row-1">
+            <div class="develop-row-in">
+              <div class="item-1">
+                <div class="item-1-img-w"><img src="img/dev-logo-1.png" /></div>
+                <div class="item-1-desc">
+                  <div class="item-1-r-1"><span class="item-txt-1">Адрес:</span><span class="item-txt-2">Декабристов, 1</span></div>
+                  <div class="item-1-r-2"><span class="item-txt-1">Адрес:</span><a href="#" class="item-link">8 (843) 232-23-23</a></div>
+                  <a href="#" class="item-link">10 отзывов</a>
+    
+                  <div class="item-1-r-4">
+                    <div class="per-50">
+                     <span class="item-built">                        
+                      <span class="item-built-span">16</span>
+                      <span class="svg-2"></span>                        
+                    </span>
+                    <div class="item-txt-3">
+                      Построение<br />
+                      объектов
+                    </div>
+                  </div>
+                  <div class="per-50">
+                   <span class="item-proc">
+                    <span class="item-proc-span">7</span>
+                    <span class="svg-3"></span>
+                  </span>
+                  <div class="item-txt-3">
+                    В процессе<br />
+                    строительства
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item-2">
+            <a href="#" class="item-2-link-w">
+              <div class="item-2-img-w"><img src="img/proj-2.jpg" /></div>
+              <div class="item-2-title">ЖК Венский лес</div>
+            </a>
+            <div class="item-2-butt-w"><a href="#" class="butt-oo">Смотреть 30 объектов</a></div>
+          </div>
+          <div class="item-2">
+            <a href="#" class="item-2-link-w">
+              <div class="item-2-img-w"><img src="img/proj-3.jpg" /></div>
+              <div class="item-2-title">ЖК Южный бульвар</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="develop-row-1">
+        <div class="like-h4">Сувар Девелопмент</div>
+        <div class="develop-row-in">
+          <div class="item-1">
+            <div class="item-1-img-w"><img src="img/dev-logo-2.jpg" /></div>
+            <div class="item-1-desc">
+              <div class="item-1-r-1"><span class="item-txt-1">Адрес:</span><span class="item-txt-2">Декабристов, 1</span></div>
+              <div class="item-1-r-2"><span class="item-txt-1">Адрес:</span><a href="#" class="item-link">8 (843) 232-23-23</a></div>
+              <a href="#" class="item-link">10 отзывов</a>
+
+              <div class="item-1-r-4">
+                <div class="per-50">
+                 <span class="item-built">                        
+                  <span class="item-built-span">14</span>
+                  <span class="svg-2"></span>                        
+                </span>
+                <div class="item-txt-3">
+                  Построение<br />
+                  объектов
+                </div>
+              </div>
+              <div class="per-50">
+               <span class="item-proc">
+                <span class="item-proc-span">4</span>
+                <span class="svg-3"></span>
+              </span>
+              <div class="item-txt-3">
+                В процессе<br />
+                строительства
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item-2">
+        <a href="#" class="item-2-link-w">
+          <div class="item-2-img-w"><img src="img/proj-2.jpg" /></div>
+          <div class="item-2-title">ЖК Венский лес</div>
+        </a>
+        <div class="item-2-butt-w"><a href="#" class="butt-oo">Смотреть 30 объектов</a></div>
+      </div>
+      <div class="item-2">
+        <a href="#" class="item-2-link-w">
+          <div class="item-2-img-w"><img src="img/proj-3.jpg" /></div>
+          <div class="item-2-title">ЖК Южный бульвар</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="develop-row-1">
+    <div class="like-h4">Таш Инвест</div>
+    <div class="develop-row-in">
+      <div class="item-1">
+        <div class="item-1-img-w"><img src="img/dev-logo-3.jpg" /></div>
+        <div class="item-1-desc">
+          <div class="item-1-r-1"><span class="item-txt-1">Адрес:</span><span class="item-txt-2">Декабристов, 1</span></div>
+          <div class="item-1-r-2"><span class="item-txt-1">Адрес:</span><a href="#" class="item-link">8 (843) 232-23-23</a></div>
+          <a href="#" class="item-txt-1">Отзывов пока нет</a>
+
+          <div class="item-1-r-4">
+            <div class="per-50">
+             <span class="item-built">                        
+              <span class="item-built-span">20</span>
+              <span class="svg-2"></span>                        
+            </span>
+            <div class="item-txt-3">
+              Построение<br />
+              объектов
+            </div>
+          </div>
+          <div class="per-50">
+           <span class="item-proc">
+            <span class="item-proc-span">2</span>
+            <span class="svg-3"></span>
+          </span>
+          <div class="item-txt-3">
+            В процессе<br />
+            строительства
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="item-2">
+    <a href="#" class="item-2-link-w">
+      <div class="item-2-img-w"><img src="img/proj-2.jpg" /></div>
+      <div class="item-2-title">ЖК Венский лес</div>
+    </a>
+    <div class="item-2-butt-w"><a href="#" class="butt-oo">Смотреть 30 объектов</a></div>
+  </div>
+  <div class="item-2">
+    <a href="#" class="item-2-link-w">
+      <div class="item-2-img-w"><img src="img/proj-3.jpg" /></div>
+      <div class="item-2-title">ЖК Южный бульвар</div>
+    </a>
+  </div>
+</div>
+<div class="dev-link-w"><a href="#" class="link-arr">Рейтинг застройщиков</a></div>
+</div>
+
+
+<div class="col-r-2 show-1299">
+  <div class="p-bann">
+    <img src="img/orig_2.jpg" alt="">
+  </div>
+</div>
+
+
+
+</div>
+<div class="col-r-2 hide-1299">
+  <div class="p-bann">
+    <img src="img/orig_2.jpg" alt="">
+  </div>
+</div>
+</div>
+</div>
+</div>
+<section class="pub-section">
+  <div class="contain">
+    <div class="like-h2">
+      Публикации
+    </div>
+    <div class="pub-its">
+      <div class="pub-it">
+        <a href="#" class="pub-it-img-w"><img src="img/pub-1.jpg" /></a><a href="#" class="news-it-title">В каких ЖК живут казанские знаменитости?</a>
+      </div>
+      <div class="pub-it">
+        <a href="#" class="pub-it-img-w"><img src="img/pub-2.jpg" /></a><a href="#" class="news-it-title">Подборка новостроек на старте продаж</a>
+      </div>
+      <div class="pub-it">
+        <a href="#" class="pub-it-img-w"><img src="img/pub-3.jpg" /></a><a href="#" class="news-it-title">Стоимость недвижимости в Казани</a>
+      </div>
+      <div class="pub-it">
+        <a href="#" class="pub-it-img-w"><img src="img/pub-1.jpg" /></a><a href="#" class="news-it-title">В каких ЖК живут казанские знаменитости?</a>
+      </div>
+    </div>
+    <div class="dev-link-w"><a href="#" class="link-arr">Все публикации</a></div>
+  </section>
+</div>  
+<section class="foot-section">
+  <div class="contain">
+    <div class="foot-w">
+      <div class="foot-col foot-col-1">
+        <a href="/" class="logo-2"><img src="img/logo-white_2.svg" /></a>          
+        <select class="sel-city">
+          <option class="top-sel-span" value="Выбрать город">Выбрать город</option>
+          <option class="top-sel-span" value="Москва">Москва</option>
+          <option class="top-sel-span" value="Казань">Казань</option>
+        </select>
+      </div>
+      <div class="foot-col foot-col-2">
+        <ul class="mnu-ul">
+          <li class="mnu-li"><a href="#" class="mnu-a">Жилые комплексы</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Застройщики</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Публикации</a></li>          
+        </ul>
+      </div>
+      <div class="foot-col foot-col-3">
+        <ul class="mnu-ul">
+          <li class="mnu-li"><a href="#" class="mnu-a">Все ЖК</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Застройщикам</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Все застройщики</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Все города</a></li>
+        </ul>
+      </div>
+      <div class="foot-col foot-col-4">
+        <ul class="mnu-ul">
+          <li class="mnu-li"><a href="#" class="mnu-a">Отзывы на ЖК</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Отзывы на застройщиков</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Добавить отзыв</a></li>          
+        </ul>
+      </div>
+      <div class="foot-col foot-col-5">
+        <ul class="mnu-ul">
+          <li class="mnu-li"><a href="#" class="mnu-a">Добавить объект</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Правила сайта</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">О сайте</a></li>
+        </ul>
+      </div>
+      <div class="foot-col foot-col-6">
+        <div class="foot-soc-w">
+          <a href="#" class="foot-soc"><img src="img/fb.svg" /></a>
+          <a href="#" class="foot-soc"><img src="img/vk.svg" /></a>            
+          <a href="#" class="foot-soc"><img src="img/inst.svg" /></a>
+        </div>
+        <a href="https://rucontent.com/" class="rucont-link"><img src="img/rucontent.svg" /></a>
+      </div>
+    </div>
+    <div class="copy">
+      Материалы, размещенные на сайте, получены от застройщиков, банков или собраны из открытых источников. Сайт носит информационный характер и не является публичной офертой. Все права на изображения и тексты принадлежат их
+      правообладателям. Если вы считаете, что публикация того или иного материала нарушает права правообладателя, свяжитесь с нами по электронной почте.
+    </div>
+  </div>
+</section>
+</div><!--wrapper-->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/fancySelect.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/donut-chart.js"></script>
+<script src="js/jquery.sliderPro.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

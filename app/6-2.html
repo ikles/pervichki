@@ -1,0 +1,114 @@
+@@include('var/_head.html')
+<title>6.2. Застройщик - перечень ЖК</title>
+</head>
+<body>
+ <div class="wrapper wrapper-6-2">  
+  @@include('var/_top-mnu.html')
+  <div class="develop-blue-top-2">
+    <div class="contain">
+      <div class="develop-pers-cols">
+        <div class="develop-l">
+          <img src="img/dev-logo-min.jpg"></div>          
+          <div class="develop-r">
+            <h1>Унистрой</h1>
+          
+          </div>
+        </div>
+      </div>
+    </div><!--develop-blue-top-->
+
+
+    <div class="contain">
+      <ul class="develop-tabs">
+        <li>
+          <a href="#">О компании</a>
+        </li>
+        <li>
+          <a class="active" href="#">Объекты</a>
+        </li>
+        <li>
+          <a href="#">Новости</a>
+        </li>
+        <li>
+          <a href="#">Отзывы</a>
+        </li> 
+        <li>
+          <a href="#">Отзывы на объекты (4)</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+      <div class="develop-h2-w">
+        <div class="like-h2">Жилые комплексы</div>
+      </div>
+      <div class="sort-w-2 sort-w-3">
+        <div class="sort-l">
+          <div class="sort-tit">Сортировать по</div>
+          
+          <div class="sort-links hide-992">
+            <a href="#" class="sort-link-1 active">Рекомендуемые</a>            
+            <a href="#" class="sort-link-1">По сроку сдачи</a>
+          </div>
+
+          <div class="top-sel top-sel-sort-2 show-992">
+            <select class="sel-city">
+              <option class="top-sel-span" value="Выбрать город">Рекомендуемые</option>                          
+              <option class="top-sel-span" value="Выбрать город">По сроку сдачи</option>                          
+            </select>
+          </div><!--top-sel-sort-->
+
+
+        </div>
+
+        <ul class="sort-r sort-r-2">
+          <li class="tabs_control_item active">
+            <a href="#" class="sort-link tabs_control_link">
+              <img src="img/squares_1.svg" />
+              Плитка
+            </a>
+          </li>
+          <li class="tabs_control_item">
+            <a href="#" class="sort-link tabs_control_link">
+             <img src="img/checklist_1.svg" />
+             Список
+           </a>
+         </li>
+         <li class="tabs_control_item">
+          <a href="#" class="sort-link tabs_control_link">
+            <img src="img/gps_4.svg" />
+            На карте
+          </a>
+        </li>
+      </ul><!--tabs-control-->  
+    </div><!--sort-w-2-->
+
+
+    <ul class="develop-proj-list">
+      <li class="tabs_content_item active">
+        <div class="develop-proj-list-in">          
+          <div class="proj-w">
+          @@include('var/_proj-its.html')
+          @@include('var/_proj-its3.html')
+          </div>
+        </div><!--develop-proj-list-->
+      </li><!--tabs_content_item active-->
+      <li class="tabs_content_item">
+        <div class="develop-proj-list-in">
+        </div>
+      </li>
+      <li class="tabs_content_item">
+        3
+      </li>
+    </ul>    
+    <div class="proj-w proj-w-3">
+@@include('var/_proj-its.html')
+    </div>
+    
+    
+  </div><!--cont-->
+  @@include('var/_footer.html')
+</div><!--wrapper-->
+@@include('var/_scripts.html')
+</body>
+</html>

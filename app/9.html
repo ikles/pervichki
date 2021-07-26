@@ -1,0 +1,672 @@
+@@include('var/_head.html')
+<title>9. Ипотека</title>
+</head>
+<body>
+ <div class="wrapper wrapper-9">
+  @@include('var/_top-mnu.html')
+  
+  <section class="filter-section filter-section-3">
+    <div class="blue-b">
+      <div class="contain">
+        <h1 class="h1-w">Ипотека на новостройки в Казани</h1>
+        <div class="s-form-w">
+          <form class="s-form">       
+            <div class="s-input-lbl-wrap s-input-lbl-wrap_1">
+              <div class="label-n label-n_2">Стоимость недвижимости, руб.</div>
+              <div class="s-input-337">
+                <input class="inputt" id="amount-distance" type="text" placeholder="0" /> 
+                <div class="range-o" id="calc-distance">
+                </div>
+              </div>
+            </div>
+            
+            <div class="s-input-lbl-wrap s-input-lbl-wrap_2">
+              <div class="label-n label-n_2">Первоначальный взнос, руб.</div>
+              <div class="s-input-337">
+                <input class="inputt" id="amount-distance-2" type="text" placeholder="0" />
+                <div class="range-o" id="calc-distance-2">
+                </div>
+              </div>
+            </div>
+
+            <div class="s-input-lbl-wrap s-input-lbl-wrap_3">
+              <div class="label-n label-n_2">Срок</div>
+              <div class="s-input-158">
+                <select class="s-sel">
+                  <option value="1 год">1 год</option>
+                  <option value="2 года">2 года</option>
+                  <option value="3 года">3 года</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="s-input-lbl-wrap s-input-lbl-wrap_4">              
+              <div class="label-n_2 empty"></div>
+              <div class="s-input-grow">
+                <div class="s-butt-w">
+                  <input type="submit" class="butt" value="Показать">
+                </div>              
+                <div class="butt-o-w">
+                  <a href="#" class="butt-o">Сбросить параметры</a>
+                </div>
+                <a href="#" class="link-arr-w ml10">
+                  <span>Подбор по параметрам</span>
+                  <img src="img/arr-b-v.svg" alt="">
+                </a>
+              </div><!--s-input-grow-->
+            </div>
+
+            <div class="s-input-lbl-wrap s-input-lbl-wrap_5">             
+              <div class="label-n_2">Процентная ставка</div>
+              <div class="s-input-396">
+                <input class="inputt s-input s-input-s" type="text" placeholder="от">
+                <input class="inputt s-input" type="text" placeholder="до">
+              </div><!--s-input-396-->
+            </div>
+
+
+            <div class="s-filter-more-chars">
+              <div class="s-input-selects_2">
+                <div class="s-input-409">
+                  <select class="s-sel">
+                    <option value="Цель ипотеки">Цель ипотеки</option>
+                    <option value="В процессе">В процессе</option>
+                    <option value="Завершен">Завершен</option>
+                  </select>
+                </div>
+
+                <div class="s-input-409">
+                  <select class="s-sel">
+                    <option value="Ипотечная программа">Ипотечная программа</option>
+                    <option value="В процессе">В процессе</option>
+                    <option value="Завершен">Завершен</option>
+                  </select>
+                </div>
+
+                <div class="s-input-409">
+                  <select class="s-sel">
+                    <option value="Подтверждение дохода">Подтверждение дохода</option>
+                    <option value="В процессе">В процессе</option>
+                    <option value="Завершен">Завершен</option>
+                  </select>
+                </div>
+
+                <div class="s-input-409">
+                  <select class="s-sel">
+                    <option value="Категория заемщика">Категория заемщика</option>
+                    <option value="В процессе">В процессе</option>
+                    <option value="Завершен">Завершен</option>
+                  </select>
+                </div>
+
+                <div class="s-input-409">
+                  <select class="s-sel">
+                    <option value="Стаж на последнем месте работы">Стаж на последнем месте работы</option>
+                    <option value="В процессе">В процессе</option>
+                    <option value="Завершен">Завершен</option>
+                  </select>
+                </div>
+
+                <div class="s-input-409">
+                  <select class="s-sel">
+                    <option value="Возраст заемщика">Возраст заемщика</option>
+                    <option value="В процессе">В процессе</option>
+                    <option value="Завершен">Завершен</option>
+                  </select>
+                </div>
+              </div><!--s-input-selects-->
+
+
+
+              <div class="s-filter-check-w">
+                <div class="s-filter-check-rw">
+                  <div class="s-filter-check-tit s-filter-check-tit_2">Топ банков по размеру активов</div>
+                  <div class="s-filter-check-labels s-filter-check-labels_2">
+                    <label class="check-label">
+                      <input name="check-24" type="checkbox">
+                      <span class="check-butt">Топ 100</span>
+                    </label>
+                    <label class="check-label">
+                      <input name="check-24" type="checkbox">
+                      <span class="check-butt">Топ 50</span>
+                    </label>
+                    <label class="check-label">
+                      <input name="check-24" type="checkbox">
+                      <span class="check-butt">Топ 10</span>
+                    </label>
+                    <div class="s-input-409">
+                      <select class="s-sel">
+                        <option value="Выберете банк">Выберете банк</option>
+                        <option value="В процессе">В процессе</option>
+                        <option value="Завершен">Завершен</option>
+                      </select>
+                    </div>
+                  </div><!--s-filter-check-labels-->
+                </div><!--s-filter-check-rw-->
+              </div><!--s-filter-check-w-->
+              <div class="find-cred">Найдено 138 ипотечных кредитов</div>
+            </div><!--s-filter-more-chars-->
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sort-w-2">
+    <div class="contain">
+      <div class="sort-l sort-l-dev">
+        <div class="sort-tit">Сортировать по</div>
+        <div class="sort-links hide-992">          
+          <a href="#" class="sort-link-1 active">Банк</a>
+          <a href="#" class="sort-link-1">Ставка</a>
+          <a href="#" class="sort-link-1">Сумма</a>
+          <a href="#" class="sort-link-1">Требования</a>
+        </div>
+        <div class="top-sel top-sel-sort show-992">
+          <select class="sel-city">
+            <option class="top-sel-span" value="Выбрать город">Банк</option>
+            <option class="top-sel-span" value="Выбрать город">Ставка</option>
+            <option class="top-sel-span" value="Выбрать город">Сумма</option>
+            <option class="top-sel-span" value="Выбрать город">Требования</option>
+          </select>
+        </div><!--top-sel-sort-->
+
+      </div>
+    </div>
+  </div>
+  <div class="contain">
+    <div class="cols banks-list-cols-w">
+      <div class="col-grow">
+        <div class="banks-list-block">
+          <div class="banks-list-w">
+            <div class="banks-list-item">
+              <div class="banks-list-l">
+                <div class="banks-list-img-w"><img src="img/bank-2.jpg"></div>
+                <a href="#" class="banks-list-pub">
+                  Реклама <img src="img/pub-i.svg" alt="">
+                </a>                
+              </div>
+              <div class="banks-list-r">
+                <div class="banks-list-tit">Рефинансирование</div>
+                <div class="banks-list-terms">
+                  <div class="banks-list-terms-l">
+                    <div class="banks-list-terms-row-1">
+                      <div class="per-50">
+                        <div class="banks-list-terms-txt-1">ставка</div>
+                        <div class="banks-list-terms-txt-2">от 8,39%</div>
+                      </div>
+                      <div class="per-50">
+                        <div class="banks-list-terms-txt-1">cрок</div>
+                        <div class="banks-list-terms-txt-2">до 10 лет</div>
+                      </div>
+                    </div>
+                    <div class="banks-list-terms-row-2">первоначальный взнос <b>от 15%</b></div>
+                    <div class="banks-list-terms-butt-w">
+                      <a href="#" class="butt-o">Онлайн заявка</a>
+                    </div>
+                  </div>
+                  <div class="banks-list-terms-r">
+                    <div class="banks-list-terms-row-3">
+                      <div class="banks-list-terms-txt-1">сумма</div>
+                      <div class="banks-list-terms-txt-2">3 000 000 - 26 000 000 руб.</div>
+                    </div>
+                    <ul class="banks-list-terms-row-4">
+                      <li>стаж работы 6 мес.</li>
+                      <li>срок рассмотрения от 1 до 3 дней</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div><!--banks-list-item-->
+
+            <div class="banks-list-item">
+              <div class="banks-list-l">
+                <div class="banks-list-img-w"><img src="img/bank-3.jpg"></div>
+                <a href="#" class="banks-list-pub">
+                  Реклама <img src="img/pub-i.svg" alt="">
+                </a>                
+              </div>
+              <div class="banks-list-r">
+                <div class="banks-list-tit">Рефинансирование</div>
+                <div class="banks-list-terms">
+                  <div class="banks-list-terms-l">
+                    <div class="banks-list-terms-row-1">
+                      <div class="per-50">
+                        <div class="banks-list-terms-txt-1">ставка</div>
+                        <div class="banks-list-terms-txt-2">от 8,39%</div>
+                      </div>
+                      <div class="per-50">
+                        <div class="banks-list-terms-txt-1">cрок</div>
+                        <div class="banks-list-terms-txt-2">до 10 лет</div>
+                      </div>
+                    </div>
+                    <div class="banks-list-terms-row-2">первоначальный взнос <b>от 15%</b></div>
+                    <div class="banks-list-terms-butt-w">
+                      <a href="#" class="butt-o">Онлайн заявка</a>
+                    </div>
+                  </div>
+                  <div class="banks-list-terms-r">
+                    <div class="banks-list-terms-row-3">
+                      <div class="banks-list-terms-txt-1">сумма</div>
+                      <div class="banks-list-terms-txt-2">3 000 000 - 26 000 000 руб.</div>
+                    </div>
+                    <ul class="banks-list-terms-row-4">
+                      <li>стаж работы 6 мес.</li>
+                      <li>срок рассмотрения от 1 до 3 дней</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div><!--banks-list-item-->
+
+            <div class="banks-list-item">
+              <div class="banks-list-l">
+                <div class="banks-list-img-w"><img src="img/bank-4.jpg"></div>
+                <a href="#" class="banks-list-pub">
+                  Реклама <img src="img/pub-i.svg" alt="">
+                </a>                
+              </div>
+              <div class="banks-list-r">
+                <div class="banks-list-tit">Рефинансирование</div>
+                <div class="banks-list-terms">
+                  <div class="banks-list-terms-l">
+                    <div class="banks-list-terms-row-1">
+                      <div class="per-50">
+                        <div class="banks-list-terms-txt-1">ставка</div>
+                        <div class="banks-list-terms-txt-2">от 8,39%</div>
+                      </div>
+                      <div class="per-50">
+                        <div class="banks-list-terms-txt-1">cрок</div>
+                        <div class="banks-list-terms-txt-2">до 10 лет</div>
+                      </div>
+                    </div>
+                    <div class="banks-list-terms-row-2">первоначальный взнос <b>от 15%</b></div>
+                    <div class="banks-list-terms-butt-w">
+                      <a href="#" class="butt-o">Онлайн заявка</a>
+                    </div>
+                  </div>
+                  <div class="banks-list-terms-r">
+                    <div class="banks-list-terms-row-3">
+                      <div class="banks-list-terms-txt-1">сумма</div>
+                      <div class="banks-list-terms-txt-2">3 000 000 - 26 000 000 руб.</div>
+                    </div>
+                    <ul class="banks-list-terms-row-4">
+                      <li>стаж работы 6 мес.</li>
+                      <li>срок рассмотрения от 1 до 3 дней</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div><!--banks-list-item-->
+
+
+
+            <div class="banks-list-item">
+              <div class="banks-list-l">
+                <div class="banks-list-img-w"><img src="img/bank-3.jpg"></div>
+                <div class="banks-list-num-w">Отделение: <a href="#">10</a></div>
+              </div>
+              <div class="banks-list-r">
+                <div class="banks-list-tit">Рефинансирование</div>
+                <div class="banks-list-terms">
+                  <div class="banks-list-terms-l">
+                    <div class="banks-list-terms-row-1">
+                      <div class="per-50">
+                        <div class="banks-list-terms-txt-1">ставка</div>
+                        <div class="banks-list-terms-txt-2">от 8,39%</div>
+                      </div>
+                      <div class="per-50">
+                        <div class="banks-list-terms-txt-1">cрок</div>
+                        <div class="banks-list-terms-txt-2">до 10 лет</div>
+                      </div>
+                    </div>
+                    <div class="banks-list-terms-row-2">первоначальный взнос <b>от 15%</b></div>
+                    <div class="banks-list-terms-butt-w">
+                      <a href="#" class="butt-o">Онлайн заявка</a>
+                    </div>
+                  </div>
+                  <div class="banks-list-terms-r">
+                    <div class="banks-list-terms-row-3">
+                      <div class="banks-list-terms-txt-1">сумма</div>
+                      <div class="banks-list-terms-txt-2">3 000 000 - 26 000 000 руб.</div>
+                    </div>
+                    <ul class="banks-list-terms-row-4">
+                      <li>стаж работы 6 мес.</li>
+                      <li>срок рассмотрения от 1 до 3 дней</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div><!--banks-list-item-->
+
+            <div class="banks-list-item">
+              <div class="banks-list-l">
+                <div class="banks-list-img-w"><img src="img/bank-5.jpg"></div>
+                <div class="banks-list-num-w">Отделение: <a href="#">10</a></div>
+              </div>
+              <div class="banks-list-r">
+                <div class="banks-list-tit">Рефинансирование</div>
+                <div class="banks-list-terms">
+                  <div class="banks-list-terms-l">
+                    <div class="banks-list-terms-row-1">
+                      <div class="per-50">
+                        <div class="banks-list-terms-txt-1">ставка</div>
+                        <div class="banks-list-terms-txt-2">от 8,39%</div>
+                      </div>
+                      <div class="per-50">
+                        <div class="banks-list-terms-txt-1">cрок</div>
+                        <div class="banks-list-terms-txt-2">до 10 лет</div>
+                      </div>
+                    </div>
+                    <div class="banks-list-terms-row-2">первоначальный взнос <b>от 15%</b></div>
+                    <div class="banks-list-terms-butt-w">
+                      <a href="#" class="butt-o">Онлайн заявка</a>
+                    </div>
+                  </div>
+                  <div class="banks-list-terms-r">
+                    <div class="banks-list-terms-row-3">
+                      <div class="banks-list-terms-txt-1">сумма</div>
+                      <div class="banks-list-terms-txt-2">3 000 000 - 26 000 000 руб.</div>
+                    </div>
+                    <ul class="banks-list-terms-row-4">
+                      <li>стаж работы 6 мес.</li>
+                      <li>срок рассмотрения от 1 до 3 дней</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div><!--banks-list-item-->
+
+            <div class="blue-block-txt blue-block-txt_2">
+              <div class="blue-l">
+                <div class="blue-round-img-w">
+                  <img src="img/lendo.png" alt="">
+                </div>
+                <div class="blue-txts">
+                  <div class="blue-txt-11">
+                    Сравните условия ипотеки разных банков <br>
+                    Казани при помощи сервиса Lendo
+                  </div>                  
+                </div>
+              </div>
+              <div class="blue-r-2"><a href="#" class="butt butt-vv">Перейти</a></div>
+            </div>
+
+            <div class="banks-list-item">
+              <div class="banks-list-l">
+                <div class="banks-list-img-w"><img src="img/bank-4.jpg"></div>
+                <div class="banks-list-num-w">Отделение: <a href="#">10</a></div>
+              </div>
+              <div class="banks-list-r">
+                <div class="banks-list-tit">Рефинансирование</div>
+                <div class="banks-list-terms">
+                  <div class="banks-list-terms-l">
+                    <div class="banks-list-terms-row-1">
+                      <div class="per-50">
+                        <div class="banks-list-terms-txt-1">ставка</div>
+                        <div class="banks-list-terms-txt-2">от 8,39%</div>
+                      </div>
+                      <div class="per-50">
+                        <div class="banks-list-terms-txt-1">cрок</div>
+                        <div class="banks-list-terms-txt-2">до 10 лет</div>
+                      </div>
+                    </div>
+                    <div class="banks-list-terms-row-2">первоначальный взнос <b>от 15%</b></div>
+                    <div class="banks-list-terms-butt-w">
+                      <a href="#" class="butt-o">Онлайн заявка</a>
+                    </div>
+                  </div>
+                  <div class="banks-list-terms-r">
+                    <div class="banks-list-terms-row-3">
+                      <div class="banks-list-terms-txt-1">сумма</div>
+                      <div class="banks-list-terms-txt-2">3 000 000 - 26 000 000 руб.</div>
+                    </div>
+                    <ul class="banks-list-terms-row-4">
+                      <li>стаж работы 6 мес.</li>
+                      <li>срок рассмотрения от 1 до 3 дней</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div><!--banks-list-item-->
+
+            <div class="banks-list-item">
+              <div class="banks-list-l">
+                <div class="banks-list-img-w"><img src="img/bank-3.jpg"></div>
+                <div class="banks-list-num-w">Отделение: <a href="#">10</a></div>
+              </div>
+              <div class="banks-list-r">
+                <div class="banks-list-tit">Рефинансирование</div>
+                <div class="banks-list-terms">
+                  <div class="banks-list-terms-l">
+                    <div class="banks-list-terms-row-1">
+                      <div class="per-50">
+                        <div class="banks-list-terms-txt-1">ставка</div>
+                        <div class="banks-list-terms-txt-2">от 8,39%</div>
+                      </div>
+                      <div class="per-50">
+                        <div class="banks-list-terms-txt-1">cрок</div>
+                        <div class="banks-list-terms-txt-2">до 10 лет</div>
+                      </div>
+                    </div>
+                    <div class="banks-list-terms-row-2">первоначальный взнос <b>от 15%</b></div>
+                    <div class="banks-list-terms-butt-w">
+                      <a href="#" class="butt-o">Онлайн заявка</a>
+                    </div>
+                  </div>
+                  <div class="banks-list-terms-r">
+                    <div class="banks-list-terms-row-3">
+                      <div class="banks-list-terms-txt-1">сумма</div>
+                      <div class="banks-list-terms-txt-2">3 000 000 - 26 000 000 руб.</div>
+                    </div>
+                    <ul class="banks-list-terms-row-4">
+                      <li>стаж работы 6 мес.</li>
+                      <li>срок рассмотрения от 1 до 3 дней</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div><!--banks-list-item-->
+          </div><!--banks-list-w-->            
+          <div class="banks-pagin-w">
+            <ul class="pagin">
+              <li><a href="#">1</a></li>
+              <li><a href="#" class="active">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li>
+                <a href="#" class="pagin-a"><img src="img/arrow-r (1).svg"></a>
+              </li>
+            </ul>
+          </div>
+        </div><!--bnklst-blck-->
+
+        <div class="revs-block revs-block_3">          
+          <div class="like-h2">Отзывы</div>
+          <div class="revs-w">
+            <div class="revs-item">
+              <div class="revs-item-row-1">
+                <div class="revs-item-col-l">
+                  <div class="revs-ava-nd">
+                    <a href="#" class="revs-ava"><img src="img/ava.svg"></a>
+                    <div class="revs-name-date">
+                      <div class="revs-name">Максим П.</div>
+                      <div class="revs-date">26.04.2020 19:45</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="revs-item-col-r">
+                  <div class="revs-stars">
+                    <img src="img/star.svg" alt="">
+                    <img src="img/star.svg" alt="">
+                    <img src="img/star.svg" alt="">
+                    <img src="img/star.svg" alt="">
+                    <img src="img/star.svg" alt="">
+                  </div>
+                  <div class="bank-min">
+                    <img src="img/bank-min-1.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="revs-item-row-2">
+                Клиентом банка являюсь сравнительнодавно, чуть больше года.  Протестил мобильное приложение, делюсь
+                впечатлениями. По пятибалльной шкале, ставлю четверку т.к. в приложении отсутствует qr код дляоплаты квитанций.Но!В остальном молодцы! Отдельно отмечу по условиям в мобильном приложении:1.за туже оплату ЖКХ НИКАКОЙ комиссии. При чем это не в условиях пандемии ее сняли, а в течение всего времени, как являюсь клиентом банка ее не <a href="#" class="">читать полностью</a>
+              </div>
+              <div class="revs-item-row-3">
+                <div class="revs-item-col-l">
+                  <div class="revs-actions">
+                    <a href="#" class="revs-comments-reply">Ответить</a>
+                    <a href="#" class="revs-comments-count">
+                      <div class="revs-comments-span">Комментарии</div>
+                      <span class="revs-comments-link">1</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="revs-item-col-r">
+                  <div class="revs-marks">
+                    <a href="#" class="revs-mark">                        
+                      <img src="img/likee-1.svg">                        
+                      <span class="revs-mark-count revs-mark-count-1">10</span>
+                    </a>
+                    <a href="#" class="revs-mark">                        
+                      <img src="img/likee-2.svg">                        
+                      <span class="revs-mark-count revs-mark-count-2">0</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div><!--revs-item-->
+            <div class="revs-item">
+              <div class="revs-item-row-1">
+                <div class="revs-item-col-l">
+                  <div class="revs-ava-nd">
+                    <a href="#" class="revs-ava"><img src="img/ava.svg"></a>
+                    <div class="revs-name-date">
+                      <div class="revs-name">Максим П.</div>
+                      <div class="revs-date">26.04.2020 19:45</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="revs-item-col-r">
+                  <div class="revs-stars">
+                    <img src="img/star.svg" alt="">
+                    <img src="img/star.svg" alt="">
+                    <img src="img/star.svg" alt="">
+                    <img src="img/star.svg" alt="">
+                    <img src="img/star.svg" alt="">
+                  </div>
+                  <div class="bank-min">
+                    <img src="img/bank-min-2.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="revs-item-row-2">
+               Пишу отзывы в двух случаях: либо, когда совсем плохо, либо, когда удивляет отношение на столько, что хочется поблагодарить. Вот хочу сказать спасибо вашему сотруднику. Не так давно открыл новую организацию, соответственно встал вопрос об открытии расчетного счета. Т.к. с банком работаю довольно давно, решил здесь же открыть расчетный счёт. В банке очередей, как таковых не было, поэтому практически не ждал своей очереди.
+             </div>
+             <div class="revs-item-row-3">
+              <div class="revs-item-col-l">
+                <div class="revs-actions">
+                  <a href="#" class="revs-comments-reply">Ответить</a>
+                  <a href="#" class="revs-comments-count">
+                    <div class="revs-comments-span">Комментарии</div>
+                    <span class="revs-comments-link">1</span>
+                  </a>
+                </div>
+              </div>
+              <div class="revs-item-col-r">
+                <div class="revs-marks">
+                  <a href="#" class="revs-mark">                        
+                    <img src="img/likee-1.svg">                        
+                    <span class="revs-mark-count revs-mark-count-1">10</span>
+                  </a>
+                  <a href="#" class="revs-mark">                        
+                    <img src="img/dislike.svg">                        
+                    <span class="revs-mark-count revs-mark-count-2">4</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div><!--revs-item-->
+          <div class="revs-item">
+            <div class="revs-item-row-1">
+              <div class="revs-item-col-l">
+                <div class="revs-ava-nd">
+                  <a href="#" class="revs-ava"><img src="img/ava.svg"></a>
+                  <div class="revs-name-date">
+                    <div class="revs-name">Олег</div>
+                    <div class="revs-date">26.04.2020 19:45</div>
+                  </div>
+                </div>
+              </div>
+              <div class="revs-item-col-r">
+                <div class="revs-stars">
+                  <img src="img/star.svg" alt="">
+                  <img src="img/star.svg" alt="">
+                  <img src="img/star.svg" alt="">
+                  <img src="img/star.svg" alt="">
+                  <img src="img/star.svg" alt="">
+                </div>
+                <div class="bank-min">
+                  <img src="img/bank-min-1.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="revs-item-row-2">
+              Клиентом банка являюсь сравнительнодавно, чуть больше года.  Протестил мобильное приложение, делюсь
+              впечатлениями. По пятибалльной шкале, ставлю четверку т.к. в приложении отсутствует qr код дляоплаты квитанций.Но!В остальном молодцы! Отдельно отмечу по условиям в мобильном приложении:1.за туже оплату ЖКХ НИКАКОЙ комиссии. При чем это не в условиях пандемии ее сняли, а в течение всего времени, как являюсь клиентом банка ее не... читать полностью
+            </div>
+            <div class="revs-item-row-3">
+              <div class="revs-item-col-l">
+                <div class="revs-actions">
+                  <a href="#" class="revs-comments-reply">Ответить</a>
+                  <a href="#" class="revs-comments-count">
+                    <div class="revs-comments-span">Комментарии</div>
+                    <span class="revs-comments-link">1</span>
+                  </a>
+                </div>
+              </div>
+              <div class="revs-item-col-r">
+                <div class="revs-marks">
+                  <a href="#" class="revs-mark">                        
+                    <img src="img/likee-1.svg">                        
+                    <span class="revs-mark-count revs-mark-count-1">10</span>
+                  </a>
+                  <a href="#" class="revs-mark">                        
+                    <img src="img/likee-2.svg">                        
+                    <span class="revs-mark-count revs-mark-count-2">0</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div><!--revs-item-->
+          <div class="revs-item-comp-link-w">
+            <a href="#" class="link-arr">Смотреть все</a>
+          </div>
+        </div>
+      </div><!--revs-block-->
+
+
+    </div><!--col-grow-->
+    <div class="col-294">
+      <div class="r-bann-w">
+        <img src="img/r-bann-w.jpg" alt="">
+      </div>
+      <div class="r-bann-w">
+        <img src="img/r-bann-w-2.jpg" alt="">
+      </div>
+    </div><!--col-294-->
+  </div><!--banks-list-cols-w-->
+</div><!--contain-->
+
+<div class="contain">
+  <div class="proj-w proj-w-3">
+    @@include('var/_proj-its.html')   
+  </div>
+</div>
+
+@@include('var/_footer.html')
+</div><!--wrapper-->
+@@include('var/_scripts.html')
+</body>
+</html>

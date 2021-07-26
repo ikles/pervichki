@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+ <!--meta name="viewport" content="width=device-width, initial-scale=1"--> 
+ <meta name="viewport" content="width=device-width, maximum-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="css/jquery-ui.css">
+ <link rel="stylesheet" href="css/main.css">
+ <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+ <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<title>20. Карты сайта</title>
+</head>
+<body>
+ <div class="wrapper wrapper-20">
+    <section class="top-section">
+    <div class="contain">
+      <div class="top-w">
+        <a href="/" class="logo"><img src="img/logo.png" /></a>        
+        <div class="top-sel hide-1050">
+          <select class="sel-city">
+            <option class="top-sel-span" value="Выбрать город">Выбрать город</option>
+            <option class="top-sel-span" value="Москва">Москва</option>
+            <option class="top-sel-span" value="Казань">Казань</option>
+          </select>
+        </div>
+        <div class="top-mnu hide-1050">
+          <ul class="top-mnu-ul">
+            <li><a href="#">Жилые комплексы</a></li>
+            <li><a href="#">Застройщики</a></li>    
+            <li><a href="#">Публикации</a></li>    
+          </ul>
+        </div>
+        <div class="col-mnu show-1050">
+          <div class="hidden-mnu">
+            <a href="#" class="toggle-mnu"><span></span></a>
+          </div>
+          <div class="top-mnu">
+            <div class="contain">
+              <div class="top-sel">
+                <select class="sel-city">
+                  <option class="top-sel-span" value="Выбрать город">Выбрать город</option>
+                  <option class="top-sel-span" value="Москва">Москва</option>
+                  <option class="top-sel-span" value="Казань">Казань</option>
+                </select>
+              </div>
+              <ul class="top-mnu-ul">
+                <li><a href="#">Жилые комплексы</a></li>
+                <li><a href="#">Застройщики</a></li>    
+                <li><a href="#">Ипотека</a></li>    
+              </ul>
+              <a href="#" class="butt">Войти</a>
+            </div>
+          </div>          
+        </div>
+        <div class="top-icons">
+          <a href="#" class="top-i"><img src="img/top-i-1.svg" /></a>
+          <a href="#" class="top-i"><img src="img/top-i-2.svg" /></a>
+          <a href="#" class="top-i hide-360"><img src="img/top-i-3.svg" /></a>
+        </div>
+      </div>
+      <div class="top-sel top-sel-n show-1050">
+        <select class="sel-city">
+          <option class="top-sel-span" value="Выбрать город">Выбрать город</option>
+          <option class="top-sel-span" value="Москва">Москва</option>
+          <option class="top-sel-span" value="Казань">Казань</option>
+        </select>
+      </div>
+    </div>
+  </section>  
+  <div class="develop-blue-top">
+    <div class="contain">
+      <h1 class="h1-c">Карта сайта</h1>
+      <form class="map-form">
+        <input type="text" class="input map-input" placeholder="Поиск по названию">
+        <input type="submit" class="map-butt">
+      </form>
+    </div>
+  </div><!--develop-blue-top-->
+
+  <div class="develop-list-block">
+    <div class="contain">
+      <div class="develop-list-scroll">
+        <div class="develop-list-row">
+          <div class="develop-list-txt-1">А</div>
+          <div class="develop-list-w">
+            <div class="develop-list-col">
+              <ul class="develop-list-ul">
+                <li><a href="#">Авангард</a> <span class="develop-list-txt-2">(Казань)</span></li>
+                <li><a href="#">Адалин-Строй</a> <span class="develop-list-txt-2">(Москва)</span></li>
+                <li><a href="#">Алгоритм</a></li>
+                <li><a href="#">АО «АПМК-1»</a> <span class="develop-list-txt-2">(Москва)</span></li>
+                <li><a href="#">АО «ПУСК»</a></li>
+                <li><a href="#">АО «АПМК-1»</a> <span class="develop-list-txt-2">(Санкт-Петербург)</span></li>
+              </ul>
+            </div>
+            <div class="develop-list-col">
+              <ul class="develop-list-ul">
+                <li><a href="#">Авангард</a> <span class="develop-list-txt-2">(Казань)</span></li>
+                <li><a href="#">Адалин-Строй</a></li>
+                <li><a href="#">Алгоритм</a> <span class="develop-list-txt-2">(Нижний Новогород)</span></li>
+                <li><a href="#">АО «АПМК-1»</a> <span class="develop-list-txt-2">(Москва)</span></li>
+                <li><a href="#">АО «ПУСК»</a> <span class="develop-list-txt-2">(Москва)</span></li>
+                <li><a href="#">АО «АПМК-1»</a> <span class="develop-list-txt-2">(Санкт-Петербург)</span></li>
+              </ul>
+            </div>
+            <div class="develop-list-col">
+              <ul class="develop-list-ul">
+                <li><a href="#">Авангард</a></li>
+                <li><a href="#">Адалин-Строй</a></li>
+                <li><a href="#">Алгоритм</a> <span class="develop-list-txt-2">(Нижний Новогород)</span></li>
+                <li><a href="#">АО «АПМК-1»</a> <span class="develop-list-txt-2">(Москва)</span></li>
+                <li><a href="#">АО «ПУСК»</a> <span class="develop-list-txt-2">(Москва)</span></li>
+                <li><a href="#">АО «АПМК-1»</a> <span class="develop-list-txt-2">(Санкт-Петербург)</span></li>
+              </ul>
+            </div>
+            <div class="develop-list-col">
+              <ul class="develop-list-ul">
+                <li><a href="#">Авангард</a> <span class="develop-list-txt-2">(Нижний Новогород)</span></li>
+                <li><a href="#">Адалин-Строй</a></li>
+                <li><a href="#">Алгоритм</a></li>
+                <li><a href="#">АО «АПМК-1»</a></li>
+                <li><a href="#">АО «ПУСК»</a></li>
+                <li><a class="all-link1" href="#">Все застройщики на букву A</a></li>
+                <li><a class="all-link1" href="#">Все компании на букву A</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="develop-list-row">
+          <div class="develop-list-txt-1">Б</div>
+          <div class="develop-list-w">
+            <div class="develop-list-col">
+              <ul class="develop-list-ul">
+                <li><a href="#">Барнаулкапстрой</a> <span class="develop-list-txt-2">(Санкт-Петербург)</span></li>
+                <li><a href="#">Бетонстройсервис</a></li>
+                <li><a href="#">Алгоритм</a></li>
+                <li><a href="#">АО «АПМК-1»</a></li>
+                <li><a href="#">АО «ПУСК»</a></li>
+                <li><a href="#">АО «АПМК-1»</a> <span class="develop-list-txt-2">(Казань)</span></li>
+              </ul>
+            </div>
+            <div class="develop-list-col">
+              <ul class="develop-list-ul">
+                <li><a href="#">Авангард</a></li>
+                <li><a href="#">Адалин-Строй</a> <span class="develop-list-txt-2">(Санкт-Петербург)</span></li>
+                <li><a href="#">Алгоритм</a> <span class="develop-list-txt-2">(Санкт-Петербург)</span></li>
+                <li><a href="#">АО «АПМК-1»</a></li>
+                <li><a href="#">АО «ПУСК»</a></li>
+                <li><a href="#">АО «АПМК-1»</a></li>
+              </ul>
+            </div>
+            <div class="develop-list-col">
+              <ul class="develop-list-ul">
+                <li><a href="#">Авангард</a> <span class="develop-list-txt-2">(Казань)</span></li>
+                <li><a href="#">Адалин-Строй</a> <span class="develop-list-txt-2">(Москва)</span></li>
+                <li><a href="#">Алгоритм</a></li>
+                <li><a href="#">АО «АПМК-1»</a> <span class="develop-list-txt-2">(Москва)</span></li>
+                <li><a href="#">АО «ПУСК»</a></li>
+                <li><a href="#">АО «АПМК-1»</a> <span class="develop-list-txt-2">(Санкт-Петербург)</span></li>
+              </ul>
+            </div>
+            <div class="develop-list-col">
+              <ul class="develop-list-ul">
+                <li><a href="#">Авангард</a> <span class="develop-list-txt-2">(Казань)</span></li>
+                <li><a href="#">Адалин-Строй</a> <span class="develop-list-txt-2">(Москва)</span></li>
+                <li><a href="#">Алгоритм</a></li>
+                <li><a href="#">АО «АПМК-1»</a> <span class="develop-list-txt-2">(Москва)</span></li>
+                <li><a href="#">АО «ПУСК»</a></li>
+                <li><a href="#">АО «АПМК-1»</a> <span class="develop-list-txt-2">(Санкт-Петербург)</span></li>
+                <li><a class="all-link1" href="#">Все застройщики на букву Б</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="develop-list-row">
+          <div class="develop-list-txt-1">В</div>
+          <div class="develop-list-w">
+            <div class="develop-list-col">
+              <ul class="develop-list-ul">
+                <li><a href="#">Авангард</a> <span class="develop-list-txt-2">(Москва)</span></li>
+                <li><a href="#">Адалин-Строй</a> <span class="develop-list-txt-2">(Москва)</span></li>
+                <li><a href="#">Алгоритм</a> <span class="develop-list-txt-2">(Екатеринбург)</span></li>
+                <li><a href="#">АО «АПМК-1»</a> <span class="develop-list-txt-2">(Москва)</span></li>
+                <li><a href="#">АО «ПУСК»</a></li>
+                <li><a href="#">АО «АПМК-1»</a> <span class="develop-list-txt-2">(Санкт-Петербург)</span></li>
+              </ul>
+            </div>
+            <div class="develop-list-col">
+              <ul class="develop-list-ul">
+                <li><a href="#">Авангард</a></li>
+                <li><a href="#">Адалин-Строй</a></li>
+                <li><a href="#">Алгоритм</a> <span class="develop-list-txt-2">(Москва)</span></li>
+                <li><a href="#">АО «АПМК-1»</a> <span class="develop-list-txt-2">(Москва)</span></li>
+                <li><a href="#">АО «ПУСК»</a></li>
+                <li><a href="#">АО «АПМК-1»</a></li>
+              </ul>
+            </div>
+            <div class="develop-list-col">
+              <ul class="develop-list-ul">
+                <li><a href="#">Авангард</a></li>
+                <li><a href="#">Адалин-Строй</a></li>
+                <li><a href="#">Алгоритм</a> <span class="develop-list-txt-2">(Самара)</span></li>
+                <li><a href="#">АО «АПМК-1»</a></li>
+                <li><a href="#">АО «ПУСК»</a></li>
+                <li><a href="#">АО «АПМК-1»</a></li>
+              </ul>
+            </div>
+            <div class="develop-list-col">
+              <ul class="develop-list-ul">
+                <li><a href="#">Авангард</a></li>
+                <li><a href="#">Адалин-Строй</a></li>
+                <li><a href="#">Алгоритм</a></li>
+                <li><a href="#">АО «АПМК-1»</a></li>
+                <li><a href="#">АО «ПУСК»</a></li>
+                <li><a class="all-link1" href="#">Все застройщики на букву В</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="develop-list-row">
+          <div class="develop-list-txt-1">Г</div>
+          <div class="develop-list-w">
+            <div class="develop-list-col">
+              <ul class="develop-list-ul">
+                <li><a href="#">Барнаулкапстрой</a></li>
+                <li><a href="#">Бетонстройсервис</a> <span class="develop-list-txt-2">(Казань)</span></li>
+                <li><a href="#">Алгоритм</a></li>
+                <li><a href="#">АО «АПМК-1»</a></li>
+                <li><a href="#">АО «ПУСК»</a></li>
+                <li><a href="#">АО «АПМК-1»</a></li>
+              </ul>
+            </div>
+            <div class="develop-list-col">
+              <ul class="develop-list-ul">
+                <li><a href="#">Авангард</a></li>
+                <li><a href="#">Адалин-Строй</a></li>
+                <li><a href="#">Алгоритм</a></li>
+                <li><a href="#">АО «АПМК-1»</a></li>
+                <li><a href="#">АО «ПУСК»</a></li>
+                <li><a href="#">АО «АПМК-1»</a> <span class="develop-list-txt-2">(Москва)</span></li>
+              </ul>
+            </div>
+            <div class="develop-list-col">
+              <ul class="develop-list-ul">
+                <li><a href="#">Авангард</a> <span class="develop-list-txt-2">(Казань)</span></li>
+                <li><a href="#">Адалин-Строй</a> <span class="develop-list-txt-2">(Москва)</span></li>
+                <li><a href="#">Алгоритм</a></li>
+                <li><a class="all-link1" href="#">Все застройщики на букву Г</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="pub-pagin-w">
+      <ul class="pagin">
+        <li><a href="#">1</a></li>
+        <li><a href="#" class="active">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#"><img src="img/arrow-rr.svg"></a></li>
+      </ul>
+    </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="foot-section">
+  <div class="contain">
+    <div class="foot-w">
+      <div class="foot-col foot-col-1">
+        <a href="/" class="logo-2"><img src="img/logo-white_2.svg" /></a>          
+        <select class="sel-city">
+          <option class="top-sel-span" value="Выбрать город">Выбрать город</option>
+          <option class="top-sel-span" value="Москва">Москва</option>
+          <option class="top-sel-span" value="Казань">Казань</option>
+        </select>
+      </div>
+      <div class="foot-col foot-col-2">
+        <ul class="mnu-ul">
+          <li class="mnu-li"><a href="#" class="mnu-a">Жилые комплексы</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Застройщики</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Публикации</a></li>          
+        </ul>
+      </div>
+      <div class="foot-col foot-col-3">
+        <ul class="mnu-ul">
+          <li class="mnu-li"><a href="#" class="mnu-a">Все ЖК</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Застройщикам</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Все застройщики</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Все города</a></li>
+        </ul>
+      </div>
+      <div class="foot-col foot-col-4">
+        <ul class="mnu-ul">
+          <li class="mnu-li"><a href="#" class="mnu-a">Отзывы на ЖК</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Отзывы на застройщиков</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Добавить отзыв</a></li>          
+        </ul>
+      </div>
+      <div class="foot-col foot-col-5">
+        <ul class="mnu-ul">
+          <li class="mnu-li"><a href="#" class="mnu-a">Добавить объект</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Правила сайта</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">О сайте</a></li>
+        </ul>
+      </div>
+      <div class="foot-col foot-col-6">
+        <div class="foot-soc-w">
+          <a href="#" class="foot-soc"><img src="img/fb.svg" /></a>
+          <a href="#" class="foot-soc"><img src="img/vk.svg" /></a>            
+          <a href="#" class="foot-soc"><img src="img/inst.svg" /></a>
+        </div>
+        <a href="https://rucontent.com/" class="rucont-link"><img src="img/rucontent.svg" /></a>
+      </div>
+    </div>
+    <div class="copy">
+      Материалы, размещенные на сайте, получены от застройщиков, банков или собраны из открытых источников. Сайт носит информационный характер и не является публичной офертой. Все права на изображения и тексты принадлежат их
+      правообладателям. Если вы считаете, что публикация того или иного материала нарушает права правообладателя, свяжитесь с нами по электронной почте.
+    </div>
+  </div>
+</section>
+</div><!--wrapper-->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/fancySelect.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/donut-chart.js"></script>
+<script src="js/jquery.sliderPro.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

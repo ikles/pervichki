@@ -1,0 +1,138 @@
+@@include('var/_head.html')
+<title>26. Оставить отзыв</title>
+</head>
+<body>
+ <div class="wrapper wrapper-26">  
+  @@include('var/_top-mnu.html')
+  <div class="contain">
+    <div class="form-cols">
+      <div class="form-col-l">
+        <div class="add-review-block">
+          <h1>Оставить отзыв</h1>
+          <p>Чтобы оставить отзыв необходимо <a href="#">авторизоваться</a> на сайте. Если у вас нет аккаунта, то можете заполнить поля ниже и мы вас автоматически зарегистрируем на сайте.</p>
+          <form class="add-review-form">
+            <div class="add-review-label"><span class="add-review-label-txt">Имя <span>*</span></span><input type="text" class="add-review-input" placeholder="" /></div>
+            <div class="add-review-label"><span class="add-review-label-txt">Фамилия <span>*</span></span><input type="text" class="add-review-input" placeholder="" /></div>
+            <div class="add-review-label"><span class="add-review-label-txt">Пароль</span><input type="text" class="add-review-input" placeholder="" /></div>
+            <div class="add-review-label"><span class="add-review-label-txt">Повторите пароль</span><input type="text" class="add-review-input" placeholder="" /></div>
+            <div class="add-review-label"><span class="add-review-label-txt">E-mail <span>*</span></span><input type="text" class="add-review-input" placeholder="" /><span class="add-review-span">Не будет показано на сайте</span></div>
+            
+            <div class="add-review-label">
+
+
+              <span class="add-review-label-txt">Город <span>*</span></span>
+              
+
+              <select class="s-sel">
+                <option value="Город">Город</option>
+                <option value="Москва">Москва</option>
+                <option value="Казань">Казань</option>                
+              </select>
+
+              <a href="#" class="add-review-link">Почему моего города нет в списке?</a>
+
+
+            </div>
+
+
+            <div class="add-review-label">
+              <span class="add-review-label-txt">Объект для отзыва</span><input type="text" class="add-review-input" placeholder="Начните вводить название" /><span class="add-review-span">Выберите объект в выпадающем списке</span>
+            </div>
+            <textarea class="add-review-textarea" placeholder="Тема отзыва"></textarea>
+            
+
+
+
+            <div class="add-review-bot">
+              <p><b>Оцените деятельность застройщика:</b></p>
+
+              <div class="add-review-bot-rows">
+                <div class="add-review-bot-row">
+                  <div class="add-review-bot-label">Клиентоориентированность</div>
+                  <div class="stars">
+                    <img src="img/star-2.svg" />
+                    <img src="img/star-2.svg" />
+                    <img src="img/star-2.svg" />
+                    <img src="img/star-2.svg" />
+                    <img src="img/star-2.svg" />
+                  </div>
+                </div><!--add-review-bot-row-->
+
+                <div class="add-review-bot-row">
+                  <div class="add-review-bot-label">Ценовая политика</div>
+                  <div class="stars">
+                    <img src="img/star-2.svg" />
+                    <img src="img/star-2.svg" />
+                    <img src="img/star-2.svg" />
+                    <img src="img/star-2.svg" />
+                    <img src="img/star-2.svg" />
+                  </div>
+                </div><!--add-review-bot-row-->
+
+                <div class="add-review-bot-row">
+                  <div class="add-review-bot-label">Качество строительства</div>
+                  <div class="stars">
+                    <img src="img/star-2.svg" />
+                    <img src="img/star-2.svg" />
+                    <img src="img/star-2.svg" />
+                    <img src="img/star-2.svg" />
+                    <img src="img/star-2.svg" />
+                  </div>
+                </div><!--add-review-bot-row-->
+
+                <div class="add-review-bot-row">
+                  <div class="add-review-bot-label">Полнота информации</div>
+                  <div class="stars">
+                    <img src="img/star-2.svg" />
+                    <img src="img/star-2.svg" />
+                    <img src="img/star-2.svg" />
+                    <img src="img/star-2.svg" />
+                    <img src="img/star-2.svg" />
+                  </div>
+                </div><!--add-review-bot-row-->
+
+                <div class="add-review-bot-row">
+                  <div class="add-review-bot-label">Надежность застройщика</div>
+                  <div class="stars">
+                    <img src="img/star-2.svg" />
+                    <img src="img/star-2.svg" />
+                    <img src="img/star-2.svg" />
+                    <img src="img/star-2.svg" />
+                    <img src="img/star-2.svg" />
+                  </div>
+                </div><!--add-review-bot-row-->
+              </div><!--add-review-bot-rows-->
+
+              <div class="add-review-buutt-group">
+
+                <label class="confirm-label">
+                  <input type="checkbox">
+                  <div>Согласие  <a href="#"> с правилами сайта</a></div>
+                </label>
+
+                <input class="butt" type="submit" value="Оставить отзыв">
+
+              </div><!--add-review-buutt-group-->            
+            </div><!--add-review-bot-->
+          </form>
+          <br>
+          <br>
+          
+          <p><a href="#">Правила публикации отзывов</a></p>
+          <p><a href="#">Правила оценки отзывов</a></p>
+        </div><!--add-review-block-->
+        
+
+      </div><!--form-col-l-->
+      <div class="form-col-r">
+
+
+
+      </div><!--form-col-r-->
+    </div><!--form-cols-->
+  </div><!--contain-->
+@@include('var/_footer.html')
+</div><!--wrapper-->
+@@include('var/_scripts.html')
+</body>
+</html>

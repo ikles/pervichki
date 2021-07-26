@@ -1,0 +1,179 @@
+@@include('var/_head.html')
+<title>6.5. Застройщик - Отзывы</title>
+</head>
+<body>
+ <div class="wrapper wrapper-6-5">  
+  @@include('var/_top-mnu.html')
+  <div class="develop-blue-top-2">
+    <div class="contain">
+      <div class="develop-pers-cols">
+        <div class="develop-l">
+          <img src="img/dev-logo-min.jpg"></div>          
+          <div class="develop-r">
+            <h1>Унистрой</h1>           
+          </div>
+        </div>
+      </div>
+    </div><!--develop-blue-top-->
+
+
+    <div class="contain">
+      <ul class="develop-tabs">
+        <li>
+          <a href="#">О компании</a>
+        </li>
+        <li>
+          <a href="#">Объекты</a>
+        </li>
+        <li>
+          <a href="#" href="#">Новости</a>
+        </li>
+        <li>
+          <a href="#">Отзывы</a>
+        </li> 
+        <li>
+          <a class="active" href="#">Отзывы на объекты (4)</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+
+      <div class="cols">
+        <div class="col-grow">
+          <div class="develop-h2-w">
+            <div class="like-h2">Отзывы на объекты</div>
+            <p>Чтобы посмотреть отзывы на определенные ЖК выберите их в соответвующей форме. </p>
+
+            <div class="dev-news-sort-w">
+              <div class="dev-news-sort-col">
+                <div class="dev-news-sort-tit">Выберите ЖК</div>
+                <div class="dev-news-sort-sel">
+                  <select class="s-sel">
+                    <option value="ЖК «Палитра»">ЖК «Палитра»</option>
+                    <option value="За все">За все</option>
+                    <option value="За все">За все</option>                
+                  </select>
+                </div>
+              </div><!--dev-news-sort-col-->
+            </div><!--dev-news-sort-w-->
+
+          </div>
+          <div class="revs-block">          
+            <div class="revs-w">
+  @@include('var/_revs_plus.html',
+  {
+  "name":"Максим П.",
+  "text":"Расположение удобное. В любую точку Казани на одном автобусе. Ну есть места только, куда просто долго ехать, но зато на автобусе)) можно и без машины прожить, в общем. Строится быстро, что удивительно. В общем, шик, надею, что сданным он будет еще kучше",
+  "plus":"Транспортная доступность",
+  "minus":"Дом явно строили на отвяжись: звукоизоляции нет вообще (сосед храпит, а слышно всем соседям), то проблемы с трубами и лифтами обнаруживаются, короче ужас!"
+  })
+
+
+  @@include('var/_revs_plus.html',
+  {
+  "name":"Олег",
+  "text":"Отсутствие балконов и лоджий это большой недостаток.",
+  "plus":"Готовность",
+  "minus":"Планировки"
+  })
+
+
+                  
+
+
+                  
+
+          </div><!--revs-w-->
+
+<a herf="#" class="develop-btn butt">Оставить отзыв</a>
+        
+
+
+    </div>
+  </div><!--col-grow-->
+  <div class="col-294">
+    <div class="rating-block-r">
+      <a href="#" class="rating-block-img-w">
+        <img src="img/proj-7.jpg" alt="">
+      </a>
+      <div class="rating-block-title">Рейтиг ЖК «Палитра»</div>      
+      <div class="rate-it-2">        
+        <p>25 отзывов</p>        
+      </div>
+
+      <div class="add-review-bot-rows">
+        <div class="add-review-bot-row">
+          <div class="add-review-bot-label">Клиентоориентированность</div>
+          <div class="stars">
+            <img src="img/star.svg" />
+            <img src="img/star.svg" />
+            <img src="img/star.svg" />
+            <img src="img/star.svg" />
+            <img src="img/star.svg" />
+          </div>
+        </div><!--add-review-bot-row-->
+
+        <div class="add-review-bot-row">
+          <div class="add-review-bot-label">Ценовая политика</div>
+          <div class="stars">
+            <img src="img/star.svg" />
+            <img src="img/star.svg" />
+            <img src="img/star.svg" />
+            <img src="img/star.svg" />
+            <img src="img/star.svg" />
+          </div>
+        </div><!--add-review-bot-row-->
+
+        <div class="add-review-bot-row">
+          <div class="add-review-bot-label">Качество строительства</div>
+          <div class="stars">
+            <img src="img/star.svg" />
+            <img src="img/star.svg" />
+            <img src="img/star.svg" />
+            <img src="img/star.svg" />
+            <img src="img/star-2.svg" />
+          </div>
+        </div><!--add-review-bot-row-->
+
+        <div class="add-review-bot-row">
+          <div class="add-review-bot-label">Полнота информации</div>
+          <div class="stars">
+            <img src="img/star.svg" />
+            <img src="img/star.svg" />
+            <img src="img/star.svg" />
+            <img src="img/star.svg" />
+            <img src="img/star.svg" />
+          </div>
+        </div><!--add-review-bot-row-->
+
+        <div class="add-review-bot-row">
+          <div class="add-review-bot-label">Надежность застройщика</div>
+          <div class="stars">
+            <img src="img/star.svg" />
+            <img src="img/star.svg" />
+            <img src="img/star.svg" />
+            <img src="img/star.svg" />
+            <img src="img/star-2.svg" />
+          </div>
+        </div><!--add-review-bot-row-->
+      </div><!--add-review-bot-rows-->
+
+    </div><!--rating-block-r-->
+  </div><!--col-294-->
+</div><!--cols-->
+</div><!--contain-->
+
+
+
+<div class="contain">
+  <div class="proj-w proj-w-3">
+    @@include('var/_proj-its.html')   
+  </div>
+
+</div><!--cont-->
+@@include('var/_footer.html')
+</div><!--wrapper-->
+@@include('var/_scripts.html')
+</body>
+</html>
