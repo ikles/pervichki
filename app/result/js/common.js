@@ -21,8 +21,8 @@ jQuery(document).ready(function( $ ) {
   $('select').fancySelect();
 
 
-
-/*  $('.wrapper').prepend('<span class="eye-3"></span>');
+/*
+  $('.wrapper').prepend('<span class="eye-3"></span>');
   let pg = parseInt(document.location.pathname.match(/\d+/))
   $('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
@@ -145,7 +145,10 @@ jQuery(document).ready(function( $ ) {
     }
     else {
       $('.filter-section-2 .link-arr-w span').html('Подбор по параметрам'); 
-    }   
+    }  
+    $('.filter-section-2 .s-form').toggleClass('open');
+
+  
     $('.filter-section-2 .s-input-w-6').toggleClass('show-par');    
     $('.filter-section-2 .link-arr-w img').toggleClass('rot180');
     $('.filter-section-2 .s-input-w-7').toggleClass('shw');
@@ -464,6 +467,15 @@ $('.rcomplex-span').click(function (e) {
   e.preventDefault();
   $('.phone-show').toggleClass('show');
   $('.phone-hide').toggleClass('hide');
+  $('.abcomp-txt-tel').toggleClass('show');
+  if ( $(this).text() == 'Показать') {
+    $('.rcomplex-span').text('Скрыть');
+  }
+  else {
+    $('.rcomplex-span').text('Показать');
+  }
+
+
 });
 
 

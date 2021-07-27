@@ -173,7 +173,8 @@ a
   height: 296px
   background-color: rgb(248, 250, 255)  
   position: relative  
-  h1
+  h1,
+  .h1-c
     padding-top: 88px
     position: relative
     z-index: 2
@@ -187,6 +188,11 @@ a
       
 .h1-c  
   text-align: center  
+  color: #232323
+  font-size: 38px
+  font-weight: 700
+  margin-bottom: 20px
+  line-height: 1.2
 
 .check-city-w
   width: 100%
@@ -496,6 +502,19 @@ a
 
 .h1-w
   color: #ffffff
+  color: #232323
+  font-size: 38px
+  font-weight: 700
+  margin-bottom: 20px
+  line-height: 1.2
+
+.h1  
+  color: #232323
+  font-size: 38px
+  font-weight: 700
+  margin-bottom: 20px
+  line-height: 1.2
+  
 
 .s-form-w
   margin-top: 23px
@@ -503,12 +522,9 @@ a
 .s-form
   display: flex
   flex-wrap: wrap
-  margin-top: 0px
-  justify-content: space-between
+  margin-top: 0px  
 
-.filter-section-2
-  .s-form-w
-    margin-top: 32px
+
 
 input[type=text].s-input-b
   width: calc(100% - 135px)
@@ -564,6 +580,8 @@ input[type=text].s-input-b
 .s-filter-check-w
   width: 100%
   margin-top: 20px
+  margin-left: 6px
+  margin-right: 6px
 .s-filter-check-rw
   display: flex  
   margin-bottom: 10px
@@ -580,12 +598,9 @@ input[type=text].s-input-b
   -ms-flex-wrap: wrap
   flex-wrap: wrap
 
-.s-input-selects
-  margin-top: 20px
+.s-input-selects  
   width: 100%
-  display: flex
-  -webkit-justify-content: space-between
-  justify-content: space-between
+  display: flex  
 .s-input-w-1  
   height: 48px
   border: 1px solid rgb(221, 221, 221)
@@ -679,12 +694,29 @@ input[type=text].s-input-b
   -webkit-flex-grow: 1
   flex-grow: 1
 
+
+  
+
 .filter-section-2
+  
+  .s-form-w
+    margin-top: 0px
+  h1
+    margin-bottom: 19px
   .link-arr-w
     margin-left: 18px
   .butt, input[type="submit"].butt
     width: auto
     padding: 0 39px
+  .s-input-stad
+    width: 254px $i
+  .label-n
+    margin-left: 6px
+    margin-right: 6px
+  
+
+
+
 
 
 .s-check  
@@ -801,16 +833,115 @@ input[type=text].s-input
   .butt-o-w
     display: none
 
+.w264
+  width: 264px
 
-.filter-section-2
-  .s-input-w-55
-    width: 306px
+.mt17
+  margin-top: 17px
 
-.mt20
-  margin-top: 20px
+.s-form
+  margin: 0 -6px
 
-@media (max-width : 1299px)
+.c-input
+  display: flex
+  background-color: #FFF 
+  border: 1px solid #DDD
+  height: 48px
+  margin-left: 6px
+  margin-right: 6px
+  margin-top: 17px
+  input[type="text"]
+    padding: 0 15px
+
+.c-input-fancy
+  display: flex
+  background-color: #FFF   
+  height: 48px
+  margin-left: 6px
+  margin-right: 6px
+  margin-top: 17px
+  div.fancy-select
+    width: 100%
+    div.trigger
+      width: 100%
+
+.c-input-grow  
+  
+
+.c-input-square
+  width: 430px
+  input[type="text"]
+    &:nth-child(1)
+      border-right: 1px solid #DDD
+
+.c-input-class
+  width: 318px
+
+.c-input-park  
+  width: 306px
+  
+.c-input-rooms
+  
+.c-input-tit
+  width: 530px  
+
+.c-input-park
+  display: none
+
+.c-input-stad
+  width: 306px
+
+
+.c-input-o
+  background: none
+  display: flex  
+  align-items: center
+  height: 48px
+  margin-top: 17px
+  margin-left: 6px
+  margin-right: 6px 
+
+.c-input-btns
+  margin-left: auto
+  width: 441px
+
+.c-input-floor
+  width: 440px
+  display: none
+
+
+.s-form.open
+  .c-input-metro1
+    display: none
+  .c-input-park
+    display: flex
+    width: 264px
+  .c-input-class
+    width: 264px
+  .c-input-floor
+    display: flex
+  .c-input-btns
+    order: 100
+    -webkit-justify-content: flex-start
+    justify-content: flex-start
+    width: 100%
+    margin-left: unset 
+  .c-input-stad
+    width: 254px
+  .с-input-type
+    width: 264px
+  .butt-o-w
+    display: flex
+    margin-left: 11px
+
+
+@media (max-width : 1299px)  
   .filter-section-2
+    .c-input-tit
+      width: 430px
+    .c-input-stad,
+    .c-input-class
+      width: 274px
     .link-arr-w
       padding-right: 0
     .s-input-w-1,
@@ -828,7 +959,21 @@ input[type=text].s-input
     .s-butt-w .butt
       width: 170px
 @media (max-width : 1199px)
+  .top-mnu-ul a
+    font-size: 15px
   .filter-section-2     
+    .c-input-tit
+      width: 370px
+    .c-input-square
+      width: 311px
+      flex: unset
+    .c-input-square input[type="text"]
+      width: 50%
+    .c-input-stad,
+    .c-input-class
+      width: 240px
+    .c-input-btns
+      width: 311px
     .s-butt-w .butt
       width: 180px        
     .s-input-w-1,
@@ -848,9 +993,30 @@ input[type=text].s-input
       flex-wrap: wrap
     .s-input-w-13
       width: 100%
+  .filter-section-2
+    .s-form.open
+      .c-input-stad,
+      .c-input-class,
+      .c-input-park,
+      .c-input-floor
+        width: calc(50% - 12px)
       
 @media (max-width : 992px)
-  .filter-section-2
+  .top-mnu-ul a
+    font-size: 16px
+  .filter-section-2,
+  .filter-section-3,
+  .filter-section-4
+    .c-input-tit,
+    .c-input-rooms,
+    .c-input-square,
+    .c-input-class,
+    .c-input-btns
+      width: calc(50% - 12px) 
+    .link-arr-w
+      margin-left: auto
+      span
+        font-size: 14px
     .s-input-w-2
       margin-top: 0
     .s-input-w-3,
@@ -871,8 +1037,15 @@ input[type=text].s-input
     .s-filter-check-tit
       margin-bottom: 15px
       width: 100%
+  .filter-section-2
+    .label-n
+      
 @media (max-width : 768px)
   .filter-section-2
+    .c-input-btns
+      width: 100%      
+      flex-wrap: wrap
+      height: auto
     .link-arr-w      
       justify-content: center
       display: flex
@@ -901,11 +1074,27 @@ input[type=text].s-input
   .s-input-w-7
     input[type=text].s-input:first-child
       width: 50%
+  .filter-section-2
+    .s-form.open
+      .s-butt-w
+        margin-bottom: 15px
+      .c-input-btns
+        margin-top: 0
+      .butt-o-w
+        margin-left: 0
+        width: 100%
+        .butt-o
+          width: 100%
+      .c-input-floor
+        width: 100%
   
 @media (max-width : 570px)
   .filter-section-2
     .link-arr-w      
-      
+    
+    .s-form.open
+      .c-input-stad
+        width: 100%
     .s-input-w-1,
     .s-input-w-2
       width: 100%
@@ -922,6 +1111,13 @@ input[type=text].s-input
       .link-arr-w
         margin-top: 25px
 
+@media (max-width : 480px)
+  .filter-section-2
+    .s-form.open
+      .c-input-class,
+      .с-input-type,    
+      .c-input-park
+        width: 100%
 
 .slider
   background-color: rgba(14, 6, 19, 0.46)
@@ -1053,6 +1249,13 @@ input[type=text].s-input
   .s-input-w-3,
   .s-input-w-6
     width: 388px
+  .s-form.open
+    .c-input-floor
+      display: flex    
+      width: 351px
+      input[type="text"]
+        width: 50%
+        
 @media (max-width : 1199px)
   .f-contain
     width: 914px
@@ -1176,11 +1379,29 @@ input[type=text].s-input
   input[type=text].s-input
     padding-left: 15px
     padding-right: 15px
+  .filter-section-2
+    .c-input-tit,
+    .c-input-rooms,
+    .c-input-square,
+    .c-input-class,
+    .c-input-btns,
+    .c-input-stad
+      width: 100%
+    .c-input-metro1
+      margin-left: auto
   
 
 @media (max-width : 480px)
   .s-cont
     width: 340px
+  .filter-section-2
+    .c-input-metro1
+      margin-left: 6px
+      margin-right: 6px
+      width: 100%
+    
+  
+    
       
 @media (max-width : 360px)
   .s-cont
@@ -1399,21 +1620,24 @@ input[type=text].s-input
   margin-right: 0
   margin-top: 57px
 
+.proj-w-h
+
+
+
 .proj-w-h-2
   margin-bottom: 49px
   margin-top: 18px
-.proj-it-h
+.proj-it-h,
+.proj-w-h .proj-it
   width: 100%
   margin-right: 0
   display: flex  
   border-radius: 8px  
   padding: 23px 14px 23px 0px
+  margin-bottom: 0
   &:last-child
     margin-bottom: 0
-  &.pub  
-    background-color: #fffae9
-    margin-bottom: 23.5px    
-    padding-left: 21px
+  &.pub      
   &:not(.pub)
     padding-top: 10px
     margin-bottom: 16px
@@ -1432,7 +1656,8 @@ input[type=text].s-input
     margin-bottom: 8px
   .proj-desc
     display: flex
-    -webkit-flex-grow: 1
+    -webkit-flex-grow: 1      
+    flex-direction: column
     flex-grow: 1
     margin-left: 29px
     padding-top: 0
@@ -1447,6 +1672,10 @@ input[type=text].s-input
     -webkit-justify-content: flex-end
     justify-content: flex-end
     display: flex
+
+
+
+
 .proj-img-w-h
   width: 293px
   height: 242px  
@@ -1461,6 +1690,10 @@ input[type=text].s-input
 .proj-w-3
   margin-top: 25px
   padding-bottom: 103px
+
+
+  
+
 
 @media (min-width : 1199px)
   .wrapper-6-2
@@ -1498,7 +1731,7 @@ input[type=text].s-input
   .proj-w-3
     padding-bottom: 40px
   .proj-list
-    padding-bottom: 0   
+    
   .proj-it
     margin-bottom: 25px
   .proj-section
@@ -1552,6 +1785,7 @@ input[type=text].s-input
       width: 100%
       margin-left: 0
       padding-left: 0 
+
 @media (max-width : 640px)
   .proj-it
     width: 100%
@@ -1615,16 +1849,18 @@ input[type=text].s-input
 
 .develop-cols
 
-.wrapper-2
-  .develop-cols
-    margin-top: -13px
+.wrapper-2  
   .cols-2
     margin-top: 6px
   .dev-link-w
-    margin-top: 56px
+    
   .pub-section
     .dev-link-w
       margin-top: 36px
+
+
+
+  
 
 .like-h3-w
   margin-top: 34px
@@ -1646,7 +1882,7 @@ input[type=text].s-input
   width: 941px
 
 .develop-row-1
-  margin-bottom: 90px 
+  margin-bottom: 66px 
 
 .wrapper-7
   .develop-row-1
@@ -2026,7 +2262,7 @@ input[type=text].s-input
   margin-right: 6px
 
 .sort-section
-  padding-top: 49px
+  padding-top: 40px
 
 .tabs_content_item
   display: none
@@ -2057,7 +2293,7 @@ input[type=text].s-input
   margin-left: 13px
   margin-bottom: 9px
 .sort-w
-  margin-top: 14px
+  margin-top: 20px
   display: flex
   -webkit-align-items: flex-end
   align-items: flex-end
@@ -2109,8 +2345,8 @@ input[type=text].s-input
   margin-bottom: 0px
 
 .check-label
-  cursor: pointer
-  margin-right: 14px
+  cursor: pointer  
+  margin-right: 5px
   margin-bottom: 12px
   &:last-child
     margin-right: 0
@@ -2135,7 +2371,7 @@ input[type=text].s-input
   flex: none  
   margin-bottom: 10px
 .sort-w-2
-  margin-top: 44px
+  margin-top: 36px
   display: flex
   align-items: center
   justify-content: space-between
@@ -2219,6 +2455,13 @@ input[type=text].s-input
   justify-content: flex-end
   align-items: center
 
+@media (min-width : 1200px)
+  .wrapper-2
+    .develop-cols    
+      margin-top: 57px
+    .dev-link-w
+      margin-top: 56px
+
 @media (max-width : 1199px)
   .sort-w-2    
     flex-wrap: wrap
@@ -2269,6 +2512,47 @@ input[type=text].s-input
     border-bottom: none
     &:nth-child(3)
       border-bottom: none
+
+.wrapper-3
+  .proj-it
+  .filter-section-2
+    margin-top: -12px
+.wrapper-4
+  .dev-proj-w
+    margin-top: 80px
+    padding-bottom: 154px
+  .develop-blue-top
+    margin-top: -5px
+  .sort-w-2
+    margin-top: 42px
+  .develop-cols-2
+    margin-top: 40px
+  .like-h3-w-2
+  .dev-pagin-w
+    margin-top: 90px
+  .like-h4
+    margin-bottom: 0px
+    display: inline-block
+    width: auto
+  
+
+.wrapper-5
+  .develop-blue-top
+    margin-top: -12px
+  .develop-form_4
+    margin-top: 37px
+  .develop-form
+    width: 100%
+    max-width: 100% 
+.wrapper-6
+.wrapper-7
+.wrapper-8
+.wrapper-9
+.wrapper-10
+.wrapper-11
+
+
+    
     
 /*******************************Page 3-2*******************************/
 
@@ -2599,7 +2883,7 @@ input[type=text].s-input
 
 @media (min-width : 1199px)
   .develop-blue-top 
-    margin-top: 10px
+    
 
 input[type=text].input 
   height: 48px
@@ -2611,7 +2895,8 @@ input[type=text].input
   padding: 0 20px
 .develop-form
   display: flex
-  width: 965px
+  max-width: 919px
+  width: 100%
   margin-top: 31px
   input[type=text].input
     -webkit-flex-grow: 1
@@ -4229,6 +4514,7 @@ input[type="text"].user-search-input
     margin-top: 15px
   .person-dates
     display: block
+    
 @media (max-width : 640px)
   .person-cols
     display: block
@@ -4351,8 +4637,11 @@ input[type="text"].add-review-input
   border: 1px solid rgb(221, 221, 221)
   background-color: rgb(255, 255, 255)
   width: 100%
-  padding: 23px 18px
-  margin-top: 10px  
+  padding: 23px 18px  
+  margin-bottom: 21px
+
+.add-review-textarea2
+  height: 156px
 
 .add-review-bot
   margin-top: 33px
@@ -4434,6 +4723,9 @@ input[type="text"].add-review-input
     display: block
   .form-col-l
     width: 100%
+  .wrapper-4
+    .dev-proj-w
+      padding-bottom: 40px
 
 @media (max-width : 570px)
   .add-review-bot-row
@@ -4997,7 +5289,7 @@ img.content-img
   -webkit-align-items: center
   align-items: center
   margin-right: 32px
-  a
+  div
     color: #999999
   img
     margin-right: 5px
@@ -5450,6 +5742,8 @@ img.content-img
     width: 100%
     display: block
     margin-left: 0
+  .wrapper-6-5 .revs-block
+    padding-bottom: 0
 @media (max-width : 768px)
   .pub-it-r-butts    
     display: flex
@@ -5457,7 +5751,7 @@ img.content-img
       max-width: calc(100% / 3 - 10px)
       margin-right: 8px
   .my-pubs
-    padding-bottom: 60px
+    padding-bottom: 60px  
 @media (max-width : 570px)
   .pub-it-hor
     .pub-it-img-w
@@ -5956,9 +6250,7 @@ input[type="text"].inputt
   -webkit-flex-wrap: wrap
   -ms-flex-wrap: wrap
   flex-wrap: wrap
-  display: flex
-  -webkit-justify-content: space-between
-  justify-content: space-between
+  display: flex  
   margin-top: 27px
   .s-input-409
     margin-bottom: 21px
@@ -6784,8 +7076,10 @@ input[type="text"].inputt
 
 @media (min-width : 1199px)
   .filter-section-4
+    .contain
+      max-width: 1248px      
     .s-form
-      margin-top: -25px
+      
     .blue-b
       padding-bottom: 60px
 
@@ -6874,12 +7168,13 @@ input[type="text"].inputt
   h1
     margin-bottom: 0px
     line-height: 1
+  .rcomplex-head-info-w
+    margin-left: 6px
 
 .rcomplex-head-info, .rcomplex-geo
   img
     margin-right: 5px
-.rcomplex-head-info-w
-  margin-left: 16px
+.rcomplex-head-info-w  
   display: flex  
   align-items: flex-end
   margin-bottom: 6px
@@ -6951,6 +7246,8 @@ input[type="text"].inputt
   display: flex
   align-items: flex-end
   justify-content: center
+  color: #999 
+  
   
 .rcomplex-row-2
   display: flex
@@ -7046,12 +7343,19 @@ ul.chars-list
   font-size: 17px
   margin-right: 5px
 
+.abcomp-txt-tel
+  display: none
+  &.show
+    display: block
+    margin-bottom: 10px
+    margin-top: 15px
+
 .chars-list-txt
   color: rgb(35, 35, 35)
   font-size: 17px
   font-weight: 400
   margin-bottom: 14px
-  width: 100%
+  width: 100%  
 .rcomplex-min
   display: flex
   justify-content: flex-start
@@ -7187,8 +7491,10 @@ ul.chars-list
     flex: none
     width: 16px
   span.span-gray
-    margin-left: 4px
-  .span-gray
+    margin-left: 4px  
+    color: #999999
+
+span.span-gray    
     color: #999999
 
 .rcom-desc-block
@@ -7655,6 +7961,23 @@ ul.chars-list
     margin-bottom: 21px
   p
     line-height: 1.6
+@media (max-width : 992px)
+  .add-rev-r-block
+    margin-top: 10px
+  .revs-block_2
+    padding-bottom: 0
+  .wrapper-22 .proj-w-3
+    margin-top: 60px
+@media (max-width : 480px)
+  .revs-item-col-l
+    order: -1 $i
+  .revs-item-row-1
+    .revs-item-col-r
+      margin-top: 15px
+@media (max-width : 640px)
+  .revs-ntitle
+    margin-left: 0
+    margin-top: 10px
 
 
 @import "_body"
@@ -7662,5 +7985,3 @@ ul.chars-list
 @import "_hides"
 @import "_vars"
 @import "_after"
-
-

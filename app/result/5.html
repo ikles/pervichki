@@ -61,8 +61,7 @@
         </div>
         <div class="top-icons">
           <a href="#" class="top-i"><img src="img/top-i-1.svg" /></a>
-          <a href="#" class="top-i"><img src="img/top-i-2.svg" /></a>
-          <a href="#" class="top-i hide-360"><img src="img/top-i-3.svg" /></a>
+          <a href="#" class="top-i"><img src="img/top-i-2.svg" /></a>          
         </div>
       </div>
       <div class="top-sel top-sel-n show-1050">
@@ -79,85 +78,192 @@
       <form class="develop-form develop-form_3 develop-form_4">
         <input type="text" class="input develop-input" placeholder="Поиск по ЖК">
         <div class="s-filter-more-chars">
-          <div class="s-input-selects_2">
-            <div class="s-input-409">
-              <select class="s-sel">
-                <option value="Цель ипотеки">Цель ипотеки</option>
-                <option value="В процессе">В процессе</option>
-                <option value="Завершен">Завершен</option>
-              </select>
-            </div>
 
-            <div class="s-input-409">
-              <select class="s-sel">
-                <option value="Ипотечная программа">Ипотечная программа</option>
-                <option value="В процессе">В процессе</option>
-                <option value="Завершен">Завершен</option>
-              </select>
-            </div>
+<div class="s-form open">
+  <div class="c-input c-input-tit">
+    <input class="s-input-b" type="text" placeholder="Название ЖК или адрес" />
+    <div class="input-l-w">
+      <a href="#" class="input-l">
+        <span>Метро</span>
+        <img src="img/metro-v.svg" alt="">
+      </a>
+      <a href="#" class="input-l">
+        <span>Район</span>
+        <img src="img/loc-v.svg" alt="">
+      </a>
+    </div>
+  </div>
+  <div class="c-input c-input-rooms w264">
+    <label class="s-check s-check-f">
+      <input type="checkbox" name="s-check-1" value="Студия">
+      <span>Студия</span>
+    </label>
+    <label class="s-check">
+      <input type="checkbox" name="s-check-1" value="1">
+      <span>1</span>
+    </label>
+    <label class="s-check">
+      <input type="checkbox" name="s-check-1" value="2">
+      <span>2</span>
+    </label>
+    <label class="s-check">
+      <input type="checkbox" name="s-check-1" value="3">
+      <span>3</span>
+    </label>
+    <label class="s-check">
+      <input type="checkbox" name="s-check-1" value="4">
+      <span>4+</span>
+    </label>
+  </div>            
+  <div class="label-n show-992">Площадь м²</div>
+  <div class="c-input c-input-grow c-input-square">
+    <input class="" type="text" placeholder="Площадь м² от" />
+    <input class="" type="text" placeholder="до" />
+  </div>                        
+  <div class="c-input-fancy c-input-class">
+    <select class="s-sel">
+      <option value="Стадии строительства">Класс жилья</option>
+      <option value="В процессе">В процессе</option>
+      <option value="Завершен">Завершен</option>
+    </select>
+  </div> 
 
-            <div class="s-input-409">
-              <select class="s-sel">
-                <option value="Подтверждение дохода">Подтверждение дохода</option>
-                <option value="В процессе">В процессе</option>
-                <option value="Завершен">Завершен</option>
-              </select>
-            </div>
+  <div class="c-input-fancy c-input-park">
+    <select class="s-sel">
+      <option value="Стадии строительства">Паркинг</option>
+      <option value="В процессе">В процессе</option>
+      <option value="Завершен">Завершен</option>
+    </select>
+  </div>
 
-            <div class="s-input-409">
-              <select class="s-sel">
-                <option value="Категория заемщика">Категория заемщика</option>
-                <option value="В процессе">В процессе</option>
-                <option value="Завершен">Завершен</option>
-              </select>
-            </div>
+  <div class="c-input-fancy c-input-stad">
+    <select class="s-sel">
+      <option value="Стадии строительства">Стадии строительства</option>
+      <option value="В процессе">В процессе</option>
+      <option value="Завершен">Завершен</option>
+    </select>
+  </div> 
+  <div class="c-input-o c-input-metro1">
+    <label class="s-input-label">
+      <input type="checkbox">
+      <span>Возле метро</span>
+    </label>
+  </div>          
 
-            <div class="s-input-409">
-              <select class="s-sel">
-                <option value="Стаж на последнем месте работы">Стаж на последнем месте работы</option>
-                <option value="В процессе">В процессе</option>
-                <option value="Завершен">Завершен</option>
-              </select>
-            </div>
+  <div class="label-n label-n-7">Этажность дома</div>
+  <div class="c-input c-input-floor">
+    <input class="s-input s-input-s" type="text" placeholder="Этажность дома" />
+    <input class="s-input" type="text" placeholder="до" />
+  </div>
 
-            <div class="s-input-409">
-              <select class="s-sel">
-                <option value="Возраст заемщика">Возраст заемщика</option>
-                <option value="В процессе">В процессе</option>
-                <option value="Завершен">Завершен</option>
-              </select>
-            </div>
-          </div><!--s-input-selects-->
+  <div class="s-filter-more-chars">
+    <div class="s-input-selects">
 
 
+      <div class="c-input-fancy с-input-type">
+        <select class="s-sel">
+          <option value="Стадии строительства">Тип здания</option>
+          <option value="В процессе">В процессе</option>
+          <option value="Завершен">Завершен</option>
+        </select>
+      </div>
 
-          <div class="s-filter-check-w">
-            <div class="s-filter-check-rw">
-              <div class="s-filter-check-tit s-filter-check-tit_2">Топ банков по размеру активов</div>
-              <div class="s-filter-check-labels s-filter-check-labels_2">
-                <label class="check-label">
-                  <input name="check-24" type="checkbox">
-                  <span class="check-butt">Топ 100</span>
-                </label>
-                <label class="check-label">
-                  <input name="check-24" type="checkbox">
-                  <span class="check-butt">Топ 50</span>
-                </label>
-                <label class="check-label">
-                  <input name="check-24" type="checkbox">
-                  <span class="check-butt">Топ 10</span>
-                </label>
-                <div class="s-input-409">
-                  <select class="s-sel">
-                    <option value="Выберете банк">Выберете банк</option>
-                    <option value="В процессе">В процессе</option>
-                    <option value="Завершен">Завершен</option>
-                  </select>
-                </div>
-              </div><!--s-filter-check-labels-->
-            </div><!--s-filter-check-rw-->
-          </div><!--s-filter-check-w-->
-          <div class="find-cred">Найдено 138 ипотечных кредитов</div>
+      <div class="c-input-o с-input-metro2">
+        <label class="s-input-label">
+          <input type="checkbox">
+          <span>Возле метро</span>
+        </label>
+      </div>
+    </div><!--s-input-selects-->
+
+
+
+    <div class="s-filter-check-w">
+      <div class="s-filter-check-rw">
+        <div class="s-filter-check-tit">Безопасность</div>
+        <div class="s-filter-check-labels">
+          <label class="check-label">
+            <input name="check-24" type="checkbox">
+            <span class="check-butt">Закрытая территория</span>
+          </label>
+          <label class="check-label">
+            <input name="check-24" type="checkbox">
+            <span class="check-butt">Консьерж</span>
+          </label>
+          <label class="check-label">
+            <input name="check-24" type="checkbox">
+            <span class="check-butt">Охрана</span>
+          </label>
+        </div><!--s-filter-check-labels-->
+      </div><!--s-filter-check-rw-->
+
+      <div class="s-filter-check-rw">
+        <div class="s-filter-check-tit">Дополнительные опции</div>
+        <div class="s-filter-check-labels">
+          <label class="check-label">
+            <input name="check-24" type="checkbox">
+            <span class="check-butt">Балкон или лоджия</span>
+          </label>
+          <label class="check-label">
+            <input name="check-24" type="checkbox">
+            <span class="check-butt">Свободная планировка</span>
+          </label>
+          <label class="check-label">
+            <input name="check-24" type="checkbox">
+            <span class="check-butt">Панорамные окна</span>
+          </label>
+        </div><!--s-filter-check-labels-->
+      </div><!--s-filter-check-rw-->
+
+      <div class="s-filter-check-rw">
+        <div class="s-filter-check-tit">Инфраструктура</div>
+        <div class="s-filter-check-labels">
+          <label class="check-label">
+            <input name="check-24" type="checkbox">
+            <span class="check-butt">У воды</span>
+          </label>
+          <label class="check-label">
+            <input name="check-24" type="checkbox">
+            <span class="check-butt">У леса</span>
+          </label>
+          <label class="check-label">
+            <input name="check-24" type="checkbox">
+            <span class="check-butt">Рядом с парком</span>
+          </label>
+          <label class="check-label">
+            <input name="check-24" type="checkbox">
+            <span class="check-butt">Пляж у дома</span>
+          </label>
+          <label class="check-label">
+            <input name="check-24" type="checkbox">
+            <span class="check-butt">Спортивные площадки</span>
+          </label>
+          <label class="check-label">
+            <input name="check-24" type="checkbox">
+            <span class="check-butt">Детский садик</span>
+          </label>
+          <label class="check-label">
+            <input name="check-24" type="checkbox">
+            <span class="check-butt">Школа</span>
+          </label>
+          <label class="check-label">
+            <input name="check-24" type="checkbox">
+            <span class="check-butt">Магазины</span>
+          </label>
+          <label class="check-label">
+            <input name="check-24" type="checkbox">
+            <span class="check-butt">Аптеки</span>
+          </label>
+        </div><!--s-filter-check-labels-->
+      </div><!--s-filter-check-rw-->
+
+
+
+    </div><!--s-filter-check-w-->
+  </div><!--s-filter-more-chars-->
+
+  </div>  
+
         </div><!--s-filter-more-chars-->
         <div class="s-input-w-22">
           <input type="submit" class="butt develop-butt" value="Найти">
@@ -237,8 +343,8 @@
     </div>
     <div class="rcomplex-row-3 hide-570">
       <div class="rcomplex-head-txt-1">Возле метро:</div>
-      <span class="rcomplex-metro"><img src="img/metro.svg" /><span class="rcomplex-adress-1">Козья Слобода;</span></span>
-      <span class="rcomplex-metro"><img src="img/metro.svg" /><span class="rcomplex-adress-1">Московский рынок</span></span>
+      <a href="#" class="rcomplex-metro"><img src="img/metro.svg" /><span class="rcomplex-adress-1">Козья Слобода;</span></a>
+      <a href="#" class="rcomplex-metro"><img src="img/metro.svg" /><span class="rcomplex-adress-1">Московский рынок</span></a>
     </div>
     <div class="rcomplex-cols">
       <div class="rcomplex-col-l">
@@ -325,23 +431,23 @@
         <div class="chars-butt-w">
           <a href="#" class="butt-oo">Все характеристики</a>
         </div>
-        <div class="like-h4">Как купить?</div>
-        <div class="chars-list-txt">Жилой комплекс от <a href="#" class="">Унистрой</a></div>
+        <div class="like-h4">Застройщик</div>        
         <div class="rcomplex-min">
           <div class="rcomplex-min-l">
             <a href="#" class="rcomplex-min-img-w"><img src="img/unistroi.png" /></a>
           </div>
           <div class="rcomplex-min-r">
+            <div class="chars-list-txt">Жилой комплекс от <a href="#" class="">Унистрой</a></div>
             <div class="rcomplex-min-txt-1">yл. Брусничная 15</div>
             <span class="rcomplex-phone">
               <span class="phone-hide">8 (843) 34...</span>
               <span class="phone-show">8 (843) 345-56-58</span>
+              <a href="#" class="abcomp-txt-3 abcomp-txt-tel mt10">
+                <img src="img/cep.svg" alt="">
+                unistroyrf.ru
+              </a>
               <a href="#" class="rcomplex-span">Показать</a>
-            </span>
-            <a href="#" class="abcomp-txt-3 mt10">
-              <img src="img/cep.svg" alt="">
-              unistroyrf.ru
-            </a>
+            </span>            
           </div>
         </div>
         <div class="info-its">
@@ -654,8 +760,8 @@
 </div>
 
 
-  
-  <div class="contain">
+
+<div class="contain">
 
   <section class="pub-section_2">    
     <div class="like-h2">
@@ -732,12 +838,12 @@
               <span>
                 <span class="phone-hide">8 (843) 34...</span>
                 <span class="phone-show">8 (843) 345-56-58</span>
+                <a href="#" class="abcomp-txt-3 abcomp-txt-tel mt5">
+                  <img src="img/cep.svg" alt="">
+                  unistroyrf.ru
+                </a>
                 <a href="#" class="rcomplex-span">Показать</a>
               </span>
-              <a href="#" class="abcomp-txt-3 mt5">
-                <img src="img/cep.svg" alt="">
-                unistroyrf.ru
-              </a>
             </div>
           </div>
           <div class="howtobuy-col-2">
@@ -757,7 +863,7 @@
                 <div class="info-it-txt-2">cтроится</div>
               </div>      
             </div>            
-            <div class="howtobuy-rw-2"><img src="img/excl.svg" /><span class="howtobuy-txt">Все квартиры от застройщика распроданы</span></div>
+            
           </div>
         </div>        
       </div>
@@ -769,11 +875,11 @@
 
 
 
-                <div class="revs-item revs-item_parent">
+                        <div class="revs-item revs-item_parent">
                 <div class="revs-item-row-1">
                   <div class="revs-item-col-l">
                     <div class="revs-ava-nd">
-                      <a href="#" class="revs-ava"><img src="img/ava.svg"></a>
+                      <div class="revs-ava"><img src="img/ava.svg"></div>
                       <div class="revs-name-date">
                         <div class="revs-name">Максим П.</div>
                         <div class="revs-date">26.04.2020 19:45</div>
@@ -829,11 +935,11 @@
               </div><!--revs-item-->
 
 
-                <div class="revs-item revs-item_parent">
+                        <div class="revs-item revs-item_parent">
                 <div class="revs-item-row-1">
                   <div class="revs-item-col-l">
                     <div class="revs-ava-nd">
-                      <a href="#" class="revs-ava"><img src="img/ava.svg"></a>
+                      <div class="revs-ava"><img src="img/ava.svg"></div>
                       <div class="revs-name-date">
                         <div class="revs-name">Олег</div>
                         <div class="revs-date">26.04.2020 19:45</div>
@@ -891,17 +997,17 @@
 
 
 
-          </div>
+        </div>
 
 
-    
-      <div class="dev-link-w">
-        <a href="#" class="dev-link-btn btn-o">Оставить отзыв</a>
-        <a href="#" class="link-arr">Все отзывы</a>
-      </div>
-    </div><!--revs-block-->    
-  </div><!--col-940-->
-</div>
+
+        <div class="dev-link-w">
+          <a href="#" class="dev-link-btn btn-o">Оставить отзыв</a>
+          <a href="#" class="link-arr">Все отзывы</a>
+        </div>
+      </div><!--revs-block-->    
+    </div><!--col-940-->
+  </div>
 </div>
 
 
@@ -911,7 +1017,7 @@
   <div class="dev-proj-w dev-proj-w_2">
 
     <div class="proj-w">
-<div class="proj-it">
+      <div class="proj-it">
   <div class="proj-img-w"><a href="#project-link" class="proj-img-link"></a>
     <img src="img/proj-1.jpg">
     <div class="proj-ics">
@@ -986,11 +1092,13 @@
   <div class="dev-proj-w dev-proj-w_3 pb-142">
     <div class="like-h2">Смотрите также</div>    
     <div class="proj-w">
-    <div class="proj-it">
+      <div class="proj-it">
   <div class="proj-img-w"><a href="#project-link" class="proj-img-link"></a>
     <img src="img/proj-1.jpg">
     <div class="proj-ics">
-      <a href="#" class="proj-ic"><img src="img/top-i-1.svg"></a><a href="#" class="proj-ic"><img src="img/top-i-2.svg"></a><a href="#" class="publ">Реклама<img src="img/bulicity.svg"></a>
+      <a href="#" class="proj-ic"><img src="img/top-i-1.svg"></a>
+      <a href="#" class="proj-ic"><img src="img/top-i-2.svg"></a>
+      <a href="#" class="proj-ic proj-ic-r"><img src="img/gps_4.svg"></a>
     </div>
     <div class="tagss"><span class="tagg">Строится, есть сданные</span><span class="tagg">Комфорт</span></div>
   </div>
@@ -1007,7 +1115,9 @@
   <div class="proj-img-w"><a href="#project-link" class="proj-img-link"></a>
     <img src="img/proj-2.jpg">
     <div class="proj-ics">
-      <a href="#" class="proj-ic"><img src="img/top-i-1.svg"></a><a href="#" class="proj-ic"><img src="img/top-i-2.svg"></a><a href="#" class="publ">Реклама<img src="img/bulicity.svg"></a>
+      <a href="#" class="proj-ic"><img src="img/top-i-1.svg"></a>
+      <a href="#" class="proj-ic"><img src="img/top-i-2.svg"></a>
+      <a href="#" class="proj-ic proj-ic-r"><img src="img/gps_4.svg"></a>
     </div>
     <div class="tagss"><span class="tagg">Строится</span><span class="tagg">Комфорт</span></div>
   </div>
@@ -1025,7 +1135,9 @@
   <div class="proj-img-w"><a href="#project-link" class="proj-img-link"></a>
     <img src="img/proj-3.jpg">
     <div class="proj-ics">
-      <a href="#" class="proj-ic"><img src="img/top-i-1.svg"></a><a href="#" class="proj-ic"><img src="img/top-i-2.svg"></a><a href="#" class="publ">Реклама<img src="img/bulicity.svg"></a>
+      <a href="#" class="proj-ic"><img src="img/top-i-1.svg"></a>
+      <a href="#" class="proj-ic"><img src="img/top-i-2.svg"></a>
+      <a href="#" class="proj-ic proj-ic-r"><img src="img/gps_4.svg"></a>
     </div>
     <div class="tagss"><span class="tagg">Сдан</span><span class="tagg">Бизнес</span></div>
   </div>
@@ -1042,7 +1154,9 @@
   <div class="proj-img-w"><a href="#project-link" class="proj-img-link"></a>
     <img src="img/proj-4.jpg">
     <div class="proj-ics">
-      <a href="#" class="proj-ic"><img src="img/top-i-1.svg"></a><a href="#" class="proj-ic"><img src="img/top-i-2.svg"></a><a href="#" class="publ">Выбор редакции</a>
+      <a href="#" class="proj-ic"><img src="img/top-i-1.svg"></a>
+      <a href="#" class="proj-ic"><img src="img/top-i-2.svg"></a>
+      <a href="#" class="proj-ic proj-ic-r"><img src="img/gps_4.svg"></a>
     </div>
     <div class="tagss"><span class="tagg">Строится, есть сданные</span><span class="tagg">Комфорт</span></div>
   </div>
@@ -1078,8 +1192,7 @@
       </div>
       <div class="foot-col foot-col-3">
         <ul class="mnu-ul">
-          <li class="mnu-li"><a href="#" class="mnu-a">Все ЖК</a></li>
-          <li class="mnu-li"><a href="#" class="mnu-a">Застройщикам</a></li>
+          <li class="mnu-li"><a href="#" class="mnu-a">Все ЖК</a></li>          
           <li class="mnu-li"><a href="#" class="mnu-a">Все застройщики</a></li>
           <li class="mnu-li"><a href="#" class="mnu-a">Все города</a></li>
         </ul>

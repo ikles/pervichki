@@ -9,85 +9,9 @@
       <form class="develop-form develop-form_3 develop-form_4">
         <input type="text" class="input develop-input" placeholder="Поиск по ЖК">
         <div class="s-filter-more-chars">
-          <div class="s-input-selects_2">
-            <div class="s-input-409">
-              <select class="s-sel">
-                <option value="Цель ипотеки">Цель ипотеки</option>
-                <option value="В процессе">В процессе</option>
-                <option value="Завершен">Завершен</option>
-              </select>
-            </div>
 
-            <div class="s-input-409">
-              <select class="s-sel">
-                <option value="Ипотечная программа">Ипотечная программа</option>
-                <option value="В процессе">В процессе</option>
-                <option value="Завершен">Завершен</option>
-              </select>
-            </div>
+@@include('var/_sform2.html')  
 
-            <div class="s-input-409">
-              <select class="s-sel">
-                <option value="Подтверждение дохода">Подтверждение дохода</option>
-                <option value="В процессе">В процессе</option>
-                <option value="Завершен">Завершен</option>
-              </select>
-            </div>
-
-            <div class="s-input-409">
-              <select class="s-sel">
-                <option value="Категория заемщика">Категория заемщика</option>
-                <option value="В процессе">В процессе</option>
-                <option value="Завершен">Завершен</option>
-              </select>
-            </div>
-
-            <div class="s-input-409">
-              <select class="s-sel">
-                <option value="Стаж на последнем месте работы">Стаж на последнем месте работы</option>
-                <option value="В процессе">В процессе</option>
-                <option value="Завершен">Завершен</option>
-              </select>
-            </div>
-
-            <div class="s-input-409">
-              <select class="s-sel">
-                <option value="Возраст заемщика">Возраст заемщика</option>
-                <option value="В процессе">В процессе</option>
-                <option value="Завершен">Завершен</option>
-              </select>
-            </div>
-          </div><!--s-input-selects-->
-
-
-
-          <div class="s-filter-check-w">
-            <div class="s-filter-check-rw">
-              <div class="s-filter-check-tit s-filter-check-tit_2">Топ банков по размеру активов</div>
-              <div class="s-filter-check-labels s-filter-check-labels_2">
-                <label class="check-label">
-                  <input name="check-24" type="checkbox">
-                  <span class="check-butt">Топ 100</span>
-                </label>
-                <label class="check-label">
-                  <input name="check-24" type="checkbox">
-                  <span class="check-butt">Топ 50</span>
-                </label>
-                <label class="check-label">
-                  <input name="check-24" type="checkbox">
-                  <span class="check-butt">Топ 10</span>
-                </label>
-                <div class="s-input-409">
-                  <select class="s-sel">
-                    <option value="Выберете банк">Выберете банк</option>
-                    <option value="В процессе">В процессе</option>
-                    <option value="Завершен">Завершен</option>
-                  </select>
-                </div>
-              </div><!--s-filter-check-labels-->
-            </div><!--s-filter-check-rw-->
-          </div><!--s-filter-check-w-->
-          <div class="find-cred">Найдено 138 ипотечных кредитов</div>
         </div><!--s-filter-more-chars-->
         <div class="s-input-w-22">
           <input type="submit" class="butt develop-butt" value="Найти">
@@ -167,8 +91,8 @@
     </div>
     <div class="rcomplex-row-3 hide-570">
       <div class="rcomplex-head-txt-1">Возле метро:</div>
-      <span class="rcomplex-metro"><img src="img/metro.svg" /><span class="rcomplex-adress-1">Козья Слобода;</span></span>
-      <span class="rcomplex-metro"><img src="img/metro.svg" /><span class="rcomplex-adress-1">Московский рынок</span></span>
+      <a href="#" class="rcomplex-metro"><img src="img/metro.svg" /><span class="rcomplex-adress-1">Козья Слобода;</span></a>
+      <a href="#" class="rcomplex-metro"><img src="img/metro.svg" /><span class="rcomplex-adress-1">Московский рынок</span></a>
     </div>
     <div class="rcomplex-cols">
       <div class="rcomplex-col-l">
@@ -255,23 +179,23 @@
         <div class="chars-butt-w">
           <a href="#" class="butt-oo">Все характеристики</a>
         </div>
-        <div class="like-h4">Как купить?</div>
-        <div class="chars-list-txt">Жилой комплекс от <a href="#" class="">Унистрой</a></div>
+        <div class="like-h4">Застройщик</div>        
         <div class="rcomplex-min">
           <div class="rcomplex-min-l">
             <a href="#" class="rcomplex-min-img-w"><img src="img/unistroi.png" /></a>
           </div>
           <div class="rcomplex-min-r">
+            <div class="chars-list-txt">Жилой комплекс от <a href="#" class="">Унистрой</a></div>
             <div class="rcomplex-min-txt-1">yл. Брусничная 15</div>
             <span class="rcomplex-phone">
               <span class="phone-hide">8 (843) 34...</span>
               <span class="phone-show">8 (843) 345-56-58</span>
+              <a href="#" class="abcomp-txt-3 abcomp-txt-tel mt10">
+                <img src="img/cep.svg" alt="">
+                unistroyrf.ru
+              </a>
               <a href="#" class="rcomplex-span">Показать</a>
-            </span>
-            <a href="#" class="abcomp-txt-3 mt10">
-              <img src="img/cep.svg" alt="">
-              unistroyrf.ru
-            </a>
+            </span>            
           </div>
         </div>
         <div class="info-its">
@@ -584,8 +508,8 @@
 </div>
 
 
-  
-  <div class="contain">
+
+<div class="contain">
 
   <section class="pub-section_2">    
     <div class="like-h2">
@@ -662,12 +586,12 @@
               <span>
                 <span class="phone-hide">8 (843) 34...</span>
                 <span class="phone-show">8 (843) 345-56-58</span>
+                <a href="#" class="abcomp-txt-3 abcomp-txt-tel mt5">
+                  <img src="img/cep.svg" alt="">
+                  unistroyrf.ru
+                </a>
                 <a href="#" class="rcomplex-span">Показать</a>
               </span>
-              <a href="#" class="abcomp-txt-3 mt5">
-                <img src="img/cep.svg" alt="">
-                unistroyrf.ru
-              </a>
             </div>
           </div>
           <div class="howtobuy-col-2">
@@ -687,7 +611,7 @@
                 <div class="info-it-txt-2">cтроится</div>
               </div>      
             </div>            
-            <div class="howtobuy-rw-2"><img src="img/excl.svg" /><span class="howtobuy-txt">Все квартиры от застройщика распроданы</span></div>
+            
           </div>
         </div>        
       </div>
@@ -699,37 +623,37 @@
 
 
 
-  @@include('var/_revs_plus.html',
-  {
-  "name":"Максим П.",
-  "text":"Расположение удобное. В любую точку Казани на одном автобусе. Ну есть места только, куда просто долго ехать, но зато на автобусе)) можно и без машины прожить, в общем. Строится быстро, что удивительно. В общем, шик, надею, что сданным он будет еще kучше",
-  "plus":"Транспортная доступность",
-  "minus":"Дом явно строили на отвяжись: звукоизоляции нет вообще (сосед храпит, а слышно всем соседям), то проблемы с трубами и лифтами обнаруживаются, короче ужас!"
-  })
+          @@include('var/_revs_plus.html',
+          {
+            "name":"Максим П.",
+            "text":"Расположение удобное. В любую точку Казани на одном автобусе. Ну есть места только, куда просто долго ехать, но зато на автобусе)) можно и без машины прожить, в общем. Строится быстро, что удивительно. В общем, шик, надею, что сданным он будет еще kучше",
+            "plus":"Транспортная доступность",
+            "minus":"Дом явно строили на отвяжись: звукоизоляции нет вообще (сосед храпит, а слышно всем соседям), то проблемы с трубами и лифтами обнаруживаются, короче ужас!"
+          })
 
 
-  @@include('var/_revs_plus.html',
-  {
-  "name":"Олег",
-  "text":"Отсутствие балконов и лоджий это большой недостаток.",
-  "plus":"Готовность",
-  "minus":"Планировки"
-  })
+          @@include('var/_revs_plus.html',
+          {
+            "name":"Олег",
+            "text":"Отсутствие балконов и лоджий это большой недостаток.",
+            "plus":"Готовность",
+            "minus":"Планировки"
+          })
 
 
 
 
-          </div>
+        </div>
 
 
-    
-      <div class="dev-link-w">
-        <a href="#" class="dev-link-btn btn-o">Оставить отзыв</a>
-        <a href="#" class="link-arr">Все отзывы</a>
-      </div>
-    </div><!--revs-block-->    
-  </div><!--col-940-->
-</div>
+
+        <div class="dev-link-w">
+          <a href="#" class="dev-link-btn btn-o">Оставить отзыв</a>
+          <a href="#" class="link-arr">Все отзывы</a>
+        </div>
+      </div><!--revs-block-->    
+    </div><!--col-940-->
+  </div>
 </div>
 
 
@@ -739,14 +663,14 @@
   <div class="dev-proj-w dev-proj-w_2">
 
     <div class="proj-w">
-@@include('var/_proj-its.html')
+      @@include('var/_proj-its.html')
     </div>
     
   </div><!--dev-proj-w-->
   <div class="dev-proj-w dev-proj-w_3 pb-142">
     <div class="like-h2">Смотрите также</div>    
     <div class="proj-w">
-    @@include('var/_proj-its.html')
+      @@include('var/_proj-its-geo.html')
     </div>        
   </div><!--dev-proj-w-->
 </div><!--contain-->
